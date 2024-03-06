@@ -1,0 +1,359 @@
+CRITICAL - 2024-01-19 04:51:30 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\Clientes.php on line 231.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 04:54:43 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\Clientes.php on line 231.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 04:54:52 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\Clientes.php on line 231.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 04:55:29 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\Clientes.php on line 231.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 04:57:17 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\Clientes.php on line 231.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 04:57:25 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\Clientes.php on line 231.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 04:57:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id_cliente,
+        cli.id_tipo_documento,
+        td.descripcion as tipo_doc' at line 2 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' \r\n   ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' \r\n   ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' \r\n   ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' \r\n   ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(221): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-19 04:57:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id_cliente,
+        cli.id_tipo_documento,
+        td.descripcion as tipo_doc' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' 
+        cli.id_cliente,
+        cli.id_tipo_documento,
+        td.descripcion as tipo_documento,
+        cli.nro_documento,
+        cli.apellidos,
+        cli.nombres,
+        cli.direccion,
+        cli.correo,
+        cli.telefono,
+        cli.celular,
+        CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE `td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`nombres` LIKE :cli.nombres: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+OR  `cli`.`direccion` LIKE :cli.direccion: ESCAPE \'!\'
+OR  `cli`.`celular` LIKE :cli.celular: ESCAPE \'!\'
+ORDER BY `cli`.`id_cliente` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(221): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 05:29:00 --> Undefined array key "length"
+in APPPATH\Controllers\Inventarios\Productos.php on line 169.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "length"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 05:29:09 --> Undefined array key "length"
+in APPPATH\Controllers\Inventarios\Productos.php on line 169.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "length"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 05:35:40 --> Undefined array key "length"
+in APPPATH\Controllers\Inventarios\Productos.php on line 169.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "length"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 05:36:59 --> mysqli_sql_exception: Unknown column 'p.nombre_categoria' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-19 05:36:59 --> Unknown column 'p.nombre_categoria' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as detalles, 
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+AND  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+AND  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+AND  `p`.`nombre_categoria` LIKE :p.nombre_categoria: ESCAPE \'!\'
+AND  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+AND  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+AND  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+AND  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`cod_interno` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 05:38:07 --> mysqli_sql_exception: Unknown column 'c.nombre_categoria' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-19 05:38:07 --> Unknown column 'c.nombre_categoria' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as detalles, 
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+AND  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+AND  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+AND  `c`.`nombre_categoria` LIKE :c.nombre_categoria: ESCAPE \'!\'
+AND  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+AND  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+AND  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+AND  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`cod_interno` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 05:38:43 --> Undefined array key ""
+in APPPATH\Controllers\Inventarios\Productos.php on line 191.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 06:05:30 --> Undefined array key ""
+in APPPATH\Controllers\Inventarios\Productos.php on line 191.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 06:10:35 --> Undefined array key ""
+in APPPATH\Controllers\Inventarios\Productos.php on line 190.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 06:11:33 --> Undefined array key ""
+in APPPATH\Controllers\Inventarios\Productos.php on line 190.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 06:20:24 --> Undefined array key ""
+in APPPATH\Controllers\Inventarios\Productos.php on line 192.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 06:22:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`' at line 4 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(174): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-19 06:22:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as detalles, 
+        \'\' as opciones
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+AND  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+AND  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+AND  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+AND  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+AND  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+AND  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(174): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 06:22:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`' at line 4 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(174): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-19 06:22:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as detalles, 
+        \'\' as opciones
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+AND  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+AND  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+AND  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+AND  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+AND  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+AND  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(174): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 06:48:43 --> mysqli_sql_exception: Unknown column 'c.nombre_categoria' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-19 06:48:43 --> Unknown column 'c.nombre_categoria' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+AND  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+AND  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+AND  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+AND  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+AND  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+AND  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `c`.`nombre_categoria` ASC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 06:48:56 --> mysqli_sql_exception: Unknown column 'c.nombre_categoria' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-19 06:48:56 --> Unknown column 'c.nombre_categoria' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+AND  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+AND  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+AND  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+AND  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+AND  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+AND  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `c`.`nombre_categoria` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

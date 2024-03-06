@@ -1,0 +1,283 @@
+ERROR - 2024-01-28 12:03:09 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'pos_ec.cli.id_cliente'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' , cli...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' , cli...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' , cli...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' , cli...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(338): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:03:09 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'pos_ec.cli.id_cliente'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' , cli.id_cliente, cli.id_tipo_documento, td.descripcion as tipo_documento, cli.nro_documento,
+        cli.apellidos, cli.nombres, cli.direccion, cli.correo, cli.telefono, cli.celular,
+        CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado, COUNT(*) as totalFiltered
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE   (
+`td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`nombres` LIKE :cli.nombres: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+OR  `cli`.`direccion` LIKE :cli.direccion: ESCAPE \'!\'
+OR  `cli`.`celular` LIKE :cli.celular: ESCAPE \'!\'
+ )', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(338): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-28 12:03:54 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'pos_ec.cli.id_cliente'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' , cli...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' , cli...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' , cli...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' , cli...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(338): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:03:54 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'pos_ec.cli.id_cliente'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' , cli.id_cliente, cli.id_tipo_documento, td.descripcion as tipo_documento, cli.nro_documento,
+        cli.apellidos, cli.nombres, cli.direccion, cli.correo, cli.telefono, cli.celular,
+        CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado, COUNT(*) as totalFiltered
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE   (
+`td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`nombres` LIKE :cli.nombres: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+OR  `cli`.`direccion` LIKE :cli.direccion: ESCAPE \'!\'
+OR  `cli`.`celular` LIKE :cli.celular: ESCAPE \'!\'
+ )', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(338): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-28 12:07:26 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'pos_ec.cli.id_cliente'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT cli.id_c...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT cli.id_c...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT cli.id_c...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT cli.id_c...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(355): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:07:26 --> In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'pos_ec.cli.id_cliente'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT cli.id_cliente, cli.id_tipo_documento, td.descripcion as tipo_documento, cli.nro_documento,
+        cli.apellidos, cli.nombres, cli.direccion, cli.correo, cli.telefono, cli.celular,
+        CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado, COUNT(*) as totalFiltered
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE   (
+`td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`nombres` LIKE :cli.nombres: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+OR  `cli`.`direccion` LIKE :cli.direccion: ESCAPE \'!\'
+OR  `cli`.`celular` LIKE :cli.celular: ESCAPE \'!\'
+ )', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(355): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-28 12:31:17 --> mysqli_sql_exception: Column 'estado' in where clause is ambiguous in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(120): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:31:17 --> Column 'estado' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `estado` = :estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(120): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-28 12:31:31 --> mysqli_sql_exception: Column 'estado' in where clause is ambiguous in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(120): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:31:31 --> Column 'estado' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `estado` = :estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(120): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-28 12:31:50 --> mysqli_sql_exception: Column 'estado' in where clause is ambiguous in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(120): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:31:50 --> Column 'estado' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `estado` = :estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(120): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-28 12:57:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_catego' at line 5 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(232): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:57:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_catego' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria where p.estado = 1
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(232): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-28 12:57:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_catego' at line 5 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(232): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-28 12:57:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_catego' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria where p.estado = 1
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(232): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

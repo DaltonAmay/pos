@@ -1,0 +1,193 @@
+ERROR - 2023-12-12 19:16:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR cod_interno LIKE '%a%' OR cod_barras LIKE '%a%' OR nombre_producto LIKE '%a%'' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(id...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-12 19:16:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR cod_interno LIKE '%a%' OR cod_barras LIKE '%a%' OR nombre_producto LIKE '%a%'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id_producto) as total FROM productosWHERE  OR cod_interno LIKE \'%a%\' OR cod_barras LIKE \'%a%\' OR nombre_producto LIKE \'%a%\' OR precio_compra LIKE \'%a%\' OR precio_venta LIKE \'%a%\' OR precio_venta_mayoreo LIKE \'%a%\' OR utilidad LIKE \'%a%\' OR stock_min LIKE \'%a%\' OR inventariable LIKE \'%a%\' OR perecedero LIKE \'%a%\' OR created_at LIKE \'%a%\' OR updated_at LIKE \'%a%\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 19:16:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR cod_interno LIKE '%ar%' OR cod_barras LIKE '%ar%' OR nombre_producto LIKE '%a' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(id...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-12 19:16:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR cod_interno LIKE '%ar%' OR cod_barras LIKE '%ar%' OR nombre_producto LIKE '%a' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id_producto) as total FROM productosWHERE  OR cod_interno LIKE \'%ar%\' OR cod_barras LIKE \'%ar%\' OR nombre_producto LIKE \'%ar%\' OR precio_compra LIKE \'%ar%\' OR precio_venta LIKE \'%ar%\' OR precio_venta_mayoreo LIKE \'%ar%\' OR utilidad LIKE \'%ar%\' OR stock_min LIKE \'%ar%\' OR inventariable LIKE \'%ar%\' OR perecedero LIKE \'%ar%\' OR created_at LIKE \'%ar%\' OR updated_at LIKE \'%ar%\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 19:16:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR cod_interno LIKE '%arr%' OR cod_barras LIKE '%arr%' OR nombre_producto LIKE '' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(id...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-12 19:16:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR cod_interno LIKE '%arr%' OR cod_barras LIKE '%arr%' OR nombre_producto LIKE '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id_producto) as total FROM productosWHERE  OR cod_interno LIKE \'%arr%\' OR cod_barras LIKE \'%arr%\' OR nombre_producto LIKE \'%arr%\' OR precio_compra LIKE \'%arr%\' OR precio_venta LIKE \'%arr%\' OR precio_venta_mayoreo LIKE \'%arr%\' OR utilidad LIKE \'%arr%\' OR stock_min LIKE \'%arr%\' OR inventariable LIKE \'%arr%\' OR perecedero LIKE \'%arr%\' OR created_at LIKE \'%arr%\' OR updated_at LIKE \'%arr%\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:51:30 --> Undefined property: CodeIgniter\View\View::$sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:54:47 --> Undefined property: CodeIgniter\View\View::$sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:54:48 --> Undefined property: CodeIgniter\View\View::$sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:54:50 --> Undefined property: CodeIgniter\View\View::$sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:55:06 --> Undefined property: CodeIgniter\View\View::$sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:55:06 --> Undefined property: CodeIgniter\View\View::$sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:55:07 --> Undefined property: CodeIgniter\View\View::$sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:55:21 --> Undefined variable $sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:55:22 --> Undefined variable $sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:56:05 --> Undefined variable $sqlQueries
+in APPPATH\Views\productos\list.php on line 66.
+ 1 APPPATH\Views\productos\list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sqlQueries', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(36): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 20:14:30 --> Undefined variable $titulo
+in APPPATH\Views\productos\list.php on line 42.
+ 1 APPPATH\Views\productos\list.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(87): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 21:53:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM productos LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT  '' as d...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  '' as d...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  '' as d...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(87): CodeIgniter\Database\BaseConnection->query('SELECT  '' as d...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-12 21:53:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM productos LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(87): CodeIgniter\Database\BaseConnection->query('SELECT  \'\' as detalles * FROM productos LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

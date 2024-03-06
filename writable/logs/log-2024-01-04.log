@@ -1,0 +1,552 @@
+ERROR - 2024-01-04 03:59:08 --> mysqli_sql_exception: Unknown column 'nombre_categoria' in 'where clause' in G:\Otros ordenadores\Trabajos Programacion\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 G:\Otros ordenadores\Trabajos Programacion\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 G:\Otros ordenadores\Trabajos Programacion\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 G:\Otros ordenadores\Trabajos Programacion\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 G:\Otros ordenadores\Trabajos Programacion\www\pos\app\Controllers\Productos.php(125): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 G:\Otros ordenadores\Trabajos Programacion\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 G:\Otros ordenadores\Trabajos Programacion\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 G:\Otros ordenadores\Trabajos Programacion\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\Otros ordenadores\Trabajos Programacion\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-01-04 04:51:50 --> mysqli_sql_exception: Unknown column 'nombre_categoria' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(124): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-04 04:51:50 --> Unknown column 'nombre_categoria' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(124): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%a%\' OR cod_barras LIKE \'%a%\' OR nombre_producto LIKE \'%a%\' OR nombre_categoria LIKE \'%a%\' OR precio_compra LIKE \'%a%\' OR precio_venta LIKE \'%a%\' OR precio_venta_mayoreo LIKE \'%a%\' OR utilidad LIKE \'%a%\' OR stock_min LIKE \'%a%\' OR stock LIKE \'%a%\' OR inventariable LIKE \'%a%\' OR perecedero LIKE \'%a%\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 04:51:53 --> mysqli_sql_exception: Unknown column 'nombre_categoria' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(124): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-04 04:51:53 --> Unknown column 'nombre_categoria' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(124): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%av%\' OR cod_barras LIKE \'%av%\' OR nombre_producto LIKE \'%av%\' OR nombre_categoria LIKE \'%av%\' OR precio_compra LIKE \'%av%\' OR precio_venta LIKE \'%av%\' OR precio_venta_mayoreo LIKE \'%av%\' OR utilidad LIKE \'%av%\' OR stock_min LIKE \'%av%\' OR stock LIKE \'%av%\' OR inventariable LIKE \'%av%\' OR perecedero LIKE \'%av%\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+DEBUG - 2024-01-04 05:30:23 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:23 --> Respuesta JSON: {"draw":1,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:30:25 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:25 --> Respuesta JSON: {"draw":2,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:30:26 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:26 --> Respuesta JSON: {"draw":3,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:30:27 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:27 --> Respuesta JSON: {"draw":4,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:30:27 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:27 --> Respuesta JSON: {"draw":5,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:30:36 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:36 --> Respuesta JSON: {"draw":6,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:30:36 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:36 --> Respuesta JSON: {"draw":7,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:30:36 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:30:36 --> Respuesta JSON: {"draw":8,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:31:05 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:31:05 --> Respuesta JSON: {"draw":9,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:31:06 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:31:06 --> Respuesta JSON: {"draw":10,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:31:06 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:31:06 --> Respuesta JSON: {"draw":11,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:31:07 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:31:07 --> Respuesta JSON: {"draw":12,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+DEBUG - 2024-01-04 05:31:07 --> Consulta SQL: SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10
+DEBUG - 2024-01-04 05:31:07 --> Respuesta JSON: {"draw":13,"recordsTotal":"4","recordsFiltered":"4","data":[{"id_producto":"1","cod_interno":"000000001","cod_barras":"287733747742","nombre_producto":"AVENA QUEKER","precio_compra":"1.25","precio_venta":"1.50","precio_venta_mayoreo":"1.40","utilidad":"0.25","stock_min":"5.00","stock":"50.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-04 17:04:35","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"2","cod_interno":"000000002","cod_barras":"234435656444","nombre_producto":"ARROZ EL CONEJO","precio_compra":"4.00","precio_venta":"5.00","precio_venta_mayoreo":"4.80","utilidad":"1.00","stock_min":"6.00","stock":"20.00","idcategoria":"2","idmarca":null,"idunidad":"2","estado":"1","exento":"0","inventariable":"1","perecedero":"0","created_at":"2023-12-05 09:10:36","updated_at":null,"detalles":"","nombre_categoria":"CARNES"},{"id_producto":"3","cod_interno":"000000003","cod_barras":"242343455465","nombre_producto":"ACEITE GIRASOL 1LT","precio_compra":"3.60","precio_venta":"4.10","precio_venta_mayoreo":"4.00","utilidad":"0.50","stock_min":"1.00","stock":"0.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-12 15:23:59","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"},{"id_producto":"4","cod_interno":"000000004","cod_barras":"242343435454","nombre_producto":"MARGARITA EN","precio_compra":"3.90","precio_venta":"4.50","precio_venta_mayoreo":"4.40","utilidad":"0.60","stock_min":"5.00","stock":"10.00","idcategoria":"1","idmarca":null,"idunidad":"1","estado":"1","exento":"0","inventariable":"1","perecedero":"1","created_at":"2023-12-20 21:51:14","updated_at":null,"detalles":"","nombre_categoria":"LACTEOS"}],"debug_query":"SELECT p.*, '' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria LIMIT 0, 10"}
+CRITICAL - 2024-01-04 16:10:55 --> Attempt to read property "id_categoria" on array
+in APPPATH\Views\productos\list.php on line 228.
+ 1 APPPATH\Views\productos\list.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_categoria" on array', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 228)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(40): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:11:45 --> Array callback must have exactly two elements
+in APPPATH\Views\productos\list.php on line 228.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(40): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:33:26 --> Class "App\Models\MarcaModel" not found
+in APPPATH\Controllers\Productos.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Productos->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 16:34:19 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\pos\app\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-04 16:34:19 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marcas`
+WHERE `estado` = :estado:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 16:38:34 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\pos\app\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-04 16:38:34 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marcas`
+WHERE `estado` = :estado:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 16:39:13 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\pos\app\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-04 16:39:13 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marcas`
+WHERE `estado` = :estado:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 16:39:34 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\pos\app\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-04 16:39:34 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marcas`
+WHERE `estado` = :estado:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Marcas.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:40:36 --> Undefined array key "id_uni_medida"
+in APPPATH\Views\marcas\list.php on line 59.
+ 1 APPPATH\Views\marcas\list.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_uni_medida"', 'C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php', 59)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('marcas/list', [], true)
+ 5 APPPATH\Controllers\Marcas.php(30): view('marcas/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:41:05 --> Undefined array key "abreviatura"
+in APPPATH\Views\marcas\list.php on line 61.
+ 1 APPPATH\Views\marcas\list.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "abreviatura"', 'C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php', 61)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('marcas/list', [], true)
+ 5 APPPATH\Controllers\Marcas.php(30): view('marcas/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:41:19 --> Undefined array key "id_uni_medida"
+in APPPATH\Views\marcas\list.php on line 62.
+ 1 APPPATH\Views\marcas\list.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_uni_medida"', 'C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('marcas/list', [], true)
+ 5 APPPATH\Controllers\Marcas.php(30): view('marcas/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:41:20 --> Undefined array key "id_uni_medida"
+in APPPATH\Views\marcas\list.php on line 62.
+ 1 APPPATH\Views\marcas\list.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_uni_medida"', 'C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\marcas\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('marcas/list', [], true)
+ 5 APPPATH\Controllers\Marcas.php(30): view('marcas/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:46:03 --> Undefined array key "id_uni_medida"
+in APPPATH\Views\marcas\edit.php on line 20.
+ 1 APPPATH\Views\marcas\edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_uni_medida"', 'C:\\laragon\\www\\pos\\app\\Views\\marcas\\edit.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\marcas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('marcas/edit', [], true)
+ 5 APPPATH\Controllers\Marcas.php(69): view('marcas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->edit('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:46:26 --> Undefined array key "abreviatura"
+in APPPATH\Views\marcas\edit.php on line 28.
+ 1 APPPATH\Views\marcas\edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "abreviatura"', 'C:\\laragon\\www\\pos\\app\\Views\\marcas\\edit.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\marcas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('marcas/edit', [], true)
+ 5 APPPATH\Controllers\Marcas.php(69): view('marcas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->edit('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:46:56 --> Undefined array key "id_uni_medida"
+in APPPATH\Views\marcas\eliminated.php on line 52.
+ 1 APPPATH\Views\marcas\eliminated.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_uni_medida"', 'C:\\laragon\\www\\pos\\app\\Views\\marcas\\eliminated.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\marcas\\eliminated.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('marcas/eliminated', [], true)
+ 5 APPPATH\Controllers\Marcas.php(101): view('marcas/eliminated', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Marcas->eliminated()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:49:43 --> Undefined variable $marcas
+in APPPATH\Views\productos\list.php on line 236.
+ 1 APPPATH\Views\productos\list.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marcas', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 236)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:50:00 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:50:37 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:52:18 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:53:45 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:55:38 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:56:56 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:56:57 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:56:58 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:56:58 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:56:58 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:56:59 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:56:59 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:57:05 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:58:06 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:58:07 --> Undefined array key "id_marca"
+in APPPATH\Views\productos\list.php on line 237.
+ 1 APPPATH\Views\productos\list.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_marca"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(43): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:02:14 --> Undefined array key "id_unidad"
+in APPPATH\Views\productos\list.php on line 246.
+ 1 APPPATH\Views\productos\list.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_unidad"', 'C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php', 246)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\productos\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 5 APPPATH\Controllers\Productos.php(46): view('productos/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 17:41:04 --> mysqli_sql_exception: Column 'exento' cannot be null in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Productos.php(229): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->save()
+#10 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-04 17:41:04 --> Column 'exento' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`cod_interno`, `cod_barras`, `nombre_producto`, `precio_compra`, `precio_venta`, `precio_venta_mayoreo`, `utilidad`, `stock_min`, `stock`, `idcategoria`, `idmarca`, `idunidad`, `exento`, `inventariable`, `perecedero`, `created_at`, `updated_at`) VALUES (:cod_interno:, :cod_barras:, :nombre_producto:, :precio_compra:, :precio_venta:, :precio_venta_mayoreo:, :utilidad:, :stock_min:, :stock:, :idcategoria:, :idmarca:, :idunidad:, :exento:, :inventariable:, :perecedero:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Productos.php(229): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->save()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 17:43:09 --> mysqli_sql_exception: Column 'exento' cannot be null in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Productos.php(229): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->save()
+#10 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-04 17:43:09 --> Column 'exento' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`cod_interno`, `cod_barras`, `nombre_producto`, `precio_compra`, `precio_venta`, `precio_venta_mayoreo`, `utilidad`, `stock_min`, `stock`, `idcategoria`, `idmarca`, `idunidad`, `exento`, `inventariable`, `perecedero`, `created_at`, `updated_at`) VALUES (:cod_interno:, :cod_barras:, :nombre_producto:, :precio_compra:, :precio_venta:, :precio_venta_mayoreo:, :utilidad:, :stock_min:, :stock:, :idcategoria:, :idmarca:, :idunidad:, :exento:, :inventariable:, :perecedero:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Productos.php(229): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->save()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 18:01:54 --> mysqli_sql_exception: Column 'exento' cannot be null in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Productos.php(229): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->save()
+#10 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-04 18:01:54 --> Column 'exento' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`cod_interno`, `cod_barras`, `nombre_producto`, `precio_compra`, `precio_venta`, `precio_venta_mayoreo`, `utilidad`, `stock_min`, `stock`, `idcategoria`, `idmarca`, `idunidad`, `exento`, `inventariable`, `perecedero`, `created_at`, `updated_at`) VALUES (:cod_interno:, :cod_barras:, :nombre_producto:, :precio_compra:, :precio_venta:, :precio_venta_mayoreo:, :utilidad:, :stock_min:, :stock:, :idcategoria:, :idmarca:, :idunidad:, :exento:, :inventariable:, :perecedero:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Productos.php(229): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->save()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

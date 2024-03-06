@@ -1,0 +1,192 @@
+CRITICAL - 2024-01-13 04:12:14 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Inventarios/Unidades::index"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Inventarios/Unidades::index')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('administrar/unidades')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('administrar/unidades')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 04:14:46 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Inventarios/Unidades::index"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Inventarios/Unidades::index')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('administrar/unidades')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('administrar/unidades')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 14:40:49 --> mysqli_sql_exception: Column 'id_tipo_documento' cannot be null in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(48): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->save()
+#10 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#11 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-13 14:40:49 --> Column 'id_tipo_documento' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clientes` (`id_tipo_documento`, `nro_documento`, `apellidos`, `nombres`, `direccion`, `correo`, `telefono`, `celular`, `estado`) VALUES (:id_tipo_documento:, :nro_documento:, :apellidos:, :nombres:, :direccion:, :correo:, :telefono:, :celular:, :estado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Ventas\Clientes.php(48): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->save()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 14:42:37 --> mysqli_sql_exception: Column 'nro_documento' cannot be null in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(48): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->save()
+#10 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#11 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-13 14:42:37 --> Column 'nro_documento' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clientes` (`id_tipo_documento`, `nro_documento`, `apellidos`, `nombres`, `direccion`, `correo`, `telefono`, `celular`, `estado`) VALUES (:id_tipo_documento:, :nro_documento:, :apellidos:, :nombres:, :direccion:, :correo:, :telefono:, :celular:, :estado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Ventas\Clientes.php(48): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->save()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 18:16:14 --> mysqli_sql_exception: Unknown column 'CASE WHEN cli.estado = 1 THEN "ACTIVO" ELSE "INACTIVO" END' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT "" as `o...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT "" as `o...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "" as `o...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "" as `o...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(170): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 18:16:14 --> Unknown column 'CASE WHEN cli.estado = 1 THEN "ACTIVO" ELSE "INACTIVO" END' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "" as `opciones`, `cli`.`id_cliente`, `cli`.`id_tipo_documento`, `td`.`descripcion` as `tipo_documento`, `cli`.`nro_documento`, `cli`.`apellidos`, `cli`.`nombres`, `cli`.`correo`, `cli`.`telefono`, `cli`.`celular`, `CASE WHEN cli`.`estado = 1 THEN "ACTIVO" ELSE "INACTIVO" END` as `estado`
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE `td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+ORDER BY `cli`.`id_cliente` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(170): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 18:16:39 --> mysqli_sql_exception: Unknown column 'CASE WHEN cli.estado = 1 THEN "ACTIVO" ELSE "INACTIVO" END' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT "" as `o...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT "" as `o...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "" as `o...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "" as `o...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(170): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 18:16:39 --> Unknown column 'CASE WHEN cli.estado = 1 THEN "ACTIVO" ELSE "INACTIVO" END' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "" as `opciones`, `cli`.`id_cliente`, `cli`.`id_tipo_documento`, `td`.`descripcion` as `tipo_documento`, `cli`.`nro_documento`, `cli`.`apellidos`, `cli`.`nombres`, `cli`.`correo`, `cli`.`telefono`, `cli`.`celular`, `CASE WHEN cli`.`estado = 1 THEN "ACTIVO" ELSE "INACTIVO" END` as `estado`
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE `td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+ORDER BY `cli`.`id_cliente` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(170): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 18:20:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '// Si 'opciones' es una columna literal, de lo contrario quitar o ajustar
+    c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '', // S...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '', // S...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '', // S...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '', // S...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 18:20:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '// Si 'opciones' es una columna literal, de lo contrario quitar o ajustar
+    c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\', // Si \'opciones\' es una columna literal, de lo contrario quitar o ajustar
+    cli.id_cliente,
+    cli.id_tipo_documento,
+    td.descripcion as tipo_documento,
+    cli.nro_documento,
+    cli.apellidos,
+    cli.nombres,
+    cli.correo,
+    cli.telefono,
+    cli.celular,
+    CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE `td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+ORDER BY `cli`.`id_cliente` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(169): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 18:22:32 --> Undefined array key "opciones"
+in APPPATH\Controllers\Ventas\Clientes.php on line 181.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opciones"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 18:23:24 --> Undefined array key "id"
+in APPPATH\Controllers\Ventas\Clientes.php on line 182.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 18:23:58 --> Undefined array key "direccion"
+in APPPATH\Controllers\Ventas\Clientes.php on line 188.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "direccion"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 19:24:18 --> Call to a member function table() on null
+in APPPATH\Controllers\Ventas\Facturar.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Facturar->obtenerTipoDocumentos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Facturar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

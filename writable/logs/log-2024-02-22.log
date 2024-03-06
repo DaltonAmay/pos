@@ -1,0 +1,51 @@
+ERROR - 2024-02-22 08:43:27 --> mysqli_sql_exception: Duplicate entry '1900683176001' for key 'empresa.numero_documento' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(166): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): App\Controllers\Gerencia\Empresa->save(Array, Array, NULL)
+#10 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+#11 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#12 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2024-02-22 08:43:36 --> mysqli_sql_exception: Duplicate entry '1900683176001' for key 'empresa.numero_documento' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(166): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): App\Controllers\Gerencia\Empresa->save(Array, Array, NULL)
+#10 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+#11 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#12 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2024-02-22 08:43:50 --> mysqli_sql_exception: Duplicate entry '1900683176001' for key 'empresa.numero_documento' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(166): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): App\Controllers\Gerencia\Empresa->save(Array, Array, NULL)
+#10 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+#11 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#12 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}

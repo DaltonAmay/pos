@@ -1,0 +1,97 @@
+CRITICAL - 2024-02-01 14:18:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 166.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->obtenerTipoDocumentos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:19:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 166.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->obtenerTipoDocumentos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:20:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 177.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->obtenerTipoDocumentos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:21:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 180.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 180)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->obtenerTipoDocumentos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:27:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 172.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 172)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->ajaxListarTipoDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:27:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 172.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 172)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->ajaxListarTipoDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:28:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 172.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 172)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->ajaxListarTipoDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:31:25 --> Undefined array key "draw"
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 230.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "draw"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->ajaxListarTipoDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:50:24 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 224.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 224)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->ajaxListarTipoDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:50:45 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 223.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 223)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->ajaxListarTipoDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 14:50:52 --> Undefined array key ""
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 223.
+ 1 APPPATH\Controllers\Ventas\TipoDocumento.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\TipoDocumento.php', 223)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\TipoDocumento->ajaxListarTipoDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\TipoDocumento))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 15:29:11 --> Call to a member function get() on string
+in APPPATH\Controllers\Inventarios\Productos.php on line 126.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 15:30:10 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #1 ($value) must be of type ?int, string given, called in C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php on line 126
+in SYSTEMPATH\Database\BaseBuilder.php on line 1490.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(126): CodeIgniter\Database\BaseBuilder->limit('0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 15:30:18 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #1 ($value) must be of type ?int, string given, called in C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php on line 126
+in SYSTEMPATH\Database\BaseBuilder.php on line 1490.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(126): CodeIgniter\Database\BaseBuilder->limit('0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

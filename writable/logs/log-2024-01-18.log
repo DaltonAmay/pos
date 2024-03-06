@@ -1,0 +1,263 @@
+ERROR - 2024-01-18 15:36:23 --> mysqli_sql_exception: Unknown column 'tpo_documento.id' in 'on clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `cliente...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-18 15:36:23 --> Unknown column 'tpo_documento.id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.*, `tipo_documento`.`descripcion` as `nombreDocumento`
+FROM `clientes`
+JOIN `tipo_documento` ON `tpo_documento`.`id` = `clientes`.`id_tipo_documento`
+WHERE `clientes`.`id_cliente` = :clientes.id_cliente:', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 15:47:57 --> Undefined array key 1
+in APPPATH\Controllers\Ventas\Clientes.php on line 189.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 15:55:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`pos_ec`.`productos`, CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`id_categoria`)) in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(397): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->update()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-18 15:55:34 --> Cannot add or update a child row: a foreign key constraint fails (`pos_ec`.`productos`, CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`id_categoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `cod_barras` = :cod_barras:, `nombre_producto` = :nombre_producto:, `precio_compra` = :precio_compra:, `precio_venta` = :precio_venta:, `precio_venta_mayoreo` = :precio_venta_mayoreo:, `utilidad` = :utilidad:, `stock` = :stock:, `stock_min` = :stock_min:, `exento` = :exento:, `inventariable` = :inventariable:, `perecedero` = :perecedero:, `idcategoria` = :idcategoria:, `idmarca` = :idmarca:, `idunidad` = :idunidad:
+WHERE `id_producto` = :id_producto:', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(397): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 17:27:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`pos_ec`.`productos`, CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`id_categoria`)) in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(397): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->update()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-18 17:27:27 --> Cannot add or update a child row: a foreign key constraint fails (`pos_ec`.`productos`, CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`id_categoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `cod_barras` = :cod_barras:, `nombre_producto` = :nombre_producto:, `precio_compra` = :precio_compra:, `precio_venta` = :precio_venta:, `precio_venta_mayoreo` = :precio_venta_mayoreo:, `utilidad` = :utilidad:, `stock` = :stock:, `stock_min` = :stock_min:, `exento` = :exento:, `inventariable` = :inventariable:, `perecedero` = :perecedero:, `idcategoria` = :idcategoria:, `idmarca` = :idmarca:, `idunidad` = :idunidad:
+WHERE `id_producto` = :id_producto:', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(397): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 17:28:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`pos_ec`.`productos`, CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`id_categoria`)) in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `product...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(397): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->update()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-18 17:28:17 --> Cannot add or update a child row: a foreign key constraint fails (`pos_ec`.`productos`, CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`id_categoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `cod_barras` = :cod_barras:, `nombre_producto` = :nombre_producto:, `precio_compra` = :precio_compra:, `precio_venta` = :precio_venta:, `precio_venta_mayoreo` = :precio_venta_mayoreo:, `utilidad` = :utilidad:, `stock` = :stock:, `stock_min` = :stock_min:, `exento` = :exento:, `inventariable` = :inventariable:, `perecedero` = :perecedero:, `idcategoria` = :idcategoria:, `idmarca` = :idmarca:, `idunidad` = :idunidad:
+WHERE `id_producto` = :id_producto:', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(397): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 18:51:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Ventas\Clientes.php on line 301.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 301)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(262): App\Controllers\Ventas\Clientes->buildCondition([...], 'cli', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:06:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%r%' OR cli.id_cliente LIKE '%r%' OR cli.id_tipo_documento LIKE '%r%' OR c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:06:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%r%' OR cli.id_cliente LIKE '%r%' OR cli.id_tipo_documento LIKE '%r%' OR c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%r%\' OR cli.id_cliente LIKE \'%r%\' OR cli.id_tipo_documento LIKE \'%r%\' OR cli.nro_documento LIKE \'%r%\' OR cli.apellidos LIKE \'%r%\' OR cli.nombres LIKE \'%r%\' OR cli.direccion LIKE \'%r%\' OR cli.correo LIKE \'%r%\' OR cli.telefono LIKE \'%r%\' OR cli.celular LIKE \'%r%\' OR cli.estado LIKE \'%r%\' AND cli.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:06:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%r%' OR cli.id_cliente LIKE '%r%' OR cli.id_tipo_documento LIKE '%r%' OR c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:06:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%r%' OR cli.id_cliente LIKE '%r%' OR cli.id_tipo_documento LIKE '%r%' OR c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%r%\' OR cli.id_cliente LIKE \'%r%\' OR cli.id_tipo_documento LIKE \'%r%\' OR cli.nro_documento LIKE \'%r%\' OR cli.apellidos LIKE \'%r%\' OR cli.nombres LIKE \'%r%\' OR cli.direccion LIKE \'%r%\' OR cli.correo LIKE \'%r%\' OR cli.telefono LIKE \'%r%\' OR cli.celular LIKE \'%r%\' OR cli.estado LIKE \'%r%\' AND cli.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:10:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%c%' OR cli.id_cliente LIKE '%c%' OR cli.id_tipo_documento LIKE '%c%' OR c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:10:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%c%' OR cli.id_cliente LIKE '%c%' OR cli.id_tipo_documento LIKE '%c%' OR c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%c%\' OR cli.id_cliente LIKE \'%c%\' OR cli.id_tipo_documento LIKE \'%c%\' OR cli.nro_documento LIKE \'%c%\' OR cli.apellidos LIKE \'%c%\' OR cli.nombres LIKE \'%c%\' OR cli.direccion LIKE \'%c%\' OR cli.correo LIKE \'%c%\' OR cli.telefono LIKE \'%c%\' OR cli.celular LIKE \'%c%\' OR cli.estado LIKE \'%c%\' AND cli.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:10:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%ce%' OR cli.id_cliente LIKE '%ce%' OR cli.id_tipo_documento LIKE '%ce%' O' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:10:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%ce%' OR cli.id_cliente LIKE '%ce%' OR cli.id_tipo_documento LIKE '%ce%' O' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%ce%\' OR cli.id_cliente LIKE \'%ce%\' OR cli.id_tipo_documento LIKE \'%ce%\' OR cli.nro_documento LIKE \'%ce%\' OR cli.apellidos LIKE \'%ce%\' OR cli.nombres LIKE \'%ce%\' OR cli.direccion LIKE \'%ce%\' OR cli.correo LIKE \'%ce%\' OR cli.telefono LIKE \'%ce%\' OR cli.celular LIKE \'%ce%\' OR cli.estado LIKE \'%ce%\' AND cli.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:10:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%c%' OR cli.id_cliente LIKE '%c%' OR cli.id_tipo_documento LIKE '%c%' OR c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:10:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%c%' OR cli.id_cliente LIKE '%c%' OR cli.id_tipo_documento LIKE '%c%' OR c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%c%\' OR cli.id_cliente LIKE \'%c%\' OR cli.id_tipo_documento LIKE \'%c%\' OR cli.nro_documento LIKE \'%c%\' OR cli.apellidos LIKE \'%c%\' OR cli.nombres LIKE \'%c%\' OR cli.direccion LIKE \'%c%\' OR cli.correo LIKE \'%c%\' OR cli.telefono LIKE \'%c%\' OR cli.celular LIKE \'%c%\' OR cli.estado LIKE \'%c%\' AND cli.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:10:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%1%' OR cli.id_cliente LIKE '%1%' OR cli.id_tipo_documento LIKE '%1%' OR c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:10:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%1%' OR cli.id_cliente LIKE '%1%' OR cli.id_tipo_documento LIKE '%1%' OR c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%1%\' OR cli.id_cliente LIKE \'%1%\' OR cli.id_tipo_documento LIKE \'%1%\' OR cli.nro_documento LIKE \'%1%\' OR cli.apellidos LIKE \'%1%\' OR cli.nombres LIKE \'%1%\' OR cli.direccion LIKE \'%1%\' OR cli.correo LIKE \'%1%\' OR cli.telefono LIKE \'%1%\' OR cli.celular LIKE \'%1%\' OR cli.estado LIKE \'%1%\' AND cli.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:10:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%1%' OR cli.id_cliente LIKE '%1%' OR cli.id_tipo_documento LIKE '%1%' OR c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:10:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%1%' OR cli.id_cliente LIKE '%1%' OR cli.id_tipo_documento LIKE '%1%' OR c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%1%\' OR cli.id_cliente LIKE \'%1%\' OR cli.id_tipo_documento LIKE \'%1%\' OR cli.nro_documento LIKE \'%1%\' OR cli.apellidos LIKE \'%1%\' OR cli.nombres LIKE \'%1%\' OR cli.direccion LIKE \'%1%\' OR cli.correo LIKE \'%1%\' OR cli.telefono LIKE \'%1%\' OR cli.celular LIKE \'%1%\' OR cli.estado LIKE \'%1%\' AND cli.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:13:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%c%' OR cli.id_cliente LIKE '%c%' OR cli.id_tipo_documento LIKE '%c%' OR c' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:13:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%c%' OR cli.id_cliente LIKE '%c%' OR cli.id_tipo_documento LIKE '%c%' OR c' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%c%\' OR cli.id_cliente LIKE \'%c%\' OR cli.id_tipo_documento LIKE \'%c%\' OR cli.nro_documento LIKE \'%c%\' OR cli.apellidos LIKE \'%c%\' OR cli.nombres LIKE \'%c%\' OR cli.direccion LIKE \'%c%\' OR cli.correo LIKE \'%c%\' OR cli.telefono LIKE \'%c%\' OR cli.celular LIKE \'%c%\' OR cli.estado LIKE \'%c%\' AND cli.estado = \'1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 19:13:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%ce%' OR cli.id_cliente LIKE '%ce%' OR cli.id_tipo_documento LIKE '%ce%' O' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(cl...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(cl...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(cl...')
+#3 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cl...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-18 19:13:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%ce%' OR cli.id_cliente LIKE '%ce%' OR cli.id_tipo_documento LIKE '%ce%' O' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(264): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(cli.id_cliente) as total FROM clientes cli WHERE cli. LIKE \'%ce%\' OR cli.id_cliente LIKE \'%ce%\' OR cli.id_tipo_documento LIKE \'%ce%\' OR cli.nro_documento LIKE \'%ce%\' OR cli.apellidos LIKE \'%ce%\' OR cli.nombres LIKE \'%ce%\' OR cli.direccion LIKE \'%ce%\' OR cli.correo LIKE \'%ce%\' OR cli.telefono LIKE \'%ce%\' OR cli.celular LIKE \'%ce%\' OR cli.estado LIKE \'%ce%\' AND cli.estado = \'1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->ajaxListarClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

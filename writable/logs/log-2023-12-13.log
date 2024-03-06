@@ -1,0 +1,18 @@
+ERROR - 2023-12-13 14:06:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' as detalles FROM productos LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * '' as ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * '' as ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * '' as ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * '' as ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 14:06:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' as detalles FROM productos LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * \'\' as detalles FROM productos LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

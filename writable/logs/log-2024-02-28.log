@@ -1,0 +1,42 @@
+CRITICAL - 2024-02-28 17:04:48 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 106.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(259): App\Controllers\Gerencia\Empresa->saveImage(null, true, '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-28 17:05:06 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 106.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(259): App\Controllers\Gerencia\Empresa->saveImage(null, true, '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-28 17:07:16 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 106.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(259): App\Controllers\Gerencia\Empresa->saveImage(null, true, '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-28 17:17:37 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 106.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(259): App\Controllers\Gerencia\Empresa->saveImage(null, true, '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-28 19:05:43 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 106.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(270): App\Controllers\Gerencia\Empresa->saveImage(null, true, '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-28 19:06:17 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 106.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(270): App\Controllers\Gerencia\Empresa->saveImage(null, true, '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

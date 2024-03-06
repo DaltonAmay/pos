@@ -1,0 +1,239 @@
+ERROR - 2024-01-10 03:27:22 --> mysqli_sql_exception: Unknown column 'c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 03:27:22 --> Unknown column 'c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%a%\' OR cod_barras LIKE \'%a%\' OR nombre_producto LIKE \'%a%\' OR idcategoria LIKE \'%a%\' OR precio_compra LIKE \'%a%\' OR precio_venta LIKE \'%a%\' OR precio_venta_mayoreo LIKE \'%a%\' OR utilidad LIKE \'%a%\' OR stock LIKE \'%a%\' OR stock_min LIKE \'%a%\' OR exento LIKE \'%a%\' OR inventariable LIKE \'%a%\' OR perecedero LIKE \'%a%\' OR c.nombre LIKE \'%a%\' AND p.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 03:27:36 --> mysqli_sql_exception: Unknown column 'p.nombre_categoria' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 03:27:36 --> Unknown column 'p.nombre_categoria' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE p.cod_interno LIKE \'%a%\' OR p.cod_barras LIKE \'%a%\' OR p.nombre_producto LIKE \'%a%\' OR p.idcategoria LIKE \'%a%\' OR p.precio_compra LIKE \'%a%\' OR p.precio_venta LIKE \'%a%\' OR p.precio_venta_mayoreo LIKE \'%a%\' OR p.utilidad LIKE \'%a%\' OR p.stock LIKE \'%a%\' OR p.stock_min LIKE \'%a%\' OR p.exento LIKE \'%a%\' OR p.inventariable LIKE \'%a%\' OR p.perecedero LIKE \'%a%\' OR p.nombre_categoria LIKE \'%a%\' AND p.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 03:49:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(158): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 03:49:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(158): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 LIMIT 0, -1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 14:38:05 --> mysqli_sql_exception: Column 'idunidad' cannot be null in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Productos.php(248): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->save()
+#10 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2024-01-10 14:38:25 --> mysqli_sql_exception: Column 'idunidad' cannot be null in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pos\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pos\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pos\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pos\app\Controllers\Productos.php(248): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->save()
+#10 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#11 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-10 14:55:32 --> Undefined property: App\Controllers\Productos::$load
+in APPPATH\Controllers\Productos.php on line 232.
+ 1 APPPATH\Controllers\Productos.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$load', 'C:\\laragon\\www\\pos\\app\\Controllers\\Productos.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 15:27:53 --> Undefined property: App\Controllers\Productos::$load
+in APPPATH\Controllers\Productos.php on line 232.
+ 1 APPPATH\Controllers\Productos.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$load', 'C:\\laragon\\www\\pos\\app\\Controllers\\Productos.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 15:34:08 --> Undefined property: App\Controllers\Productos::$form_validation
+in APPPATH\Controllers\Productos.php on line 235.
+ 1 APPPATH\Controllers\Productos.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$form_validation', 'C:\\laragon\\www\\pos\\app\\Controllers\\Productos.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 15:38:30 --> Undefined constant "App\Controllers\form_validation"
+in APPPATH\Controllers\Productos.php on line 232.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 18:13:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by desc LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(158): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 18:13:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by desc LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(158): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1order by desc LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 18:14:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by desc LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(158): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 18:14:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by desc LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(158): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1order by desc LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 18:15:50 --> mysqli_sql_exception: Unknown column 'p.fecha_creacion' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 18:15:50 --> Unknown column 'p.fecha_creacion' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 ORDER BY p.fecha_creacion DESC LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 23:22:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY exento asc LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 23:22:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY exento asc LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 ORDER BY p.created_at DESC ORDER BY exento asc LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 23:22:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY stock_min asc LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 23:22:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY stock_min asc LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 ORDER BY p.created_at DESC ORDER BY stock_min asc LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 23:22:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY precio_venta_mayoreo asc LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 23:22:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY precio_venta_mayoreo asc LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 ORDER BY p.created_at DESC ORDER BY precio_venta_mayoreo asc LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 23:22:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY precio_compra asc LIMIT 0, 10' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 23:22:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY precio_compra asc LIMIT 0, 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(159): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 ORDER BY p.created_at DESC ORDER BY precio_compra asc LIMIT 0, 10')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

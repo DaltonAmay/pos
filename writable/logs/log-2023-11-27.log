@@ -1,0 +1,78 @@
+CRITICAL - 2023-11-27 02:54:25 --> Invalid file: "content.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('content.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('content', [], true)
+ 3 APPPATH\Controllers\Home.php(11): view('content')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 03:13:02 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\administrar/unidades"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\administrar/unidades')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('administrar/unidades')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('administrar/unidades')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 03:22:55 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Administrar/Unidades::index"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Administrar/Unidades::index')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('administrar/unidades')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('administrar/unidades')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 03:29:00 --> Class "App\Model\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 03:30:33 --> Class "App\Model\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 03:30:39 --> Class "App\Model\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 03:31:47 --> Class "App\Model\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 03:38:45 --> Class "App\Model\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 14:27:59 --> Class "App\Model\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 14:51:25 --> Class "App\Model\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 16:00:35 --> Undefined variable $variable
+in APPPATH\Views\administrar\unidades.php on line 47.
+ 1 APPPATH\Views\administrar\unidades.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $variable', 'C:\\laragon\\www\\pos\\app\\Views\\administrar\\unidades.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\administrar\\unidades.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('administrar/unidades', [], true)
+ 5 APPPATH\Controllers\Unidades.php(28): view('administrar/unidades', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Unidades->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

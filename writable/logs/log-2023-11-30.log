@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-30 00:29:35 --> Undefined variable $titulo
+in APPPATH\Views\unidades_medida\new.php on line 11.
+ 1 APPPATH\Views\unidades_medida\new.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\laragon\\www\\pos\\app\\Views\\unidades_medida\\new.php', 11)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\unidades_medida\\new.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('unidades_medida/new', [], true)
+ 5 APPPATH\Controllers\Unidades.php(35): view('unidades_medida/new')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Unidades->new()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,506 @@
+CRITICAL - 2024-02-16 08:03:46 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 77.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(116): App\Controllers\Gerencia\Empresa->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:03:56 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 77.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(116): App\Controllers\Gerencia\Empresa->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:14:29 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 77.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(113): App\Controllers\Gerencia\Empresa->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:16:14 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:18:31 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 164.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:21:23 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:28:02 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:44:06 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:53:25 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:54:37 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 77.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(114): App\Controllers\Gerencia\Empresa->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 08:55:45 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 77.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(114): App\Controllers\Gerencia\Empresa->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 15:38:04 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 15:38:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 16:01:58 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 16:01:58 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 16:50:52 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 16:50:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('3')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 16:51:04 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 16:51:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 16:51:38 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 16:51:38 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 16:51:54 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 16:51:54 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 16:53:41 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 16:53:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('3')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 16:55:38 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 16:55:38 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(327): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('3')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 18:12:04 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(345): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 18:12:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(345): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 18:13:34 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody([...], 'json')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(345): CodeIgniter\HTTP\Response->setJSON([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 18:13:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Format\Exceptions\FormatException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Format\Exceptions\FormatException
+Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(322): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\HTTP\ResponseTrait.php(248): CodeIgniter\HTTP\Response->formatBody(Array, 'json')
+#3 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(345): CodeIgniter\HTTP\Response->setJSON(Array)
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('2')
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 18:43:47 --> stream_get_contents(): Argument #1 ($stream) must be of type resource, string given
+in APPPATH\Controllers\Gerencia\Empresa.php on line 314.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(314): stream_get_contents('‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '€' . "\0" . '' . "\0" . 'ˆ' . "\0" . '' . "\0" . '' . "\0" . '‡IZ' . "\0" . '' . "\0" . '' . "\0" . 'sRGB' . "\0" . '®Îé' . "\0" . '' . "\0" . '' . "\0" . 'gAMA' . "\0" . '' . "\0" . '±üa' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ã' . "\0" . '' . "\0" . 'ÃÇo¨d' . "\0" . '' . "\0" . 'FIDATx^íÜ;²4I¶Ö6P¸“' . "\0" . '5¨˜çÁ‰@¢Òfw(œHT¯Ê1ÐŒ€…ò5+ærG–ç—“xxx¬Ï–PyÂ3Âã‘{wu÷?þÃù7' . "\0" . '' . "\0" . '' . "\0" . 'V ' . "\0" . '' . "\0" . 'X‰' . "\0" . '' . "\0" . '`%0' . "\0" . '' . "\0" . '€•hÀ' . "\0" . '' . "\0" . '' . "\0" . 'V2söÿóœÄ' . "\0" . '' . "\0" . '8™³;w_z0' . "\0" . '' . "\0" . '€»fkÀÚîë,' . "\0" . '' . "\0" . '' . "\0" . 'œ' . "\0" . '' . "\0" . '`%ó4`Ñz]Ä0' . "\0" . '' . "\0" . '€#Ó€' . "\0" . '' . "\0" . '¬dÙì$F' . "\0" . '' . "\0" . 'ÖXt\\!' . "\0" . '' . "\0" . '–€µÅ›â‘øÖgbŸ¯ˆ=' . "\0" . 'ÀŒ¾mÀâ¥uW|€ãˆ7Â,â­9£8' . "\0" . '|æ«,^N\'ý$þxß`±8,vÛŠ‘‹ZùpgíÉÐ‰ü$þØ¡÷¦o [O°VìXÇ¿üë¿¿%¾þ–ØÕëb?|)–_æW€­œ»¯sbSo~Ÿ_¼lž8w_çÄ¦çâˆpdsu#±Ÿy­y¬“8ÜbU|$¾õD|‘EÅÅOu6½ö65¹&1 +÷\'¯–Uïõ“Øô¢˜Œ$šŠ¹¬pˆÞ´§¼±Ö-aµÍà­Äw?ðAb¯¹ÜîÙïÌ5ÕÚ8%¶ö fÖ$tåÎä.ï’·TãÕ$¼(&ûmóŠ«Ý›XÙmÞÄÎïZ(q”§âyèÓî&l¥–Á)±µ5³&1 +_5`Õi½øâ1N¢îüU|ý-±«ÅNºÓžÑ
+‡à®Ë•ïA¬fýš1±ç°Pâ(a…Ä_Jb†\'1' . "\0" . 'à¢V¿)±us5­›Ä°~|Õ€µªÓj^“Ù‹(
+ÏbÌ‹b\'3Zí@gq¸õÅ|8©éåÄ×ßR»x?±Ÿ·Ä3°ŽXÄz´\\â@­EG‰«årÜwÄó³•˜ÕI' . "\0" . '8«ï:1f[5§›Ä°~ÜŸY,Ê/ªÆë\'±éE1ND…7£Ñ‰Ë™.*ºSµfL‰­o©]Ì—Ø¨A$ô–xHæ+Øç^L|ë-Ëe…CtžËxS<N+‹ÉœÄ' . "\0" . '€³Zë®c¶UsºIëÇ/3‹Õù¹ê½~›ž‹ƒn.
+8f—zqˆnÕb0_bÿ­1wâ(¡-œ8è[âÉùF,b/Y4q¬ K\'.ø;âÑZGÌá"†œÔBw³¡šÐƒÄàN¼7­X©o½Ø}ÅnUÔìÖ9
+—;û¥ØmÏj˜;q”³Ú6tâ”ßÒ»bA{hÛô3“ƒ¤½Ú—~Y<cK‹£_Ä0øy¸ÿ$þÎ¡ÔCp³¡šÐƒÄàN|>­XµÏž4`ñõ\'¢Tâ¤¢—_]}ÿýÄ~ÞÏÀ¯âë/ª¹.8P¨A2wâ:¿+ªÅÊ–Dî&ž“{âI[N7Ä`Ž¬žÞ)±•ƒ¨Û/1r9u¼ZÍ·Ž…û®øÊ]QíKÝÃ›Ä°Õ—çKìÿV›;q”·Äãbð#5ÒÉ4Žö"_.û‹âÑúU,ny=ñðLâa[N7Ä`Ž¬žØ)±•ƒ¨Û/1r!u°Å‡[ÇGµ;ÄàÅPŸêþÌ—Ø«FÌ8J«F,™8â»Þzfê"Sâ	¹Ø±¸‘ÏÒxä1˜Ãªõ:1†#¨{/1r!u°Å‡[ÇfXÔ@Ýª›3wâ(\'µaèÄ)¿ëÉ“Syœxf..‹Òs±²‘/sýDÅS·„8â]ñŽ©ÑëÄ†Q7x¾Äþ¿Q{\\,q¸ulÓ€EôŠºH$jÌ—¸Â_ªŠ¼œx„.ëR¬]¿ù2ñDmÒ€Ý›I|…ªã^b$¨[;wâ(ß¨=.8Ðjæ9p¬Ý1ì,ªŸ»êªl—æ0pÎwùüÙrÊùãgj"/$ž“X²Þ&òYâAšÄër	qÄGó‰oq4õ`ÜKŒd' . "\0" . 'ukçNå{µß™;_ÙÚXT?­ºr˜Äð™Ú—ÈƒÄs+ÕçDÞJ<?7â9»8Ü—\\ÿ=¾È¡Ô#ñ81ž½«û:wâ(³¨]Øíúf›A¬Ý\'1à$j ³ºr¤Ä3ðÚ£ÈMâQ9‹eê["¯$›ßÄ«sFq šÞ9×›â‹Ì¥®vß=LMñqb<¨[;_bÿóªc|”ØÕVlÀ¢î¹«.†&ñ' . "\0" . '|¯ö+rxNÎbzÃ%þ.ò(ñÌ¼&Þ°³ˆCüÑ&6éÁP—zJlíGÍïqb<c¨»;GbÏK¨#½™ØÉ†¾Ê£â¦ýûu=ä0‰à‘çÿÛ°Ë¦Ú©Èu.J«] z1¯i°wÄÛö3±Ï+·‰Ø-Ÿ©ë<%¶v¢&÷[â[Œ¡îîw‰}.§Ž÷Nbúp*QÙ\\œWêøãu=ä‰»ß:w\\§Äß©=Š<H>0×Õdëj˜Èì¹yäJ›Øô#^»¯‹ý<t›ð@Ž×Õuž[—SÇÛ.1zV÷ìÓÄÞ–SÇ{3±“½=•¶Xù^]9FâîŸT×õ“Øô«Ú©ì6KßÐ«=ß‘žºŸ¯ŠÌšöÙ{”vÌxù>ß}ÉmbÀb<Qù:1f	u¤­³¢suÛÞLìdQuÈ7;ÙÐ{S‰JåKu1ä0‰`µkÙ[â>ÞUCgÉMá¨“¿Ó>¦Æx‡ü†ç‰Á/‹éêò^\'ÆÌ®ÓGbnt®nÛk‰ï® üfb\'zc*Q¦ÜUç\'ò ñÀ|¯ö+{KÜÇçê;ßä¦X¼˜ù@²»Ü<WÖLúiK#_ònâë/ˆIÒª«z3»:L‰¹Ñ¹ºm¯%¾»´:êG‰]måÛ¬ÎFäåÄ#ô½Ú¯ì*q_T_þ,7Åbøvÿ²ÓÜ<	÷-8Ü\\Ý×\\‰Ý>Så¬.ã½ÄÈÙÕa¶NÌŠþÕ{9ñõEÕ!?Jìj+ß6`\'uBr€Ä­oÕˆ×ßýRíTö–¸/ª/¿“¿¿{S,¾G†LÜå_ÍžØÿ$^Á­ùÌ\\‰Ý>Så¬.ã½ÄÈ%Ô‘¶KÌ‡þÕ›ò×_Õ?M¹ýKìaQuÈ{yqÀæÞ˜Ç¥ˆy¢NNMÜîGjôo‰o}¬v\'{NÜÓçê;÷#oE±ø9)qs_ñ}b‡×âý{+Æ¿äÝÄ×_óä¬.é½ÄÈåÔñÖMÌ½¨û÷NbË©ãÝËÃ¶òÞ$¢”ùX]' . "\0" . 'Ù[â>þª¾ö4ñ•wÕ^d¸ÄžW”Œ’ñ·ø¹Ï;¹\'Þ¼Ä·Þð<1øe1=Zum$/ª¹|â¸ìKÝÅw{XNï:1æ¢6_\'ÆlâíIDóº²ŸÄ|Q}ùAbð»j/2nâŽÏè´ Eù>qÇoýšÿ‚ö…ûºØÉKî&Æü&¦Á]um\'Æ¯ ¼LâXìQÝË7;YH¬I5¨IØÄ‡“ˆ:æ3udo‰ûø¢úòMbØ[jr€Ä­ÿF»”E5ù9Tâî/£}2¿»}è61à8¿ªËû81~5uøùûg§êv¾ŸØÏrêxï±¾ÐÍSúí<¢²yK]	ÙâÎ® ,ÇHÜýÄÂueåßå×2|.ÏÀ¬âÉœQèÊmbÀµØ3¯«Ëû81~e5‰ïûd×ê¦Þäõüj³¬î•—¸Ñ³«ÃÈFYù´·þ±@=õå"¿&ž™/Ä¹¨8ti›~ÄNø@]ÞßßZSÍà»Ä>Ùµº©×ù`O,Ò€Õ}c\'žŠÔÌäÓ¬p1ÛC<Ñg¢ÖüCä•ÄcóŽxW“©Ó9çzS|‘[uÝÖMÌá{µß9{f¿êŽ6‰gµ­Ià	˜,•x*:Q““÷Wò¤6|šØÛëbúXTœWDî&ž“ßÄ#·¹˜Þ—\\ÿ=¾H¨‹¶Eb&_ªÎ‘Ø3ûUwtJlmÕˆ)±•\'iÀZuOäH‰g +5Åu³ù¾O{
+Šõç{QtÞ!rN<“x¢úótvñ-B]·-3ùFíq¾ÄþÙ¯º£¯ÝÓ×Gr1ÃõŠ
+i!ç»+ŸeËx9Ê#ñä<ßKÍuÅÄÎjÛ3ßJ<3ŠºóO#Ïd®¬yUÛcÝSÿbþwO3¾Â­ºn[$fòÚã|‰ýÌók‰Ri!õû–7³ÐeŒÝþ*ž™wÅÞ–S§÷râë¨õ”˜á†â1XHTŸ’ï³ô%ý?Ò.Ä)Ü_á®z`ÖMÌáµÇ¹G^ö‰r³Ýø(›–PêºÙöèßç2ÿÅ£2»8Ü®Õm[=1mÅý]MÔ ‹ï—ôÖ‹‰o½)ž}‰s	1˜\'êYZ+qô/ÕNËÇãGRç¶nbfþµÔŒê‘\\11“Ú°‡ÄÌ·Ç¢âÐã©[ûEb‡˜ñ‚·»êJÔ£sÚ*=Ìa–´\'²‘xZö(Î(Ä`~Uç’‰#Î¢vý81þ¬¶=NŒß£:“þód×¿QrÍ®žÊïû|E}³¿Ä<·Á:bÌ+®öADmú•­Ó8Û]bþ[ˆgc¿â¼Bæõ”.“8Ö,j×ƒoÕ¸‰Á»PSßUâØ—-ï_”w»V¿†-3ÙPÜßõÅ|ú±—y>óç,ÊÖ¯Ì’Øç‹:OÌvqßÇçxÃx]=±s\'Ž2—ÚûMbØsõ›Ä°nÕt÷Ÿ8/v¡—Ûß0êÇ1GbÏ›‹;¸•˜ÕÒâèß‹ý÷#æÉQÂîX\'‰Y­.îïâ”/bo©x¾ÄþgTh^WßoºRSœ/ÿùÿþ¾T;š)q¾t«£[õs‰ë<Œ8ÍuÄf‡[MLƒÏD-»{ë$úš¸ò­yW|å˜âšœÄ' . "\0" . '>Söw‰}.¡Ž4Ó±j_½6' . "\0" . '5¹O-Ó:êØŸ&®' . "\0" . '½éåE9Ø•]Lò®ËÌ÷.Îk+1«õÅ|Þ{c^QËËóÄàïÄeçcqaOb' . "\0" . '«\'ÿÓÄÞøX]Ð÷½Pjfï\'®	ØòÆDuøŠ¿n>ûU|½+1Õ½‹³ÛPLBÔ²]ÙÑTŸˆ³àKqyOb' . "\0" . '«Ê÷ÓÄÞxW]ÇwÝNÿjÞï$®ÒêÜvxvÛÌ8JÛuÄfZYLf$q¦›ˆ)Á]QÈ>WÿéÑ”Øú±˜Ò+b}Š93#×y!U~šØ¯«+øZ¢¥Ù¯:Ÿ×Wl×ê”¦ÄÖÎ->Ý(g·³ZMLã±ç#ˆ+0‹8|£­_UýÖÓÄWnÅfÚVÌå¸àK¨zðÓÄÞxE]»ÝËHê_H\\½ª“™[;·àt£ðÝPLŒ½ˆûø½Ø?|ìÒ*¬,¦±¨8ôrâ¸°wU~‘Ø!Ôõz!Ñ«Œ­Îù…ÄõÜ—:‡)±µs#7`1ö(îéb‡ðèV“éGÌó"†ÁT1ø]bŸÜª+õ[¢39šº
+¿%®í.ÔÔ¯cz6BÇe<qÇïŠ¯À÷¢ØVÌèSU‚ß%öI«®ÑÓDB]—§‰ëÜ¹šôubLÏöÔ€Åþ–ýÏVbV@çªü.±O.ê=N4´ê=M\\ðnÕt¯czÖu;XGtA«‰i' . "\0" . 'ûReà‰=S×åq¢Ùà‰ºdW¾C5Ñ{‰‘ÝZ|¢ÑS=ßØPôEs‰£' . "\0" . 'ƒ©ði^ÆY]‘‰Ö‚×Õ|¸]©)ÞKŒì–_8@ŠÆé{±`HU>Î#®.ÇƒDGÁêRÞKÜ‹~Ôüî%FvË/èÝ&mÌå ¯‹=' . "\0" . 'GS5àƒ|3ø€êB<Ht|£®éƒÄ}éAÍì^bd·üÂ®mÛäÄÑïŠ¯' . "\0" . 'ÇTà½ÄÈV¸—yuþÍs©ëû q6Tzœß\'Ð5Ý°UýÝ$†Ýªq7‰aQ\'/Ñ0°„ºÖ÷wj9u¼eÇÚŠèWt_g1 Uß]\'Æ<R£¯cŽ Îü^¢O`QuÑo÷k	u¤%GÜ„èW´^g1 UÜM‰­¯¨oN‰­Ã«Ó¾Iô¬£®þ½Ä›WcÉÄ7¡:}W+Fô ê»/*¼úþÁº¯:ç›DKÀúêNÜ$îàŒê' . "\0" . 'K&Ž¸	Ð©hºZ1€ª¢ø&Ñ	°•º7‰û8£:À2‰cmEô(:®[1€Ý©¢ø&Ñ,m“ƒ>qžÏ)ñ÷­ÔlnwsFu€¹GÙèQ´[·b<' . "\0" . 'ûREñM¢ú_Zõ\'±i5•)±uC5¡ëÄ=Q`¾Äþ·¥zíÖ¿ý_ÿ=þr_`/ª(¾NTü+¨7‰ë«yL‰­Ûª9]\'îìŒê' . "\0" . 's$ö¼9Ðh´N4`' . "\0" . 'Ã¨¢ø:Që¯£ŽÝ$¬¯æ1%¶n®¦u¸¿óªc|šØ[\'4`@w¢Ñ:u_gñ÷ø' . "\0" . 'ý«ºø:Qå¯¦ß$¬¯æÑ$l®¦u¸Ëóªc¼ŸØO?4`@_¢Ë:yÔ€ÄwèYÕÅ×‰ú~M5ƒ&1`e5‰ëÄ˜ÔÌ®÷z^uŒw{èŠèK´X—îënß [U_\'*û5ÕnÃÖT3¸NŒéDMî:qÇgTx\'±‡®hÀ€ŽDuò¼;‰=' . "\0" . 'Ð¡*Š¯5ýÊj7‰akª\\\'Æô£æw¸ïs©½¿“ØCW4`@G¢¹Šîë,ÆÄ' . "\0" . 'èMUÄ×‰j~}5›Ä°5Õ®cºRS¼NÜýïÕ~ßOì§0 ÑYDëucNb?' . "\0" . 'œUºi%Z3¸NÔñ›¨©Ü$†­¦/1²+5ÅëÄ3ð¥Úé”¿þú«þé·Ä~ú¡zmUô]­ûà¤ŠÐ)±uuìëD¿‰šÊƒÄàuÔ±ï%Fö¦fyx¾Q{|?±Ÿ~hÀ€.DOuMW+FžÄÞ' . "\0" . '¨"tJl]G»IÔî[©Ù<H^Gû^bd‡j¢MâIøFíñýÄ~ú¡ºUt\\·b|ì€*B§ÄÖÔ›DÕ¾¡šÐƒÄàEÕ!_K|·+5Å&ñ<|¦öõiboÐ€Û‹nê$Ú­[1þ$ö	ppU6‰‹ªC6‰z}5•—_ŸWãýÄ~úQókOÅjGòÊ€iÀ€íE+uíÖ]ñ•Ø\'À‘Uùy³¨:d“(ÖWV“xÿúÿþ¯õO÷»ú^í÷qžÏçœØgjfMâ©ø@íè&Ÿë„ØF´O­h´‰oµâX' . "\0" . 'GSåçubÌrêxM¢R_MþiNÝÎ+Ï)±óÏÔ¾ç<=ØYíå:1æ¬¶Ý$†õ@¬$z¤\'¢Ñz$¾õDÌ`xU{^\'Æ,¤Ö$jôÕÔáŸæÒí¼Òðœ‡ø@íè^ÚÉ\\Ô¶{‰=w¢&×$ž×Õ÷¯cZ5â:1¦0`AÑ½"º¬çâ»¯ˆ©jÏ›Ä°%Ô‘šD¾Ž:öãDŸsQ›\'ô®ÚËã¬6“…ÔäšÄò–ÚÅ”Øz«Æ5‰=Ð€sŠnç]Ñ_½"öð®˜?À' . "\0" . 'ªð¼—9»:L“¨ÎWS‡œKŸjóãÄ>P;zœu¦±œšb“xN^Wßsõ.»¯ð•èg>mÕ»bo‹³Ø£ª=ï%FÎ®3%êò•Õ$žæ­Öë”8Ä7jï\'öÓ§šë”xNÎå' . "\0" . 'ÞMËg¢ƒšWë3qÖ' . "\0" . '{Q5ï½ÄÈyÕ1šDQ¾¾šÇÓlÒ}]Ô®_K|·g5ã&ñ´™k¼$š“ÏD›´Ž˜Ãgâj' . "\0" . 'ô¬
+Þ{‰‘óªcL‰Š|[5§ùµ‹½-¡Žt/1r/jöSâi92×ø]t#¯‹^¨1Ã×Å5èSU»ãçR{oåxjf/\'¾¾¨:ä½ÄÈ½¨Ù7‰gæ°\\àwÑŠ<OÏbæÏÅ5ØPÕ³s\'Žò–ÚÅ”¨Å{S³|¼Ž:ö½ÄÈ©˜ÏÌa¹Àï¢y]4<=ˆ¾.®	ÀVª˜]&q¬×Õ÷§D!Þ›šåƒÄàÕÔá¯cö¥ÎaJ<3‡åB' . "\0" . '/‰nä3Ñ­#æð™¸' . "\0" . '[©JvÉÄ_Qßl…xoj–ƒWS‡¿NŒÙ:)ñä“«' . "\0" . '¼\':“E›4¯8ÖÇâÜ6Weì’‰#¾¢¾9%Jð>Õ\\oÃÖT3¸NŒÙ:)ñä“«' . "\0" . '|%:–Eõ®ØÛÇâì' . "\0" . ':T•ì2‰c½¢¾Ù$Jð>Õ\\oÃÖT3¸NŒÙ:&ñüK' . "\0" . 'Ì)ú™wE[õŠØÃ»bþ' . "\0" . '»P•ì‰½¢¾9%êïnÕtoÃÖT3¸NŒÙ£:“)ñüK' . "\0" . ',%ZEõ\\|÷E1O€=ªbvÖÄ!^T_žÅw·jº7‰a+«IL‰­;U\'3%žŸr	€•DôDtYOÄ‰™' . "\0" . 'Œ¡êÙ™;]}Jß=«7‰ë«yL‰­;U\'3%žŸr	€mDÔŠ.ë‘øV+Ž0¤ªgçHìùuõý&Q|÷¬fÜ$¬¯æ1%¶îWÏ”xŠŽFl/Ú§h´‰oÅ>Ž êÙïû|KíbJ”Ý«I7‰›¨©Ô}Ô)M‰§èh4`Àö¢•:‰^ëVŒ?‰}D•´Ÿ&öö®ÚË”(»;W“n˜K]ß)ñèBtSÑnÝŠñ±7€C©ªöýÄ~>P;šewÿjÞ?‰MÌ¨.ñ”xŠŽFt!ª“è¸Z1ò$öp4UØ¾“ØÃgj_S¢ìî_Íû\'±‰Õ%nÒ¡hÀ€^DOMW+FÆ~' . "\0" . '¨ªÚw{øLíë\'QsC«ž’)ñ ŠèE´U\'ÑwÅ˜“ØÀUUûNb¨M‰‚Zõ”L‰géP4`@G¢³ŠÖë,ÆÄ' . "\0" . 'Ž©ªÚ7;yWíeJÜÐª§dJ<K‡¢:ÍÕÉóîë$ö' . "\0" . 'p@UÒ¾ŸØÏ»j/S¢à†V=%SâY:Ð—è¯ž7`ñ]€cª’öýÄ~ÞU{™7´ê)™ÏÒ¡hÀ€¾D‹uò¨û:‰ïS•´ï\'öó®ÚË”(¸¡UOÉ”x–Et\'º¬GX|à°ª¤}?±ŸwÕ^¦DÁ­zJ¦Ä³t(0 ;Ñhø×_' . "\0" . 'T=ûiboo©]L‰‚Zõ”L‰géP4`@¢×Ò€<Rõìƒ¼2àcµ‹)QpC«ž’)ñ,ŠèQôZþû‡' . "\0" . 'T={/où@íbJÜÐª§dJ<K‡¢zíÖ­pXUÏÞä³ao©]L‰‚Zõ”L‰géP4`@§¢ãjÅH€#«zö:1æ¬¶Ý$†½®¾?%
+nhÕS2%ž¥CÑ€Š¦«#«ŠÙëÄ˜PƒšÄ€×Õ÷§DÁ­zJ¦Ä³t(0 _ÑwÅ€ƒ«zö\'±é‘=%¶¾¥v1%jn8«çcJ<EG£ú­×YŒ8¸*iß,jë;_—Âµ—)QvÃY=Sâ):Ð5Ý@Ïª že7œÕó1%ž¢£Ñ€]Ó€ô¬
+ê)QvÃY=Sâ):Ð;Ý@·ª n•7œÔÃ1%ž¢£Ñ€' . "\0" . 'ð¹ª©§DåõdL‰çç€\\' . "\0" . '' . "\0" . '>Weõ”(¾¡žŒ)ñüK' . "\0" . '' . "\0" . 'Àçª¬žÅ7Ô“1%žŸr	' . "\0" . '' . "\0" . 'ø\\•ÕM¢þæÈê™hÏÏ¹' . "\0" . '' . "\0" . '|¥*ë)Q‚sdõLL‰\'ç˜\\' . "\0" . '' . "\0" . '¾RÅõ”(Á9²z&¦Ä“sL®' . "\0" . '' . "\0" . 'ßªúzJTáÌ¥®ïN®pÍµI<6Çä*' . "\0" . '' . "\0" . 'ð­ª¯§D!Î,êâN‰­ª‰N‰gæ°\\' . "\0" . '' . "\0" . '¾U%v“¨ÅùR]Ö&1 75Ë&ñÌ–' . "\0" . 'ÀªÊžåxÿjÞ]Î¼fvÓ›šå”xZŽÌµ' . "\0" . '' . "\0" . '`Uh7‰Š¼g5ã)±u[5§ëÄ˜ÞÔ,›ÄÓrd®' . "\0" . '' . "\0" . 'ó¨Z{Jå=«_\'Æl¢¦rÓ¡šè”xNÎå' . "\0" . '' . "\0" . '`Un7‰º¼[5Ý›Ä°•Õ$®c:TmÏÉÁ¹' . "\0" . '' . "\0" . 'Ì¦*î&Qw«¦{“¶š:üubL‡j¢Mâ	Á' . "\0" . '`6Ut7‰½g5ã›Ä°Ô¯cúTsmO®' . "\0" . '' . "\0" . 'sªº»IÔè«Iß$†-§ŽwÓ§šk“x68qQ' . "\0" . '' . "\0" . '˜YUßM¢Rï\\Mú&1l	u¤ëÄ˜>Õ\\›ÄSÁ™ë' . "\0" . 'ÀÌª' . "\0" . 'oÅzÿjÞ7‰aóªc\\\'Æt«¦Û$ž
+Î\\' . "\0" . '' . "\0" . 'æW5x“¨×ûWó¾—9‹ÚõubL·jºMâyàÂ¥' . "\0" . '`U‰7‰ª}jê7‰aß¨=Þ$†u«¦Û$žZ®' . "\0" . '' . "\0" . '‹¨bü:Q»ïBMý&1ì3µ¯›Ä°nÕt¯O-W' . "\0" . '€¥T=~¨àw¡¦~/1ò-µ‹›Ä°nÕt¯Ï' . "\0" . 'Á' . "\0" . '`AU•_\'êø½¨Ùß$†½¨¾|“Ö­šîuâîsË5' . "\0" . '`YU›_\'ªù½¨ÙßKŒ|¢¾p/1²[5ÝëÄ}ç.—	' . "\0" . '€ÅU…~¨é÷¢fÿ 1øV»IëYÍø:qÇyÄ•' . "\0" . '`U§_\'*û©xœ·ÆÇàžÕŒ¯÷š\'\\,' . "\0" . '' . "\0" . 'ÖP¥úM¢¾ß‘:¯»íYÍø&q¯yÂÅ' . "\0" . '`=U°_\'ªü}©sø(±«ÎÕ¤o·˜ç\\/' . "\0" . '' . "\0" . 'VUeûu¢Öß:w{è\\Mú:qgy…«¶þóŸñ' . "\0" . '€ã¨úý:QñïQÉo‰oõ¯æ}¸§¼È…[É©ãºMŒ' . "\0" . '8Žªâo¥ÿNÕÉ\\\'ÆìBMý&q7yk· j³$' . "\0" . 'MÕò7‰€­Ôý¸IÜGÞâò]™±/:wYmb' . "\0" . '' . "\0" . '' . "\0" . 'UÑß$:ÖWwâ&qy×®`µASbëImøºSª½ü$6' . "\0" . 'ª®¿—h	XG]ý{‰{Ç6¾ˆÕ¦L‰­³¨]ßKŒ<©?‰M/ª/ÿ$6' . "\0" . 'ðHø7‰Þ€¥Õu¿IÜ/>¶å¥¬6å&1ìcµ»&1à®:%¶>WßÑz' . "\0" . '¼¯*ý{‰&%Ôµ¾—¸S|££«Y½K“ðºúþ”Øú¢úòObÓ#o' . "\0" . ' T½ÿ Ñ00£ºÄ÷÷ˆ/õxAÏmÌ%±õ¹úÎ”Øú®ÚËObÓ­§' . "\0" . 'øNþ÷mß«+{/q_˜E×—µšŸÄ¦»jèObÓ7j?‰MµY÷' . "\0" . '0‡ê' . "\0" . '$Z>SWóAâŽ0—Þ¯lµ5?‰M¡-ÖÕÞìÿÉ&' . "\0" . '' . "\0" . '>S­ÀƒD;Áëê
+>HÜæµë{no.‰­\'µaá¨Ž1åvSû' . "\0" . '' . "\0" . 'fQmÁƒDkÁsuÕ\'.>³ÛÍ%>w8—ÜÝ\\ÈùXçÄ/' . "\0" . '˜Q5O­ºFO×œ…ìïBŸ[KÚ¿´Ã–V‡üÉåc;' . "\0" . '' . "\0" . '€yU£ð4ÑxP×åiâ:³¨½^îsÃÓ&¬£Ž=%¶' . "\0" . '0»j~Kô!TâiâÚ²‚}_ôê{~›VS‡ÿIl' . "\0" . '`!Õ@¼hK†W§ý[âz²šÝ_új}6m~j0' . "\0" . '€uU3ñB¢KLäk‰kÈÊF¸ÕýtÐƒÅ' . "\0" . 'XGõ¯%º—ýªóy-qÅØŠ;' . "\0" . 'À ªÕx\'ÑÒô¯æýNâ*±-÷' . "\0" . '€ÑTçñf¢ÕéGÍïÍÄ5¡n' . "\0" . '' . "\0" . 'Ãª^äÓD#´Ž:ö§‰+@oÜ!' . "\0" . '' . "\0" . 'ÆWÝÉL‰–é3µ¯™çK·z«ÎÿŸ§Äß' . "\0" . '[õ+£$ÎŽþîžUãÕ$' . "\0" . '' . "\0" . 'pÕÄì-qìËQî_5[Mb' . "\0" . '' . "\0" . '' . "\0" . 'WýM‰y²k‡¸ÕrM‰­' . "\0" . '' . "\0" . 'p«ºŸ-3a$ãßÝêºô]' . "\0" . '' . "\0" . 'Ì¤ú¤ïûä ŽÒ€Å' . "\0" . '' . "\0" . 'Ö7xvî¾N‰¿' . "\0" . '' . "\0" . '¬¯Ç¬z¦Ç‰ñO¼;' . "\0" . '' . "\0" . '`9Ý5`ç–é•ÄoÕ8' . "\0" . '' . "\0" . 'Ð‡]þW«¯ú­³ze' . "\0" . '' . "\0" . 'Àjöú¿;7W§ÄßÏjÛOb' . "\0" . '' . "\0" . 'ÀVvüÂQÖO^ù;' . "\0" . '' . "\0" . 'À¶vÜ€E£uþxÊå/' . "\0" . '' . "\0" . '' . "\0" . '¤;¥ýxÙ
+' . "\0" . '' . "\0" . 'ÐÝ7`\'ç¦«M' . "\0" . '' . "\0" . '' . "\0" . 'èÁØI5^?‰M' . "\0" . '' . "\0" . '' . "\0" . '¤' . "\0" . '' . "\0" . 'èŸ' . "\0" . '' . "\0" . '`%0' . "\0" . '' . "\0" . '€•hÀ' . "\0" . '' . "\0" . '' . "\0" . 'V¢' . "\0" . '' . "\0" . 'X‰' . "\0" . '' . "\0" . '`%0' . "\0" . '' . "\0" . '€•hÀ' . "\0" . '' . "\0" . '' . "\0" . 'V¢' . "\0" . '' . "\0" . 'X‰' . "\0" . '' . "\0" . '`%0' . "\0" . '' . "\0" . '€•hÀ' . "\0" . '' . "\0" . '' . "\0" . 'V¢' . "\0" . '' . "\0" . 'X‰' . "\0" . '' . "\0" . '`%0' . "\0" . '' . "\0" . 'àwÿüIü‘wiÀ' . "\0" . '' . "\0" . '€_œ»¯sboÑ€' . "\0" . '' . "\0" . 'ÏTã¥õšƒ' . "\0" . '' . "\0" . '¸£º®)±•ÏhÀ€ÁýCúNÜ/' . "\0" . ':Q]×”ØÊÇ¼ù€ÁU™/½&î' . "\0" . 'Ðw-Ä›\\•ùÒkâ~ð¥Y§óNN‰¿ó=o>`pUæK¯‰ûÀ—¾oœÎ{8%þ¾¦šÁˆ 70¸*ó¥×ÄýàK_ö-ç¯Ÿ_SÍ`JlÝ;o>`pUæ7ùëÿcK‘¸_' . "\0" . '|©º–ŸÄ¦W|üÅ¹œ\'pJü}Þ|ÀàªÌoý' . "\0" . '+‹Äý`ÕÄL‰­O¼5þ<8c^WßÿIl‰70¸*ó›D?ÀÊ"q¿' . "\0" . '˜Kµ2MbÀ]ïŽ|”ü«úÚObÓ`¼ù€ÁU™ß$úV‰ûÀª³™[/jów-PíâÍ|ð•òæWe~“èXY$î' . "\0" . '9w8—ÄÖ“Ú0GT;zyW5Z0€*ó›D?ÀÊ"q¿' . "\0" . 'XZõ:7ÝÎÝ?~ì¼·Sâï·jÜ1º¯o>`pUæ7‰~€•Eâ~°‚êx®{žÛ¿|é¼ÃsbÓEm>L÷uâÍ®Êü&Ñ°²HÜ/' . "\0" . 'ÖQ}ÏÔùÔ‡¹¡ÚéObÓImøIl˜70¸*ó›D?ÀÊ"q¿' . "\0" . 'XMµ>?ÍÏå–pÞù)wÿž70¸*ó›D?ÀÊ"q¿' . "\0" . 'XÓ¹º$¶Î¨ð“øãåãAxóƒ«2¿Iô¬,÷€•» sbÓ¼ê?i?¶cŽÀ›\\•ùM¢`e‘¸_' . "\0" . '¬¯:¡Uz¡:Ò”ØzÞ|ÀàªÌoý' . "\0" . '+‹Äý`k¶Cçc›ŽÀ›\\•ùM¢`e‘¸_' . "\0" . 'Áa»¯o>`pUæ7‰~€•Eâ~ÀØ¼ù€ÁU™ß$úV‰û' . "\0" . 'cóæWe~“èXY$î' . "\0" . 'ŒÍ›\\•ùM¢`e‘¸_' . "\0" . '06o>`pUæ7‰~€•Eâ~ÀØ¼ù€ÁU™?%šÖ‰û' . "\0" . 'cóæWeþ”hX_$î' . "\0" . 'ŒÍ›\\•ùS¢`}‘¸_' . "\0" . '06o>`pUæO‰f€õEâ~ÀØ¼ù€ÁU™?%šÖ‰û' . "\0" . 'cóæWeþ”hX_$î' . "\0" . 'ŒÍ›\\•ùS¢`}‘¸_' . "\0" . 'ŒáŸSâïxóƒ«2J4¬/÷€]«®kJlåÄ›\\•ùS¢`}‘¸_' . "\0" . 'ìTµ\\Mb' . "\0" . 'gÞ|ÀàªÌŸÍ' . "\0" . 'ë‹Äý`ªåúIl"xóƒ«2J4¬/÷€…,×÷|Jü»¼ù€ÁU™?%šÖ‰ûÀB–ë‘–Ûó¼ù€ÁU™?%šÖ‰ûÀBj“Î»=%þÎ#Þ|ÀàªÌŸÍ' . "\0" . 'ë‹Äý`!Õ\'ý$6}cöÏ›\\•ùS¢`}‘¸_' . "\0" . ',êÜ/½›ØÉEmÖ€½Ã›\\•ùÒwâ®°j˜>Ê£]ÅßyÎ;\\øÒ}âÆÐê´~¼|äE^xÀàªº—î7€®œÛ­sÚí^á…®ª{é>qã' . "\0" . 'èPu]Sb+¯ðÂWÕ½ô¸k' . "\0" . 't«z¯ŸÄ&^á®
+ü)ÿËÿöïl«îÄ”¸_' . "\0" . 'ô¯Ú/ØG¼ù€ÁU™?%šÖWwbJÜ/' . "\0" . '›70¸*ó§D3ÀúêNL‰û' . "\0" . 'cóæWeþ”hX_Ý‰)q¿' . "\0" . '`lÞ|ÀàªÌŸÍ' . "\0" . 'ë«;1%î' . "\0" . 'ŒÍ›\\•ùS¢`}u\'¦Äý€±yóƒ«2J4¬¯îÄ”¸_' . "\0" . '06o>`pUæO‰f€õÕ˜÷' . "\0" . 'ÆæÍ®Êü)Ñ°¾ºSâ~ÀØ¼ù€ÁU™?%šÖWwbJÜ/' . "\0" . '›70¸*ó§D3ÀúêNL‰û' . "\0" . 'cóæWeþ”hX_Ý‰)q¿' . "\0" . '`lÞ|ÀàªÌŸÍ' . "\0" . 'ë«;1%î' . "\0" . 'ŒÍ›\\•ùS¢`}u\'¦Äý€±yóƒ«2J4¬¯îÄ”¸_' . "\0" . '06o>`pUæK÷‰' . "\0" . 'CòÂWÕ½ì!qï' . "\0" . '`<ÞvÀàª´—=$î' . "\0" . 'ŒÇÛ\\•ö²‡Ä½€ñxÛƒ«Ò^ºOÜ8' . "\0" . '’0¸ªî§üÏÿøŸØVÝ‰)q¿' . "\0" . '`lÞ|ÀÈªÆoÍ' . "\0" . 'ë«;1%n' . "\0" . 'ŒÍ›YÕøM¢`}u\'¦Ä-€±yó#«¿I4¬¯îÄ”¸e' . "\0" . '06o>`dUã7‰f€õÕ˜·' . "\0" . 'ÆæÍŒ¬jü&Ñ°¾ºSâ–ÀØ¼ù€‘Uß$šÖWwbJÜ2' . "\0" . '›70²ªñ›D3ÀúêNL‰[' . "\0" . 'cóæFV5~“hX_Ý‰)qË' . "\0" . '`lÞ|ÀÈªÆoÍ' . "\0" . 'ë«;1%n' . "\0" . 'ŒÍ›YÕøM¢`}u\'¦Ä-€±yó#«¿I4¬¯îÄ”¸e' . "\0" . '06o>`dUã7‰f€õÕ˜·' . "\0" . 'ÆæÍŒ¬jü&Ñ°¾ºSâ–ÀØ¼ù€‘U/\'n' . "\0" . 'ŒÍ›YÕøÒqâ–ÀØ¼ù€‘U/\'n' . "\0" . 'ŒÍ›YÕøÒqâ–ÀØ¼ù€‘U/\'n' . "\0" . 'ŒÍ›YÕøSb+' . "\0" . 'ÀÊ”#ÀÈªñš[' . "\0" . 'V¦FV×”Ø
+' . "\0" . '°2å0²j¼¦ÄV' . "\0" . '€•)G€‘Uã5%¶' . "\0" . '¬L9Œ¬¯)±' . "\0" . '`eÊ`dÕxM‰­' . "\0" . '' . "\0" . '+SŽ' . "\0" . '#«ÆkJl' . "\0" . 'X™rY5^Sb+' . "\0" . 'ÀÊ”#ÀÈªñš[' . "\0" . 'V¦FV×”Ø
+' . "\0" . '°2å0²j¼¦ÄV' . "\0" . '€•)G€‘Uã5%¶' . "\0" . '¬L9Œ¬¯)±' . "\0" . '`eÊ`dÕxM‰­' . "\0" . '' . "\0" . '+SŽ' . "\0" . '#«ÆkJl' . "\0" . 'X™rY5^Sb+' . "\0" . 'ÀÊ”#ÀÈªñš[' . "\0" . 'V¦FV×”Ø
+' . "\0" . '°2å0²j¼¦ÄV' . "\0" . '€•)G€‘Uã5%¶' . "\0" . '¬L9Œ¬¯)±' . "\0" . '`eÊ`dÕxM‰­' . "\0" . '' . "\0" . '+SŽ' . "\0" . 'Ãª®kJl' . "\0" . 'XŸŠV5^Sb+' . "\0" . 'ÀúT$À°ªñš[' . "\0" . 'Ö§"†U×”Ø
+' . "\0" . '°>	0¬j¼¦ÄV' . "\0" . '€õ©H€aUã5%¶' . "\0" . '¬OE«¯)±' . "\0" . '`}*`XÕxM‰­' . "\0" . '' . "\0" . 'ëS‘' . "\0" . 'ÃªÆkJl' . "\0" . 'XŸŠV5^Sb+' . "\0" . 'ÀúT$À°ªñš[' . "\0" . 'Ö§"†U×”Ø
+' . "\0" . '°>	0¬j¼¦ÄV' . "\0" . '€õ©H€aUã5%¶' . "\0" . '¬OE«¯)±' . "\0" . '`}*`XÕxM‰­' . "\0" . '' . "\0" . 'ëS‘' . "\0" . 'ÃªÆkJl' . "\0" . 'XŸŠV5^Sb+' . "\0" . 'ÀúT$À°ªñš[' . "\0" . 'Ö§"†U×”Ø
+' . "\0" . '°>	0¬j¼¦ÄV' . "\0" . '€õ©H€aUã5%¶' . "\0" . '¬OE«¯)±' . "\0" . '`}*`XÕxM‰­' . "\0" . '' . "\0" . 'ëS‘' . "\0" . 'ÃªÆkJl' . "\0" . 'XŸŠV5^Sb+' . "\0" . 'ÀúT$À°ªñš[' . "\0" . 'Ö§"†U×”Ø
+' . "\0" . '°>	0¬j¼¦ÄV' . "\0" . '€õ©H€aUã5%¶' . "\0" . '¬OE«¯)±' . "\0" . '`}*`XÕxM‰­' . "\0" . '' . "\0" . 'ëS‘' . "\0" . 'ÃªÆkJl' . "\0" . 'XŸŠV5^Sb+' . "\0" . 'ÀúT$À°ªñš[' . "\0" . 'Ö§"†U×”Ø
+' . "\0" . '°>	0¬j¼¦ÄV' . "\0" . '€õ©H€aUã5%¶' . "\0" . '¬OE«¯)±' . "\0" . '`}*`XÕxM‰­' . "\0" . '' . "\0" . 'ëS‘' . "\0" . 'ÃªÆkJl' . "\0" . 'XŸŠSu]Sb+' . "\0" . 'À&%À˜ªñš[' . "\0" . '6¡(ÆT×”Ø
+' . "\0" . '°	E	0¦j¼¦ÄV' . "\0" . '€M(J€1Uã5%¶' . "\0" . 'lBQŒ©¯)±' . "\0" . '`Š`LÕxM‰­' . "\0" . '' . "\0" . '›P”' . "\0" . 'cªÆkJl' . "\0" . 'Ø„¢S5^Sb+' . "\0" . 'À&%À˜ªñš[' . "\0" . '6¡(ÆT×”Ø
+' . "\0" . '°	E	0¦j¼¦ÄV' . "\0" . '€M(J€1Uã5%¶' . "\0" . 'lBQŒ©¯)±' . "\0" . '`Š`LÕxM‰­' . "\0" . '' . "\0" . '›P”' . "\0" . 'cªÆkJl' . "\0" . 'ØÄ8EIYK\\à¢~$Sb+' . "\0" . 'À&)JªÂ1ñ´ó¢º|Sb+' . "\0" . 'À&4`""Û\'Ö4' . "\0" . '`T0‘Å¯-' . "\0" . 'K&"""2C¢8X°ÿd>2Î/§V‚)ÿíÿøß ÎVDDDd‹D=üjØì”èU`§êé2Q’Ïõ›©e`JT±' . "\0" . '}ª5KDdŸ‰zxN' . "\0" . '‹«7“Èˆ‰zxnäì”xÿ' . "\0" . ',¤Šƒ%Š1àW£ýlj1˜+#' . "\0" . '' . "\0" . '¨ÒªIÔ`À‹oÀN‰å' . "\0" . '€·TQÕ$
+0àuþ~ja˜+' . "\0" . '' . "\0" . 'o©¢ªIT_ÀëÆoÀN‰E' . "\0" . '€U9Õ$J/à-cþ„jy˜ë' . "\0" . '' . "\0" . '/ªrjJ]À»Ñ€K	' . "\0" . '' . "\0" . '¿ªBªI]À»†ýÕ"1%V' . "\0" . '' . "\0" . 'ž«*ªI”[À4`' . "\0" . '' . "\0" . 'ÜQUT“(·€¥;%Ö' . "\0" . '' . "\0" . '©ú©IÔZÀgFþ-Õj1%–' . "\0" . '' . "\0" . 'îªâ©ITYÀÇÔ€‹' . "\0" . '' . "\0" . '·ªrjUð±ÁNµfL‰Å' . "\0" . '€PeS“¨¯€o«;%–' . "\0" . '' . "\0" . '.ª`jÅð¥ñTµxL‰U' . "\0" . '€‹*˜šDe|épØ)±Ð' . "\0" . '' . "\0" . 'pR¥R“(«€ïiÀ' . "\0" . '' . "\0" . 'ø£J¥)QS³8ÄO«V‘)±Ö' . "\0" . '' . "\0" . 'PuR“(¨€Y±;%V' . "\0" . '€#«
+©ITSÀ\\ŽòëªµdJ,:' . "\0" . '' . "\0" . 'GVR“(¥€¹´;%Ö' . "\0" . '€cªÚ¨IÔQÀŒô«eJ,=' . "\0" . '' . "\0" . 'T…Q“¨ €y·;% ' . "\0" . '€£©ª¨ITPÀ¼Žõ«ueJ,@' . "\0" . '' . "\0" . '‡R%Q“¨€Ùº;%–!' . "\0" . '€ƒ¨b¨INÀ4`¹' . "\0" . 'ACM¢p–p¸_Z-0Sb%' . "\0" . '8‚ª„šDÉ,äèØ)±' . "\0" . '¯Ê )Q/Ë9âï­Vš)±' . "\0" . 'Œ­j &Q,ËÑ€ýI¬J' . "\0" . '' . "\0" . '£ªê§ITJÀ¢ú“«õfJ,L' . "\0" . '' . "\0" . '£ªê§I”IÀ¢4`•X›' . "\0" . '' . "\0" . 'ÆSuO“¨‘€¥÷WW«Î”Xž' . "\0" . '' . "\0" . 'SEO“¨Ž€hÀ*±B' . "\0" . '¦Šž&Q+Ð€ýX¤' . "\0" . '' . "\0" . '†QåN“(€uú·WËÏ”X§' . "\0" . '' . "\0" . '†QåÎ”(Š€ÕhÀ®K' . "\0" . 'À' . "\0" . 'ªÐiE°š£ÿüjš«' . "\0" . 'ÀÞU•Ó$Ê!`M°L¬Y' . "\0" . '' . "\0" . '»V%N“(‡€5ùú—`' . "\0" . 'À°ª¾i…°2?Bÿ' . "\0" . 'SU6M¢
+ÖçwøG­ISbñ' . "\0" . 'Ø£ªlšD	¬ÏïðZ“¦Äâ' . "\0" . '°;UÖ4‰úØ„Ÿâµ,5‰%' . "\0" . '`Gª iÅ°¿ÆR‹Ó”XÅ' . "\0" . '' . "\0" . 'v¤
+š&Qù' . "\0" . '[ñk,µ85‰…' . "\0" . '`ª”ie°!?È¿Õ5%Ö2' . "\0" . '€]¨RfJ<À¶ü&ÿV«T“XÎ' . "\0" . '' . "\0" . ':WEL“(x€mùM^©…jJ¬h' . "\0" . '' . "\0" . '=«
+¦I”:Àæü,¯ÔZÕ$Ö5' . "\0" . '€nUùÒ$J`s~–©–«)±®' . "\0" . 'ô©j—&Qä' . "\0" . '=ðËLµbM‰¥' . "\0" . ' CU¸4‰
+è„gªE«I,p' . "\0" . '' . "\0" . '½©ª¥IT8@\'ü8ï¨ukJ,p' . "\0" . '' . "\0" . ']©’¥IÔ6@?ü>ï¨¥«I,s' . "\0" . '' . "\0" . '¨b¥I6@WüDï«lJ¬t' . "\0" . '' . "\0" . '¨b¥IT5@WüDï«¬I,v' . "\0" . '' . "\0" . '›«2¥I”4@oüJªelJ¬w' . "\0" . '' . "\0" . '›«2eJ3@‡üPª•¬I,y' . "\0" . '' . "\0" . 'ª¥I3@‡üPª•¬I¬z' . "\0" . '' . "\0" . '[©ê¤IT2@ŸüVŸ©õlJ,|' . "\0" . '' . "\0" . '[©ê¤I”1@ŸüVŸ©õ¬I¬}' . "\0" . '' . "\0" . 'ë«º¤IÔ0@·ü\\Q«Ú”Xþ' . "\0" . '' . "\0" . 'VVEI“¨^€žùÅþ¢¶&±' . "\0" . '¬©*’&Q½' . "\0" . '=ó‹ý]­mSb' . "\0" . 'XM•#M¢n:çGû»ZÞšÄR' . "\0" . '°‚*DšDÑôÏïö%µÈM‰Õ' . "\0" . '`Uˆ4‰ŠèŸßíKj‘›«!' . "\0" . 'ÀÒª
+iå
+°~º/©u®I¬‰' . "\0" . '' . "\0" . '‹ªdJÔ*À^øõ¾ªV»)±&' . "\0" . ',§ê&Q¨' . "\0" . '{á×ûªZíšÄÊ' . "\0" . '°„ª<šD•ìˆðjÍ›‹#' . "\0" . 'Àªòh%
+°#~Ào¨5¯I¬' . "\0" . '' . "\0" . 'óªš£IÔ\'À¾ø¿§V¾)±D' . "\0" . 'Ì¨
+Ž&Q™' . "\0" . '»ãgüžZüšÄB	' . "\0" . '0—ª6šDeìŽŸñÛjý›%' . "\0" . 'À,ªÔh5	°G~Éo«%pJ¬•' . "\0" . '' . "\0" . '³¨RcJ$ÀNù1¿­VÁ&±\\' . "\0" . '|©ŠŒ&Q' . "\0" . ';åÇü‰Z§ÄŠ	' . "\0" . 'ðª0šD)ì—ßó\'j-lë&' . "\0" . 'ÀÇª¼h¥°_~ÏªåpJ¬›' . "\0" . '' . "\0" . 'Ÿ©Ú¢I!À®ùI¨VÄ&±z' . "\0" . '¼«ªŠ&Q' . "\0" . '{çWý¹Z§Ä
+' . "\0" . 'ð®ª*šDùì_õçj]lk(' . "\0" . 'Àëªžhµ0' . "\0" . '?ì¯Ôê8%–Q' . "\0" . '€U1Ñ$ª`~Û_©rJ¬¤' . "\0" . '' . "\0" . '/ªb¢ITÀü¶¿Rd“XL' . "\0" . '~UeD“(9€aøy«–É)±ž' . "\0" . 'üªÊˆ)Ql' . "\0" . '#ñÿV­”MbI' . "\0" . 'x¢
+ˆ&Ql' . "\0" . '#ñŸA-–SbU' . "\0" . 'x¤ª‡&Qf' . "\0" . 'ƒñ#ŸA­—Mbm' . "\0" . '¸«J‡&Qf' . "\0" . 'ƒñ#ŸG-™Sbm' . "\0" . '¸UuC“(0€ñøÏ£VÍ&±Â' . "\0" . '´ªbhÕ0$?õyÔÂÙ$Y' . "\0" . '€VUM¢º' . "\0" . '†ä§>›Z;§Ä"' . "\0" . 'pQåB“¨+€QùµÏ¦–Ï&±Ô' . "\0" . 'œT¡Ð$Š
+``~ðsªEtJ¬¶' . "\0" . '' . "\0" . '\'U(4‰Š˜üœjm.' . "\0" . 'ppU"4‰r›ßüÌj)k.' . "\0" . 'ppU"L‰BžŸýÌj5mË.' . "\0" . 'pXU4‰BžŸýüjA+/' . "\0" . 'pLU4‰8¿üùÕšÚ$Ö_' . "\0" . 'à€ª,h%p~ùó«5µI¬¿' . "\0" . 'ÀÑTMÐ$êà üøQ+ë”X‚€C©‚ ITÀqøý/¢×&±' . "\0" . 'ÇQÕ@“¨€ãðû_J­¯Sb!' . "\0" . '¢J&Q3' . "\0" . '‡b	XJ-±Mb9' . "\0" . 'Ž ê€)Q0' . "\0" . 'GcXP-´Sb9' . "\0" . '†WE@“¨€£±
+,¨Ú&±(' . "\0" . '«×“(€²,«–Û)±.' . "\0" . '«×ÿ”(€c²,«VÜ)±.' . "\0" . '£ªw“(€c²,«VÜ&±:' . "\0" . 'ã©·~“¨€Ã²,®ÖÝ)±@' . "\0" . 'ã©·~“(€Ã²,®ÖÝ&±F' . "\0" . '#©÷}“¨€#³"¬¡Vß)±L' . "\0" . 'Ã¨—}“¨
+€ƒ³(¬¡à&±X' . "\0" . 'c¨7}“¨
+€ƒ³(¬¤Öà)±X' . "\0" . '¨×|“¨' . "\0" . '¬+©e¸I,Ù' . "\0" . 'ÀÞÕ;~J' . "\0" . '\'–†õÔb<%–l' . "\0" . '`×êß$*€KÃzj1ž«6' . "\0" . '°_õvoe' . "\0" . 'À™Õa=µ7‰µ' . "\0" . 'Ø©zµ7‰2' . "\0" . 'àÌê°ªZ’§ÄÚ' . "\0" . 'ìQ½×›D' . "\0" . 'paXU­ÊMb' . "\0" . 'ö¥ÞèMâíÐ²F¬­Öæ)±ˆ' . "\0" . 'ûRoô&ñêhY#ÖVks“XÇ€½¨wy“xïËÄj…žK9' . "\0" . '°õ"oo|€[VŠÔ"Ý$t' . "\0" . ' õoo|€[VŠmÔ:=%t' . "\0" . ' sõ
+oïz€»,Û¨¥zJ¬é' . "\0" . '@çê>%^ô' . "\0" . 'X/¶Q«u“XÖ€nÕË»I¼ègñ/ÿúïŠÉ' . "\0" . 'sÑ€m¦ì)±²' . "\0" . '}ª7w“xÅÏ"Ú¡­Ä¬€ø|@¶™Z³›Äú' . "\0" . 't¨^ÛMâÿ\\”bÏýãm%frçG¿‚ïiÀ¶TËö”Xß€ÞÔ;»I¼ÜïŠòëEÑ­/æs§Fâ-$:¼8ýVüRÞGbMµr7‰U' . "\0" . 'èG½­›Ä›=DÑv‘ÕØNÄYœÄù²„¸æ=ˆŽ\'Î÷$~ßŠã±²Z¿§ÄB' . "\0" . 'ô£ÞÖMâµ~uÛEV`»çuW€Å¥~"nÓâˆ1ç½kO-®Àlâ¬¬Öï&±Ö' . "\0" . '=¨÷t“x§·uÛE^c‰“=‰kÂ»âzžÅeß\\L¯§³q
+gqÊ3‹°²ZÂ›Är' . "\0" . 'l®^ÒMþúëazUi@œ~”:<WïV\\íÞÄlÏâûsnÅ9Î/¦Âúj!Ÿ+>' . "\0" . '°¹zI7‰Ší,Ë¬ƒ‰«qeq¡.âªîK{"q¾]içyg±¸˜ë«…¼I,ú' . "\0" . 'À†êõ<eËºmÚëÓŠúç°â²œÄÜ»öÔâÜ{ÐN/f¾ž˜›¨}J¬û' . "\0" . 'À†êõü“.ª·ýh/×IÔ?$.×HÚÓŒ‹°•vJ\'1áUÅÌØD-êMbé' . "\0" . '6Q/æŸtQºíÓåÒE!t—Ó‹3°Ë)ŸÄÕXM;‡³˜äbŠl¥–ö)±ú' . "\0" . 'ë«·òO:ªÞvër/¢Øå”ãšïrâ\'qMVÐý$æ¶™˜%[©Õ½I¼' . "\0" . '€•Õ+Y÷5·Ëõ¼ˆºhqšqŽ£½q‰–Ðî$&³½˜.ª5~J¼' . "\0" . '€5ÕûX÷µ˜Ë…Q íWœWœþ¯C\\¥].u+æÐ…˜7ªe~J¼' . "\0" . '€ÕÔËX÷µ–Ëu¾+J¦þµ“3=²ö²Äû^»ó“8t_bêl¨Vú&ñ2' . "\0" . '' . "\0" . 'Öq~7ÅÜ)7U¸\\ó[Q8u«sœ\'íõ‰K÷™v‡q¬NÅ	°­ŸõýïÄË' . "\0" . '' . "\0" . 'XÁù-Ü”t§Ü”P¬èr/ZQDõ ^œ¡½Vgq1_Ôî!Ñ¯8‡mµWð]±«úYâ¯¯' . "\0" . '`i§÷ï¥ÀøyßÔOlárSÞµÖBâ 1s‰ëv×¶#/b·½‹³ÚP\\ÇoÄž÷åg¡‘ÍÒ?¸©Ÿè@{›~åÖŒâ@1I^Wòu±ŸˆghqÕZ9¿×ÄNZqèþý,ô"""²YÎ%D}¸©:Ø—KM¸´8.‹bð.Eõ¿‚¸ˆ­œÜGbŸg1‡>ÅœÏjñ‘µÒ¼‚³Ì`.eÕBâpð‹èfèEÎc1qÜ³ÝPLììgé‘UÓ¼…³®' . "\0" . 'øV´s¹´ä<–‡~.Nd—£7Ó‘mróR˜Ot_º4­<dObªq^‹º4æ' . "\0" . '' . "\0" . 'Œ&šo\\‰ý¶q
+gqš‹Ý†˜	' . "\0" . '' . "\0" . '0 h^ÍC+°OqRq^û	qt' . "\0" . '' . "\0" . '`LÑ\'<=Ã]¹÷!Ä9~#ö' . "\0" . '' . "\0" . 'KtY·¢…¸ÈC\\„·Ä®' . "\0" . '' . "\0" . '€Ã‰v+h!' . "\0" . '' . "\0" . '' . "\0" . 'fWKß' . "\0" . '' . "\0" . '0§hº.t_' . "\0" . '' . "\0" . '' . "\0" . '3‹¾ëL÷' . "\0" . '' . "\0" . '0¿h½Nt_' . "\0" . '' . "\0" . '' . "\0" . '‹Ð}' . "\0" . '' . "\0" . '¬än–ƒ' . "\0" . '' . "\0" . '' . "\0" . 'øÞm÷¥' . "\0" . '' . "\0" . 'X„î' . "\0" . '' . "\0" . '`%º/' . "\0" . '' . "\0" . '€•è¾' . "\0" . '' . "\0" . '' . "\0" . 'V¢û' . "\0" . '' . "\0" . 'X‰î' . "\0" . '' . "\0" . '`%0' . "\0" . '' . "\0" . '€•è¾' . "\0" . '' . "\0" . '' . "\0" . 'V¢' . "\0" . '' . "\0" . 'XK~' . "\0" . '' . "\0" . '`!ù' . "\0" . '' . "\0" . '€…äg' . "\0" . '' . "\0" . '' . "\0" . '’Ÿ' . "\0" . '' . "\0" . 'XH~' . "\0" . '' . "\0" . '`!ù' . "\0" . '' . "\0" . 'Ø‘sât+?' . "\0" . '' . "\0" . '{Ñ&6Ñ§ü' . "\0" . '' . "\0" . 'ìE›ØDŸò3' . "\0" . '°ÿá¿üÛâ(@ßÚÄ&ú”Ÿ€µE´/q.ÀºÚÄ&ú”Ÿ€9E»r4q5€¹µ‰Mô)?' . "\0" . 'o‹®ƒWÄ5Þ‰­ô)?' . "\0" . 'EÁŒâR¿©üÏÿøŸêŸr' . "\0" . '}ÊÏ' . "\0" . 'À­˜ðŒâ@Š‰Á=K\'×Ê©ûÒ€íM~€Ã‰ºe1™Ý‰ÓYNÎ=Ç*‰ãnëïœ»/ØÞäg' . "\0" . '\\”õK‹£M\\¹ÄQ8ž¿siB–PÇø“˜À&®rož1ž>åg' . "\0" . 'Jî‰ƒò«¸€ßˆ=3®;i›…Ô‘*1¥5ý˜áImÈ¯Ð§ü' . "\0" . ';¥ùìâpÌ(.õgbŸá~¢YZõïÄ$—V‰Y]Ôæü}ÊÏ' . "\0" . '°3Q‚Ï"Á&â¦¼%vÅn]%ºŽõÕ<þNÌv!\'æsQ›ó‹ô)?@ï¢Ôþ^ìŸÅ-{Qì„½©D³ÑƒšY%¦=¯JL Ô ü.}ÊÏ' . "\0" . 'k‹‚i1:·ïK±sö(îé¯âëìA%:®Ôï$ÎåÇ½uvó]ú”ŸfePçbòl%îË7bÏ&n÷sñ]:V‰6£C5Ñg‰S{K%z«Æå×éS~øDT9#‰3e9qå?»å8âIx$¾E*ÑcìEÍþ*q‚¯û“Øÿ]ç‘7_§OùàQÊM\\¾—÷3±Oˆ\'ä®ø
+Ý¨Dƒ±Su2\'Nö¹Jìó®š{ OùàoQ¯ârñ¢¸ŒˆÂ#ñäÜŠñl­ÝÅÞÕY]%Nü®?‰]=r|³ú”ŸãŠºd51uÄ¾;çV\\±wÅÞà-ñ8…Ì¦þ$Z‹\'Þ¿¹ó„§Ä¹‡Jìá‘;¡Où™-Å+á{±hÅÓ²œ8nçbòïŠ½Y\\™wÅÞà{ñŒµb$©DkñHþIlê\\MúïÄu8©ÄŸ¨/ä~èS~fY±âo.¦ÇÀâÖÏ.7Œ8Í×Å~Ž#®Ã[bW°„xêÎbù“è+9núWóþ;^Š³óW®wB·ò3óˆ•}GâDØ¯¸³3ŠJ\\ŠWÄÆçþŠØ¬ÃsØ¥?‰¾â®óÈSþå_ÿý¤>ü$Fö¯æýwê:œ#Ÿ«ï\\]Oº•ŸùP,å#‰3¥[qãf‡ ×ê¹øî¨â¬‰oÁ&<©D_q«ÆMÝ×Åù1x/Î“o~U_Ë«JŸò3¯º,ÜG×Å­ù^ìŸÅe|"¾8ž8ßVŒ¸ö\'ÑTÜuÝ×Éùï1x_Î§pJüýõÍ¼ªô)?óPKˆ#Î"1¯8K‹ëÿ½Ø?ß‹+|W|e0Ç9S`VMÅ]ç‘Ñ}œÿƒwä<ÿ61à¹úN^Uú”Ÿ¹ÒV³ˆýo.¦÷Ø3s‰ëüØ3Ë‰+W|àÀ*ÑTÜªqþû‡§Äø½¨Ù?H¾«†æ…¥Où™ÙêÝØí^ÄY| vÈ»âz~#öÌúâŽÜŠñ' . "\0" . 'ÇS‰ŽâV¹ûºeåÞNbô)?WTEïŠ½$Îô-±+‰ëö±Ø-ˆÛt+ÆÉŸ´½Ä]ça§D÷urþ{Œß‹óä—åâYnöß¥Oùùp¢z]ìç â"¼.öC\\ŸÅnéYÜ»[1àþäÒHÜusJ´^\'µaŸXMýOâš<ò\'±“³ó¦›ñô)?EÔ=/Š\\\\œÅN%.ÅgbŸìNÜÐƒFW‰v¢U#t_TbW\'µ!ÇÓ§ü<¸¨u^{à®¸h¿Š¯,Nü±CÆw9Ä`€AU¢—hÕˆëî«þ4%¾Ò³šñUâšüêïÜÛs¦OùyLQÜü*¾Î[âb>ßCœãb‡Œ*î{+F§Òv·jÐãÄønÕt3qM^W¹Ù£Oùy(QÐ<ßå{q…Ÿˆ/îQœÑ»boJ<g1`8ré9»Më\\Mº×ác•ëCÄú”Ÿ¥ÌñE–×ü‰øâ^ÄY¼(vÂ‘Å³q' . "\0" . '†ó\'—å‘‡uë<ÿ)q¾w›@Ÿòó¾Eó\\|—Ä-x$¾Õ¿˜ÿñEhyN€#ù“hWs>Ç)qús‰ÄVú”ŸwìR»<ßbqSnÅøÎÅä[1' . "\0" . 'øñ\'Ñ±Œä|‚?‰_Â%ñwú”Ÿw,
+ßƒéAÜ£VŒìß®\'' . "\0" . '«û“hZFr>Á›³^Î9ñGú”Ÿw¬­€/bŠ[vc' . "\0" . '€±üI4-Ã8ŸÝOâ¬á$?ï›ò}×Ü>' . "\0" . '8Œ?‰¾e' . "\0" . 'çóš§gù' . "\0" . '' . "\0" . '–ö\'Ñ½ìÝù¤šÄ)ÃY~' . "\0" . '€¥ýI40»v>£ŸÄ™BÈÏ' . "\0" . '' . "\0" . '°´?‰f¿Î§ó“8M¸•Ÿ' . "\0" . '`i•èdö¨ÎäOâá®ü' . "\0" . '' . "\0" . '+¨D?ó¢úòMbØÒê¨gäg' . "\0" . '' . "\0" . 'XG%ºš»jè‰/.§ŽW‰SƒGò3' . "\0" . '' . "\0" . '¬¦½M«FÜ$†-§Ž÷0qFð\\~' . "\0" . '€5]åIçÓnšQíýÃÄ¹À¯ò3' . "\0" . '' . "\0" . '¬ïY¢ezKíâÛÄlácù' . "\0" . '' . "\0" . '¶ò0ÑV½¢¾ùRb°œü' . "\0" . '' . "\0" . ']ù>±CØP~' . "\0" . '€®|“Øl.?' . "\0" . '' . "\0" . '°ü' . "\0" . '' . "\0" . 'ÀBò3' . "\0" . '' . "\0" . '' . "\0" . 'ÉÏ' . "\0" . '' . "\0" . '' . "\0" . ',$?' . "\0" . '' . "\0" . '°ü' . "\0" . '' . "\0" . 'ÀBò3' . "\0" . '' . "\0" . '' . "\0" . 'ÉÏ' . "\0" . '' . "\0" . '' . "\0" . ',$?' . "\0" . '' . "\0" . '°ü' . "\0" . '' . "\0" . 'ÀBò3' . "\0" . '' . "\0" . '' . "\0" . 'ÉÏ' . "\0" . '' . "\0" . '' . "\0" . ',$?' . "\0" . '' . "\0" . '°ü' . "\0" . '' . "\0" . 'ÀBò3' . "\0" . '' . "\0" . '' . "\0" . 'ÉÏ' . "\0" . '' . "\0" . '' . "\0" . ',$?' . "\0" . '' . "\0" . '°ü' . "\0" . '' . "\0" . 'ÀBò3' . "\0" . '' . "\0" . '' . "\0" . 'ÉÏ' . "\0" . '' . "\0" . '' . "\0" . ',$?' . "\0" . '' . "\0" . '°ü' . "\0" . '' . "\0" . 'ÀBò3' . "\0" . '' . "\0" . '' . "\0" . 'ÉÏ' . "\0" . '' . "\0" . '' . "\0" . ',$?' . "\0" . '' . "\0" . '°ü' . "\0" . '' . "\0" . 'ÀBò3' . "\0" . '' . "\0" . '' . "\0" . 'ÉÏ' . "\0" . '' . "\0" . '' . "\0" . ',$?' . "\0" . '' . "\0" . '°€üõÿÑõ­\'ßÙ"' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerImagen('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 18:43:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\pos\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon\www\pos\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\pos\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\pos\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\pos\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\pos\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(TypeError), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+TypeError
+stream_get_contents(): Argument #1 ($stream) must be of type resource, string given
+#0 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(314): stream_get_contents('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#1 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerImagen('2')
+#2 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#3 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-16 18:48:01 --> Object of class App\Controllers\Gerencia\Empresa could not be converted to string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 309.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerImagen('2')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 18:50:17 --> Object of class App\Controllers\Gerencia\Empresa could not be converted to string
+in APPPATH\Controllers\Gerencia\Empresa.php on line 309.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerImagen('2')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 18:52:45 --> file_get_contents(ruta/a/la/imagen/no_image.jpg): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Gerencia\Empresa.php on line 326.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(ruta/a/la/imagen/no_image.jpg): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Empresa.php', 326)
+ 2 APPPATH\Controllers\Gerencia\Empresa.php(326): file_get_contents('ruta/a/la/imagen/no_image.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerImagen('2')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

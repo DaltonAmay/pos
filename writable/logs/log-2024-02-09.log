@@ -1,0 +1,537 @@
+ERROR - 2024-02-09 16:44:46 --> mysqli_sql_exception: Table 'pos_ec.empresas' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT emp.id_e...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT emp.id_e...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT emp.id_e...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_e...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-09 16:44:46 --> Table 'pos_ec.empresas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_empresa,
+             emp.razon_social,
+             emp.numero_docuemnto,
+             emp.razon_social,
+             emp.nombre_comercial,
+             emp.email,
+             emp.telefono,
+             emp.direccion,
+             emp.canton,
+             emp.provincia,
+             emp.cod_postal,
+             emp.ruta_certificado,
+             emp.clave_certificado,
+             emp.usuario_sri,
+             emp.clave_sri,
+             emp.empresa_principal,
+             emp.factura_default,
+             emp.logo,
+             emp.created_at,
+             emp.updated_at,
+             \'\' as opciones,
+             CASE WHEN emp.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `empresas` `emp`
+WHERE `emp`.`razon_social` LIKE :emp.razon_social: ESCAPE \'!\'
+OR  `emp`.`numero_documento` LIKE :emp.numero_documento: ESCAPE \'!\'
+OR  `emp`.`nombre_comercial` LIKE :emp.nombre_comercial: ESCAPE \'!\'
+OR  `emp`.`email` LIKE :emp.email: ESCAPE \'!\'
+OR  `emp`.`telefono` LIKE :emp.telefono: ESCAPE \'!\'
+OR  `emp`.`direccion` LIKE :emp.direccion: ESCAPE \'!\'
+OR  `emp`.`canton` LIKE :emp.canton: ESCAPE \'!\'
+OR  `emp`.`provincia` LIKE :emp.provincia: ESCAPE \'!\'
+OR  `emp`.`cod_postal` LIKE :emp.cod_postal: ESCAPE \'!\'
+OR  `emp`.`clave_certificado` LIKE :emp.clave_certificado: ESCAPE \'!\'
+OR  `emp`.`usuario_sri` LIKE :emp.usuario_sri: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 16:53:45 --> mysqli_sql_exception: Table 'pos_ec.empresas' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT emp.id_e...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT emp.id_e...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT emp.id_e...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_e...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-09 16:53:45 --> Table 'pos_ec.empresas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_empresa,
+             emp.razon_social,
+             emp.numero_docuemnto,
+             emp.razon_social,
+             emp.nombre_comercial,
+             emp.email,
+             emp.telefono,
+             emp.direccion,
+             emp.canton,
+             emp.provincia,
+             emp.cod_postal,
+             emp.ruta_certificado,
+             emp.clave_certificado,
+             emp.usuario_sri,
+             emp.clave_sri,
+             emp.empresa_principal,
+             emp.factura_default,
+             emp.logo,
+             emp.created_at,
+             emp.updated_at,
+             \'\' as opciones,
+             CASE WHEN emp.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `empresas` `emp`
+WHERE `emp`.`razon_social` LIKE :emp.razon_social: ESCAPE \'!\'
+OR  `emp`.`numero_documento` LIKE :emp.numero_documento: ESCAPE \'!\'
+OR  `emp`.`nombre_comercial` LIKE :emp.nombre_comercial: ESCAPE \'!\'
+OR  `emp`.`email` LIKE :emp.email: ESCAPE \'!\'
+OR  `emp`.`telefono` LIKE :emp.telefono: ESCAPE \'!\'
+OR  `emp`.`direccion` LIKE :emp.direccion: ESCAPE \'!\'
+OR  `emp`.`canton` LIKE :emp.canton: ESCAPE \'!\'
+OR  `emp`.`provincia` LIKE :emp.provincia: ESCAPE \'!\'
+OR  `emp`.`cod_postal` LIKE :emp.cod_postal: ESCAPE \'!\'
+OR  `emp`.`clave_certificado` LIKE :emp.clave_certificado: ESCAPE \'!\'
+OR  `emp`.`usuario_sri` LIKE :emp.usuario_sri: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 16:54:06 --> mysqli_sql_exception: Table 'pos_ec.empresas' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT emp.id_e...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT emp.id_e...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT emp.id_e...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_e...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-09 16:54:06 --> Table 'pos_ec.empresas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_empresa,
+             emp.razon_social,
+             emp.numero_docuemnto,
+             emp.razon_social,
+             emp.nombre_comercial,
+             emp.email,
+             emp.telefono,
+             emp.direccion,
+             emp.canton,
+             emp.provincia,
+             emp.cod_postal,
+             emp.ruta_certificado,
+             emp.clave_certificado,
+             emp.usuario_sri,
+             emp.clave_sri,
+             emp.empresa_principal,
+             emp.factura_default,
+             emp.logo,
+             emp.created_at,
+             emp.updated_at,
+             \'\' as opciones,
+             CASE WHEN emp.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `empresas` `emp`', [], false)
+ 2 APPPATH\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 16:54:25 --> mysqli_sql_exception: Unknown column 'emp.numero_docuemnto' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT emp.id_e...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT emp.id_e...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT emp.id_e...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_e...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-09 16:54:25 --> Unknown column 'emp.numero_docuemnto' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_empresa,
+             emp.razon_social,
+             emp.numero_docuemnto,
+             emp.razon_social,
+             emp.nombre_comercial,
+             emp.email,
+             emp.telefono,
+             emp.direccion,
+             emp.canton,
+             emp.provincia,
+             emp.cod_postal,
+             emp.ruta_certificado,
+             emp.clave_certificado,
+             emp.usuario_sri,
+             emp.clave_sri,
+             emp.empresa_principal,
+             emp.factura_default,
+             emp.logo,
+             emp.created_at,
+             emp.updated_at,
+             \'\' as opciones,
+             CASE WHEN emp.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `empresa` `emp`', [], false)
+ 2 APPPATH\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 16:54:40 --> mysqli_sql_exception: Unknown column 'emp.numero_docuemento' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT emp.id_e...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT emp.id_e...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT emp.id_e...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_e...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-09 16:54:40 --> Unknown column 'emp.numero_docuemento' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_empresa,
+             emp.razon_social,
+             emp.numero_docuemento,
+             emp.razon_social,
+             emp.nombre_comercial,
+             emp.email,
+             emp.telefono,
+             emp.direccion,
+             emp.canton,
+             emp.provincia,
+             emp.cod_postal,
+             emp.ruta_certificado,
+             emp.clave_certificado,
+             emp.usuario_sri,
+             emp.clave_sri,
+             emp.empresa_principal,
+             emp.factura_default,
+             emp.logo,
+             emp.created_at,
+             emp.updated_at,
+             \'\' as opciones,
+             CASE WHEN emp.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `empresa` `emp`', [], false)
+ 2 APPPATH\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 16:55:02 --> mysqli_sql_exception: Unknown column 'emp.usuario_sri' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT emp.id_e...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT emp.id_e...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT emp.id_e...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_e...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-09 16:55:02 --> Unknown column 'emp.usuario_sri' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT emp.id_empresa,
+             emp.razon_social,
+             emp.numero_documento,
+             emp.razon_social,
+             emp.nombre_comercial,
+             emp.email,
+             emp.telefono,
+             emp.direccion,
+             emp.canton,
+             emp.provincia,
+             emp.cod_postal,
+             emp.ruta_certificado,
+             emp.clave_certificado,
+             emp.usuario_sri,
+             emp.clave_sri,
+             emp.empresa_principal,
+             emp.factura_default,
+             emp.logo,
+             emp.created_at,
+             emp.updated_at,
+             \'\' as opciones,
+             CASE WHEN emp.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `empresa` `emp`', [], false)
+ 2 APPPATH\Controllers\Gerencia\Empresa.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-09 16:55:15 --> Undefined array key "draw"
+in APPPATH\Controllers\Gerencia\Empresa.php on line 252.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "draw"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Empresa.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-09 16:56:14 --> Undefined array key "draw"
+in APPPATH\Controllers\Gerencia\Empresa.php on line 252.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "draw"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Empresa.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-09 17:25:00 --> Undefined array key "ruc"
+in APPPATH\Controllers\Gerencia\Empresa.php on line 227.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ruc"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Empresa.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-09 17:25:40 --> Undefined array key "departamento"
+in APPPATH\Controllers\Gerencia\Empresa.php on line 232.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departamento"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Empresa.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->ajaxListarEmpresas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 18:47:37 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(260): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa()
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 18:47:37 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(260): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 18:56:57 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 18:56:57 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 19:00:37 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 19:00:37 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 19:09:49 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 19:09:49 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 19:11:39 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 19:11:39 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 19:12:51 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 19:12:51 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 19:13:45 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 19:13:45 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 19:15:00 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 19:15:00 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-09 19:16:03 --> mysqli_sql_exception: Table 'pos_ec.empesa' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pos\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\laragon\www\pos\app\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+#7 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+#8 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+#9 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-09 19:16:03 --> Table 'pos_ec.empesa' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empesa`
+WHERE `empesa`.`id_empresa` = :empesa.id_empresa:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Gerencia\Empresa.php(273): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->obtenerEmpresa('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

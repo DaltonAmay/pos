@@ -1,0 +1,270 @@
+ERROR - 2024-02-08 08:39:37 --> mysqli_sql_exception: Unknown column 'mar.created_at' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 08:39:37 --> Unknown column 'mar.created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `mar`.`id_marca` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 08:42:22 --> mysqli_sql_exception: Unknown column 'mar.created_at' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 08:42:22 --> Unknown column 'mar.created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `mar`.`id_marca` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 08:44:57 --> mysqli_sql_exception: Unknown column 'mar.created_at' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 08:44:57 --> Unknown column 'mar.created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `mar`.`id_marca` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 11:49:13 --> Undefined variable $id
+in APPPATH\Controllers\Inventarios\Marcas.php on line 186.
+ 1 APPPATH\Controllers\Inventarios\Marcas.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Marcas.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 11:49:52 --> Undefined variable $id
+in APPPATH\Controllers\Inventarios\Marcas.php on line 186.
+ 1 APPPATH\Controllers\Inventarios\Marcas.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Marcas.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 11:56:52 --> mysqli_sql_exception: Unknown column 'cat.created_at' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 11:56:52 --> Unknown column 'cat.created_at' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `cat`.`created_at` ASC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 11:56:55 --> mysqli_sql_exception: Unknown column 'cat.estado' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 11:56:55 --> Unknown column 'cat.estado' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `cat`.`estado` ASC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 11:56:57 --> mysqli_sql_exception: Unknown column 'cat.nombre' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 11:56:57 --> Unknown column 'cat.nombre' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `cat`.`nombre` ASC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 11:56:59 --> mysqli_sql_exception: Unknown column 'cat.nombre' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 11:56:59 --> Unknown column 'cat.nombre' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `cat`.`nombre` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 11:57:38 --> mysqli_sql_exception: Unknown column 'cat.estado' in 'order clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 11:57:38 --> Unknown column 'cat.estado' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `cat`.`estado` ASC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

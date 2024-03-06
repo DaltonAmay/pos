@@ -1,0 +1,17 @@
+INFO - 2024-02-15 07:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 07:57:48 --> Undefined variable $respuesta
+in APPPATH\Controllers\Gerencia\Empresa.php on line 152.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respuesta', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Empresa.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 08:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 08:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 08:34:18 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Gerencia\Empresa.php on line 77.
+ 1 APPPATH\Controllers\Gerencia\Empresa.php(117): App\Controllers\Gerencia\Empresa->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Empresa->crud()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,111 @@
+CRITICAL - 2024-01-17 17:19:10 --> Undefined property: App\Controllers\Ventas\Clientes::$unidad
+in APPPATH\Controllers\Ventas\Clientes.php on line 136.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas\\Clientes::$unidad', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:23:56 --> Undefined variable $titulo
+in APPPATH\Views\clientes\list.php on line 13.
+ 1 APPPATH\Views\clientes\list.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\laragon\\www\\pos\\app\\Views\\clientes\\list.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\clientes\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('clientes/list', [], true)
+ 5 APPPATH\Controllers\Ventas\Clientes.php(34): view('clientes/list')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:35:26 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:35:39 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:35:40 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:35:40 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:35:55 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:37:03 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:38:48 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:39:14 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:41:14 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 17:42:50 --> Attempt to read property "id_tipo_documento" on array
+in APPPATH\Controllers\Ventas\Clientes.php on line 134.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_tipo_documento" on array', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 17:43:30 --> mysqli_sql_exception: Unknown column 'tipo_documento.nombre' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `cliente...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cliente...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cliente...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cliente...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 17:43:30 --> Unknown column 'tipo_documento.nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `clientes`.*, `tipo_documento`.`nombre` as `tipo_documento_nombre`
+FROM `clientes`
+JOIN `tipo_documento` ON `tipo_documento`.`id` = `clientes`.`id_tipo_documento`
+WHERE `clientes`.`id_cliente` = :clientes.id_cliente:', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(144): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerCliente('9')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

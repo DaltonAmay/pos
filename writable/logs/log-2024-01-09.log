@@ -1,0 +1,414 @@
+ERROR - 2024-01-09 21:27:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:27:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 LIMIT 0, -1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:27:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:27:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 LIMIT 0, -1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:28:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:28:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 LIMIT 0, -1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:37:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:37:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.estado = 1 LIMIT 0, -1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:37:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:37:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.cod_interno LIKE \'%c%\' OR p.cod_barras LIKE \'%c%\' OR p.nombre_producto LIKE \'%c%\' OR p.idcategoria LIKE \'%c%\' OR p.precio_compra LIKE \'%c%\' OR p.precio_venta LIKE \'%c%\' OR p.precio_venta_mayoreo LIKE \'%c%\' OR p.utilidad LIKE \'%c%\' OR p.stock LIKE \'%c%\' OR p.stock_min LIKE \'%c%\' OR p.exento LIKE \'%c%\' OR p.inventariable LIKE \'%c%\' OR p.perecedero LIKE \'%c%\' OR p.estado = 1 LIMIT 0, -1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:37:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, '' ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, '' ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, '' ...')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, '' ...')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:37:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(160): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \'\' as detalles, c.nombre as nombre_categoria FROM productos p LEFT JOIN categorias c ON p.idcategoria = c.id_categoria WHERE p.cod_interno LIKE \'%cdfghh%\' OR p.cod_barras LIKE \'%cdfghh%\' OR p.nombre_producto LIKE \'%cdfghh%\' OR p.idcategoria LIKE \'%cdfghh%\' OR p.precio_compra LIKE \'%cdfghh%\' OR p.precio_venta LIKE \'%cdfghh%\' OR p.precio_venta_mayoreo LIKE \'%cdfghh%\' OR p.utilidad LIKE \'%cdfghh%\' OR p.stock LIKE \'%cdfghh%\' OR p.stock_min LIKE \'%cdfghh%\' OR p.exento LIKE \'%cdfghh%\' OR p.inventariable LIKE \'%cdfghh%\' OR p.perecedero LIKE \'%cdfghh%\' OR p.estado = 1 LIMIT 0, -1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:44:14 --> mysqli_sql_exception: Unknown column 'p.p.estado' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:44:14 --> Unknown column 'p.p.estado' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE p.p.estado = \'1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:44:31 --> mysqli_sql_exception: Unknown column 'p.p.estado' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:44:31 --> Unknown column 'p.p.estado' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE p.p.estado = \'1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:49:11 --> mysqli_sql_exception: Unknown column 'p.p.estado' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:49:11 --> Unknown column 'p.p.estado' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(135): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE p.p.estado = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:58:47 --> mysqli_sql_exception: Unknown column 'p.c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:58:47 --> Unknown column 'p.c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%c%\' OR cod_barras LIKE \'%c%\' OR nombre_producto LIKE \'%c%\' OR idcategoria LIKE \'%c%\' OR precio_compra LIKE \'%c%\' OR precio_venta LIKE \'%c%\' OR precio_venta_mayoreo LIKE \'%c%\' OR utilidad LIKE \'%c%\' OR stock LIKE \'%c%\' OR stock_min LIKE \'%c%\' OR exento LIKE \'%c%\' OR inventariable LIKE \'%c%\' OR perecedero LIKE \'%c%\' AND p.estado = 1 AND p.c.nombre = c')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 21:59:01 --> mysqli_sql_exception: Unknown column 'p.c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 21:59:01 --> Unknown column 'p.c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%cs%\' OR cod_barras LIKE \'%cs%\' OR nombre_producto LIKE \'%cs%\' OR idcategoria LIKE \'%cs%\' OR precio_compra LIKE \'%cs%\' OR precio_venta LIKE \'%cs%\' OR precio_venta_mayoreo LIKE \'%cs%\' OR utilidad LIKE \'%cs%\' OR stock LIKE \'%cs%\' OR stock_min LIKE \'%cs%\' OR exento LIKE \'%cs%\' OR inventariable LIKE \'%cs%\' OR perecedero LIKE \'%cs%\' AND p.estado = 1 AND p.c.nombre = cs')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:00:06 --> mysqli_sql_exception: Unknown column 'p.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:00:06 --> Unknown column 'p.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%c%\' OR cod_barras LIKE \'%c%\' OR nombre_producto LIKE \'%c%\' OR idcategoria LIKE \'%c%\' OR precio_compra LIKE \'%c%\' OR precio_venta LIKE \'%c%\' OR precio_venta_mayoreo LIKE \'%c%\' OR utilidad LIKE \'%c%\' OR stock LIKE \'%c%\' OR stock_min LIKE \'%c%\' OR exento LIKE \'%c%\' OR inventariable LIKE \'%c%\' OR perecedero LIKE \'%c%\' AND p.estado = 1 AND p.nombre = c')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:00:32 --> mysqli_sql_exception: Unknown column 'p.c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:00:32 --> Unknown column 'p.c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%d%\' OR cod_barras LIKE \'%d%\' OR nombre_producto LIKE \'%d%\' OR idcategoria LIKE \'%d%\' OR precio_compra LIKE \'%d%\' OR precio_venta LIKE \'%d%\' OR precio_venta_mayoreo LIKE \'%d%\' OR utilidad LIKE \'%d%\' OR stock LIKE \'%d%\' OR stock_min LIKE \'%d%\' OR exento LIKE \'%d%\' OR inventariable LIKE \'%d%\' OR perecedero LIKE \'%d%\' AND p.estado = 1 AND p.c.nombre = d')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:00:36 --> mysqli_sql_exception: Unknown column 'p.c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:00:36 --> Unknown column 'p.c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%d%\' OR cod_barras LIKE \'%d%\' OR nombre_producto LIKE \'%d%\' OR idcategoria LIKE \'%d%\' OR precio_compra LIKE \'%d%\' OR precio_venta LIKE \'%d%\' OR precio_venta_mayoreo LIKE \'%d%\' OR utilidad LIKE \'%d%\' OR stock LIKE \'%d%\' OR stock_min LIKE \'%d%\' OR exento LIKE \'%d%\' OR inventariable LIKE \'%d%\' OR perecedero LIKE \'%d%\' AND p.estado = 1 AND p.c.nombre = d')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:04:38 --> mysqli_sql_exception: Unknown column 'c' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:04:38 --> Unknown column 'c' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE p.cod_interno LIKE \'%c%\' OR p.cod_barras LIKE \'%c%\' OR p.nombre_producto LIKE \'%c%\' OR p.idcategoria LIKE \'%c%\' OR p.precio_compra LIKE \'%c%\' OR p.precio_venta LIKE \'%c%\' OR p.precio_venta_mayoreo LIKE \'%c%\' OR p.utilidad LIKE \'%c%\' OR p.stock LIKE \'%c%\' OR p.stock_min LIKE \'%c%\' OR p.exento LIKE \'%c%\' OR p.inventariable LIKE \'%c%\' OR p.perecedero LIKE \'%c%\' AND 1 AND c')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:04:49 --> mysqli_sql_exception: Unknown column 'ch' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:04:49 --> Unknown column 'ch' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE p.cod_interno LIKE \'%ch%\' OR p.cod_barras LIKE \'%ch%\' OR p.nombre_producto LIKE \'%ch%\' OR p.idcategoria LIKE \'%ch%\' OR p.precio_compra LIKE \'%ch%\' OR p.precio_venta LIKE \'%ch%\' OR p.precio_venta_mayoreo LIKE \'%ch%\' OR p.utilidad LIKE \'%ch%\' OR p.stock LIKE \'%ch%\' OR p.stock_min LIKE \'%ch%\' OR p.exento LIKE \'%ch%\' OR p.inventariable LIKE \'%ch%\' OR p.perecedero LIKE \'%ch%\' AND 1 AND ch')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:21:11 --> mysqli_sql_exception: Unknown column 'p.c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:21:11 --> Unknown column 'p.c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE p.cod_interno LIKE \'%a%\' OR p.cod_barras LIKE \'%a%\' OR p.nombre_producto LIKE \'%a%\' OR p.idcategoria LIKE \'%a%\' OR p.precio_compra LIKE \'%a%\' OR p.precio_venta LIKE \'%a%\' OR p.precio_venta_mayoreo LIKE \'%a%\' OR p.utilidad LIKE \'%a%\' OR p.stock LIKE \'%a%\' OR p.stock_min LIKE \'%a%\' OR p.exento LIKE \'%a%\' OR p.inventariable LIKE \'%a%\' OR p.perecedero LIKE \'%a%\' AND p.estado = 1 AND p.c.nombre = a')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:25:26 --> mysqli_sql_exception: Unknown column 'c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:25:26 --> Unknown column 'c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%c%\' OR cod_barras LIKE \'%c%\' OR nombre_producto LIKE \'%c%\' OR idcategoria LIKE \'%c%\' OR precio_compra LIKE \'%c%\' OR precio_venta LIKE \'%c%\' OR precio_venta_mayoreo LIKE \'%c%\' OR utilidad LIKE \'%c%\' OR stock LIKE \'%c%\' OR stock_min LIKE \'%c%\' OR exento LIKE \'%c%\' OR inventariable LIKE \'%c%\' OR perecedero LIKE \'%c%\' OR c.nombre LIKE \'%c%\' AND p.estado = 1 AND p.c.nombre = c')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:25:36 --> mysqli_sql_exception: Unknown column 'c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:25:36 --> Unknown column 'c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%ca%\' OR cod_barras LIKE \'%ca%\' OR nombre_producto LIKE \'%ca%\' OR idcategoria LIKE \'%ca%\' OR precio_compra LIKE \'%ca%\' OR precio_venta LIKE \'%ca%\' OR precio_venta_mayoreo LIKE \'%ca%\' OR utilidad LIKE \'%ca%\' OR stock LIKE \'%ca%\' OR stock_min LIKE \'%ca%\' OR exento LIKE \'%ca%\' OR inventariable LIKE \'%ca%\' OR perecedero LIKE \'%ca%\' OR c.nombre LIKE \'%ca%\' AND p.estado = 1 AND p.c.nombre = ca')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:27:12 --> mysqli_sql_exception: Unknown column 'c.nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:27:12 --> Unknown column 'c.nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%f%\' OR cod_barras LIKE \'%f%\' OR nombre_producto LIKE \'%f%\' OR idcategoria LIKE \'%f%\' OR precio_compra LIKE \'%f%\' OR precio_venta LIKE \'%f%\' OR precio_venta_mayoreo LIKE \'%f%\' OR utilidad LIKE \'%f%\' OR stock LIKE \'%f%\' OR stock_min LIKE \'%f%\' OR exento LIKE \'%f%\' OR inventariable LIKE \'%f%\' OR perecedero LIKE \'%f%\' OR c.nombre LIKE \'%f%\' AND p.estado = 1 AND p.c.nombre = f')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:28:30 --> mysqli_sql_exception: Unknown column 'nombre' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:28:30 --> Unknown column 'nombre' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%d%\' OR cod_barras LIKE \'%d%\' OR nombre_producto LIKE \'%d%\' OR idcategoria LIKE \'%d%\' OR precio_compra LIKE \'%d%\' OR precio_venta LIKE \'%d%\' OR precio_venta_mayoreo LIKE \'%d%\' OR utilidad LIKE \'%d%\' OR stock LIKE \'%d%\' OR stock_min LIKE \'%d%\' OR exento LIKE \'%d%\' OR inventariable LIKE \'%d%\' OR perecedero LIKE \'%d%\' OR nombre LIKE \'%d%\' AND p.estado = 1 AND p.c.nombre = d')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:29:01 --> mysqli_sql_exception: Unknown column 'nombre_categoria' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:29:01 --> Unknown column 'nombre_categoria' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%c%\' OR cod_barras LIKE \'%c%\' OR nombre_producto LIKE \'%c%\' OR idcategoria LIKE \'%c%\' OR precio_compra LIKE \'%c%\' OR precio_venta LIKE \'%c%\' OR precio_venta_mayoreo LIKE \'%c%\' OR utilidad LIKE \'%c%\' OR stock LIKE \'%c%\' OR stock_min LIKE \'%c%\' OR exento LIKE \'%c%\' OR inventariable LIKE \'%c%\' OR perecedero LIKE \'%c%\' OR nombre_categoria LIKE \'%c%\' AND p.estado = 1 AND p.c.nombre = c')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-09 22:29:07 --> mysqli_sql_exception: Unknown column 'nombre_categoria' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p....', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p....')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p....')
+#3 C:\laragon\www\pos\app\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p....')
+#4 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#6 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-09 22:29:07 --> Unknown column 'nombre_categoria' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Productos.php(137): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p.id_producto) as total FROM productos p WHERE cod_interno LIKE \'%c%\' OR cod_barras LIKE \'%c%\' OR nombre_producto LIKE \'%c%\' OR idcategoria LIKE \'%c%\' OR precio_compra LIKE \'%c%\' OR precio_venta LIKE \'%c%\' OR precio_venta_mayoreo LIKE \'%c%\' OR utilidad LIKE \'%c%\' OR stock LIKE \'%c%\' OR stock_min LIKE \'%c%\' OR exento LIKE \'%c%\' OR inventariable LIKE \'%c%\' OR perecedero LIKE \'%c%\' OR nombre_categoria LIKE \'%c%\' AND p.estado = 1 AND p.c.nombre = c')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

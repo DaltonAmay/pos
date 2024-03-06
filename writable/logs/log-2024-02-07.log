@@ -1,0 +1,133 @@
+CRITICAL - 2024-02-07 13:39:18 --> Undefined array key "idUnidadM"
+in APPPATH\Controllers\Inventarios\Unidades.php on line 360.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUnidadM"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 360)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 13:39:22 --> Undefined array key "idUnidadM"
+in APPPATH\Controllers\Inventarios\Unidades.php on line 360.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUnidadM"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 360)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 13:39:43 --> Undefined array key "idUnidadM"
+in APPPATH\Controllers\Inventarios\Unidades.php on line 360.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUnidadM"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 360)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 13:39:48 --> Undefined array key "idUnidadM"
+in APPPATH\Controllers\Inventarios\Unidades.php on line 360.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUnidadM"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 360)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 13:39:56 --> Undefined array key "idUnidadM"
+in APPPATH\Controllers\Inventarios\Unidades.php on line 360.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUnidadM"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 360)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 13:42:25 --> Undefined variable $id
+in APPPATH\Controllers\Inventarios\Unidades.php on line 376.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(376): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 376)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 13:42:36 --> Undefined variable $id
+in APPPATH\Controllers\Inventarios\Unidades.php on line 376.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(376): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 376)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 13:43:27 --> Undefined variable $id
+in APPPATH\Controllers\Inventarios\Unidades.php on line 376.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(376): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 376)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 14:02:31 --> Undefined array key "idUnidadM"
+in APPPATH\Controllers\Inventarios\Unidades.php on line 359.
+ 1 APPPATH\Controllers\Inventarios\Unidades.php(359): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUnidadM"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Unidades.php', 359)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 14:54:32 --> Undefined variable $titulo
+in APPPATH\Views\unidades_medida\list.php on line 12.
+ 1 APPPATH\Views\unidades_medida\list.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\laragon\\www\\pos\\app\\Views\\unidades_medida\\list.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\pos\\app\\Views\\unidades_medida\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('unidades_medida/list', [], true)
+ 5 APPPATH\Controllers\Inventarios\Unidades.php(23): view('unidades_medida/list')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-07 15:25:11 --> mysqli_sql_exception: Unknown column 'cat.abreviatura' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT cat.id_c...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT cat.id_c...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT cat.id_c...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT cat.id_c...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Categorias.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Categorias->ajaxListarCategorias()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Categorias))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-07 15:25:11 --> Unknown column 'cat.abreviatura' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT cat.id_categoria,
+         cat.nombre,
+         cat.abreviatura,
+         cat.created_at,
+         cat.updated_at,
+         \'\' as opciones,
+         CASE WHEN cat.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `categorias` `cat`
+WHERE `cat`.`nombre` LIKE :cat.nombre: ESCAPE \'!\'
+OR  `cat`.`abreviatura` LIKE :cat.abreviatura: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Categorias.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Categorias->ajaxListarCategorias()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Categorias))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-07 15:25:42 --> mysqli_sql_exception: Unknown column 'cat.abreviatura' in 'where clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT cat.id_c...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT cat.id_c...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT cat.id_c...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT cat.id_c...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Categorias.php(84): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Categorias->ajaxListarCategorias()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Categorias))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-07 15:25:42 --> Unknown column 'cat.abreviatura' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT cat.id_categoria,
+         cat.nombre,
+         cat.created_at,
+         cat.updated_at,
+         \'\' as opciones,
+         CASE WHEN cat.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `categorias` `cat`
+WHERE `cat`.`nombre` LIKE :cat.nombre: ESCAPE \'!\'
+OR  `cat`.`abreviatura` LIKE :cat.abreviatura: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Categorias.php(84): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Categorias->ajaxListarCategorias()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Categorias))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

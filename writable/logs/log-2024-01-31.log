@@ -1,0 +1,135 @@
+CRITICAL - 2024-01-31 20:13:38 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\Inventarios\Productos.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-01-31 21:15:41 --> mysqli_sql_exception: Column 'estado' in where clause is ambiguous in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.*, \r\n ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, \r\n ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, \r\n ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, \r\n ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(115): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-31 21:15:41 --> Column 'estado' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.*, 
+        \'\' as adaptable, 
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `estado` = :estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(115): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 21:16:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `' at line 4 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' as ad...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' as ad...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' as ad...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' as ad...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(115): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-31 21:16:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' as adaptable, 
+            \'\' as opciones,
+            p.*, 
+        ,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`estado` = :p.estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(115): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 21:17:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `' at line 4 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' as ad...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' as ad...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' as ad...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' as ad...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(115): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-31 21:17:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' as adaptable, 
+            \'\' as opciones,
+            p.*, 
+        ,
+        c.nombre as nombre_categoria
+FROM `productos` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`estado` = :p.estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `id_producto` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(115): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:18:05 --> Undefined array key "length"
+in APPPATH\Controllers\Inventarios\Productos.php on line 110.
+ 1 APPPATH\Controllers\Inventarios\Productos.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "length"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Inventarios\\Productos.php', 110)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

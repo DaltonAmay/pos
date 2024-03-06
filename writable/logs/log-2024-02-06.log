@@ -1,0 +1,36 @@
+CRITICAL - 2024-02-06 12:18:13 --> Trait "App\Controllers\Ventas\ResponseTrait" not found
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-06 12:18:31 --> Trait "App\Controllers\Ventas\ResponseTrait" not found
+in APPPATH\Controllers\Ventas\TipoDocumento.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-06 14:17:22 --> mysqli_sql_exception: Unknown column 'um.id' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT um.id,\r\n...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT um.id,\r\n...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT um.id,\r\n...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT um.id,\r\n...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Unidades.php(170): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->ajaxListarUnidadMedida()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-06 14:17:22 --> Unknown column 'um.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT um.id,
+         um.nombre,
+         um.abreviatura,
+         um.created_at,
+         um.updated_at,
+         \'\' as opciones,
+         CASE WHEN um.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `unidad_medida` `um`
+WHERE `um`.`nombre` LIKE :um.nombre: ESCAPE \'!\'
+OR  `um`.`abreviatura` LIKE :um.abreviatura: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Unidades.php(170): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Unidades->ajaxListarUnidadMedida()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Unidades))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,79 @@
+CRITICAL - 2023-12-08 12:33:49 --> Undefined constant "base_url"
+in APPPATH\Views\productos\list.php on line 148.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 12:34:58 --> Undefined constant "base_url"
+in APPPATH\Views\productos\list.php on line 144.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 12:35:00 --> Undefined constant "base_url"
+in APPPATH\Views\productos\list.php on line 144.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 12:35:01 --> Undefined constant "base_url"
+in APPPATH\Views\productos\list.php on line 144.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 12:35:02 --> Undefined constant "base_url"
+in APPPATH\Views\productos\list.php on line 144.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 12:35:02 --> Undefined constant "base_url"
+in APPPATH\Views\productos\list.php on line 144.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 12:41:26 --> Undefined constant "base_url"
+in APPPATH\Views\productos\list.php on line 144.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 4 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 13:24:52 --> syntax error, unexpected token ";"
+in APPPATH\Views\productos\list.php on line 147.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('productos/list', [], true)
+ 3 APPPATH\Controllers\Productos.php(30): view('productos/list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Productos->Index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
