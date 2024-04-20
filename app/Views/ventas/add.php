@@ -7,11 +7,11 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h2 class="m-0 fw-bold">FACTURA</h2>
+                            <h2 class="m-0 fw-bold">ADMINISTRAR VENTAS</h2>
                         </div><!-- /.col -->
                         <div class="col-sm-6 d-none d-md-block">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                                <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>">Inicio</a></li>
                                 <li class="breadcrumb-item active">Ventas / Factura</li>
                             </ol>
                         </div><!-- /.col -->
@@ -110,7 +110,7 @@
                                                                 <!-- EMITIR POR -->
                                                                 <div class="col-12 mb-2">
                                                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-building mr-1 my-text-color"></i> Empresa Emisora</label>
-                                                                    <select class="form-select" id="empresa_emisora" name="empresa_emisora" aria-label="Floating label select example" required>
+                                                                    <select class="empresa_emisora" style="width: 100%;" id="empresa_emisora" name="empresa_emisora" aria-label="Floating label select example" required>
                                                                     </select>
                                                                     <div class="invalid-feedback">Seleccione Empresa</div>
                                                                 </div>
@@ -128,7 +128,7 @@
                                                                 <!-- TIPO COMPROBANTE -->
                                                                 <div class="col-12 col-lg-8 mb-2">
                                                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-file-contract mr-1 my-text-color"></i>Tipo de Comprobante</label>
-                                                                    <select class="form-select" id="tipo_comprobante" name="tipo_comprobante" aria-label="Floating label select example" required readOnly>
+                                                                    <select class="tipo_comprobante" style="width: 100%;"id="tipo_comprobante" name="tipo_comprobante" aria-label="Floating label select example" required readOnly>
                                                                     </select>
                                                                     <div class="invalid-feedback">Seleccione Tipo de Comprobante</div>
                                                                 </div>
@@ -189,7 +189,7 @@
                                                                 <div class="col-12 col-lg-6 mb-2">
 
                                                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-file-signature mr-1 my-text-color"></i>Tipo Documento</label>
-                                                                    <select class="form-select" id="tipo_documento" name="tipo_documento" aria-label="Floating label select example" required readonly>
+                                                                    <select class="tipo_documento"  style="width: 100%;"id="tipo_documento" name="tipo_documento" aria-label="Floating label select example" required readonly>
                                                                     </select>
                                                                     <div class="invalid-feedback">Seleccione el Tipo de Documento</div>
 
@@ -632,4 +632,32 @@ MODAL CUOTAS DEL CREDITO
         </div>
     </div>
 
+    <script>
+        $(function() {
+            $('#tipo_documento').select2({
+                placeholder: "Selecciona un Tipo de Documento", // Puedes definir un placeholder
+                allowClear: true // Permite limpiar la selección
+            });
+            $('#tipo_comprobante').select2({
+                placeholder: "Selecciona un Tipo de Comprobante", // Puedes definir un placeholder
+                allowClear: true // Permite limpiar la selección
+            });
 
+
+
+
+
+            //METODOS PARA LLENAR LOS SELECT2
+            cargarTipoDocumento();
+            cargarTipoComprobante();
+        });
+
+
+        //FUNCIONES PARA RELLENAR TODOS LOS SELECT2
+        function cargarTipoDocumento() {
+            CargarSelect(null, $("#tipo_documento"), "", "ventas/loadCboTipoDocumento", 'obtener Tipo Documento', null, 1);
+        }
+        function cargarTipoComprobante() {
+            CargarSelect(null, $("#tipo_comprobante"), "--Seleccione el Comprobante--", "ventas/loadCboTipoComprobante", 'obtener_tipoComprobante', null, 1);
+        }
+    </script>

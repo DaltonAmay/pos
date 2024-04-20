@@ -32,7 +32,7 @@ class Marcas extends BaseController
     public function ajaxListarMarcas()
     {
         $db = \Config\Database::connect();
-        $builder = $db->table('marcas mar');
+        $builder = $db->table('marca mar');
         $builder->select(
             "mar.id_marca,
          mar.nombre,
@@ -92,7 +92,7 @@ class Marcas extends BaseController
          $totalFiltered = $queryTotalFiltered->getRowArray()['total'];
  
          // Obtener el número total de filas (sin filtros)
-         $builderTotal = $db->table('marcas');
+         $builderTotal = $db->table('marca');
          $builderTotal->select('COUNT(*) as total');
          $queryTotal = $builderTotal->get();
          $totalData = $queryTotal->getRowArray()['total'];
@@ -222,7 +222,7 @@ class Marcas extends BaseController
             ]);
 
             $respuesta['tipo_msj'] = 'success';
-            $respuesta['msj'] = "La categoría fue activada correctamente";
+            $respuesta['msj'] = "La marca fue activada correctamente";
         } catch (\Exception $e) {
             $respuesta['tipo_msj'] = 'error';
             $respuesta['msj'] = 'Error al activar : ' . $e->getMessage();

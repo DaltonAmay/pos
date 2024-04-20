@@ -5,7 +5,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class ProductosModel extends Model{
-    protected $table      = 'productos';
+    protected $table      = 'producto';
     protected $primaryKey = 'id_producto';
 
     protected $useAutoIncrement = true;

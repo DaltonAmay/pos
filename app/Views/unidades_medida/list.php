@@ -32,7 +32,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-6">
-                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i>Descripción</label>
+                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i>Descripción <span class="text-danger">(*)</span></label>
                                                     <input type="hidden" name="idUnidadM" id="idUnidadM">
 
                                                     <input type="text" style="border-radius: 20px;" class="form-control form-control-sm" id="nombre" name="nombre" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
@@ -40,7 +40,7 @@
                                                 </div>
 
                                                 <div class="col-md-6">
-                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i>Abreviatura:</label>
+                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i>Abreviatura <span class="text-danger">(*)</span></label>
 
 
                                                     <input type="text" style="border-radius: 20px;" class="form-control form-control-sm" id="abreviatura" name="abreviatura" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>

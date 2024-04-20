@@ -51,7 +51,7 @@ class Productos extends BaseController
     public function ajaxListarProductos()
     {
         $db = \Config\Database::connect();
-        $builder = $db->table('productos p');
+        $builder = $db->table('producto p');
         $builder->select(
             "p.id_producto,
             p.cod_interno, 
@@ -73,7 +73,7 @@ class Productos extends BaseController
             false
         );
 
-        $builder->join('categorias c', 'p.idcategoria = c.id_categoria');
+        $builder->join('categoria c', 'p.idcategoria = c.id_categoria');
         $builder->where('p.estado', 1);
         // Mapeo de índices de DataTables a nombres de columnas en la base de datos
         $columnMap = [
@@ -133,19 +133,19 @@ class Productos extends BaseController
         // $queryTotalFiltered = $builder->get();
         // $totalFiltered = $queryTotalFiltered->getRowArray()['total'];
 
-        $builder = $db->table('productos p');
+        $builder = $db->table('producto p');
         $builder->select('COUNT(*) as total');
         $builder->where('p.estado', 1);
-        $builder->join('categorias c', 'p.idcategoria = c.id_categoria');
+        $builder->join('categoria c', 'p.idcategoria = c.id_categoria');
 
         $query = $builder->get();
         $totalFiltered = $query->getRow()->total;
 
 
         // Obtener el número total de filas (sin filtros)
-        $builderTotal = $db->table('productos');
+        $builderTotal = $db->table('producto');
         $builderTotal->select('COUNT(*) as total');
-        $builder->join('categorias c', 'p.idcategoria = c.id_categoria');
+        $builder->join('categoria c', 'p.idcategoria = c.id_categoria');
         $queryTotal = $builderTotal->get();
         $totalData = $queryTotal->getRowArray()['total'];
 

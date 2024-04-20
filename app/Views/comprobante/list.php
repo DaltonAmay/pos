@@ -27,20 +27,20 @@
 
                                     <div class="card-body">
 
-                                        <form class="validar_tipo_doc_new" novalidate id="form_Tipo_Documento">
+                                        <form class="validarFormComprobantes" novalidate id="formComprobantes">
 
                                             <div class="row">
 
                                                 <div class="col-md-12">
-                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-receipt"></i> </i>Código de Comprobante</label>
-                                                  
+                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-receipt"></i> </i>Código de Comprobante <span class="text-smalltext-muted">(Opcional)</span></label>
+
                                                     <input type="text" style="border-radius: 20px;" class="form-control form-control-sm" id="codigo" name="codigo" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                                     <div class="invalid-feedback">Ingrese el Código</div>
                                                 </div>
 
 
                                                 <div class="col-md-12">
-                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i><?php echo $titulo; ?></label>
+                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i><?php echo $titulo; ?> <span class="text-danger">(*)</span></label>
                                                     <input type="hidden" name="idComprobante" id="idComprobante">
 
                                                     <input type="text" style="border-radius: 20px;" class="form-control form-control-sm" id="descripcion" name="descripcion" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
@@ -73,9 +73,10 @@
                                         <h3 class="card-title"><i class="fas fa-list"></i> Listado <?php echo $titulo; ?></h3>
                                     </div>
                                     <div class="card-body">
-                                        <table id="tbl_tipo_documento" class="table table-striped w-100 shadow border border-secondary">
+                                        <table id="tblComprobantes" class="table table-striped w-100 shadow border border-secondary">
                                             <thead class="bg-main text-left">
                                                 <th>Id</th>
+                                                <th>Código</th>
                                                 <th>Descripcion</th>
                                                 <th>Estado</th>
                                                 <th>Opciones</th>
@@ -102,53 +103,64 @@
 
     <script>
         $(document).ready(function() {
-            listarTipoDocumentos();
+            listarComprobantes();
 
             //EVENTO DEL BOTON GUARDAR
             $(document).on('click', '#btnRegistrarComprobante', function(e) {
                 e.preventDefault();
-                guardarTipoDocumento();
+                guardarComprobantes();
             });
 
             // Utiliza la delegación de eventos para vincular el evento click al nuevo ID
             //EVENTO DEL BOTON ACTUALIZAR
-            $(document).on('click', '#btnActualizarTipoDocumento', function(e) {
+            $(document).on('click', '#btnActualizaComprobante', function(e) {
                 e.preventDefault();
-                actualizarTipoDocumento();
+                actualizarComprobante();
             });
 
             //boton para cargar el dato en el imput
-            $('#tbl_tipo_documento').on('click', '#btnActualizarTipoDoc', function(e) {
+            $('#tblComprobantes').on('click', '#btnCargaComprobante', function(e) {
                 e.stopPropagation(); // Detiene la propagación del evento
                 var id = $(this).data('id');
-                obtenerTipoDoc(id);
+                obtenerComprobante(id);
             });
 
             // Evento para dar de baja
-            $('#tbl_tipo_documento').on('click', '#btnDarDeBajaTipoDoc', function(e) {
+            $('#tblComprobantes').on('click', '#btnBajaComprobante', function(e) {
                 e.stopPropagation(); // Detiene la propagación del evento
                 var id = $(this).data('id');
-                DarDeBajaTipoDocumento(id);
+                darDeBajaComprobante(id);
             });
 
             //Evento para activar el tipo de documento
-            $('#tbl_tipo_documento').on('click', '#btnActivarTipoDoc', function(e) {
+            $('#tblComprobantes').on('click', '#btnActivarTipoDoc', function(e) {
                 e.stopPropagation(); // Detiene la propagación del evento
                 var id = $(this).data('id');
                 activarTipoDocumento(id);
             });
+            convertirAMayusculas('#codigo');
             convertirAMayusculas('#descripcion');
 
         });
 
 
-        function listarTipoDocumentos() {
-            tablaProductos = $('#tbl_tipo_documento').DataTable({
+        function listarComprobantes() {
+            if ($.fn.DataTable.isDataTable('#tblComprobantes')) {
+                $('#tblComprobantes').DataTable().destroy();
+                $('#tblComprobantes tbody').empty();
+            }
+            table = $('#tblComprobantes').DataTable({
                 dom: 'Bfrtip',
                 buttons: [{
+                    text: '<i class="fas fa-sync-alt"></i>',
+                    className: 'bg-secondary',
+                    action: function(e, dt, node, config) {
+                        listarComprobantes();
+                    }
+                },{
                     extend: 'excel',
                     title: function() {
-                        var printTitle = 'LISTADO DE TIPOS DE DOCUMENTOS';
+                        var printTitle = 'LISTADO DE TIPOS DE COMPROBANTES';
                         return printTitle
                     }
                 }, 'pageLength'],
@@ -156,7 +168,7 @@
                 serverSide: true,
                 order: [],
                 ajax: {
-                    url: 'tiposdocumentos/obtenerDocs',
+                    url: 'tipo_comprobantes/obtenerComprobantes',
                     type: 'POST'
                 },
                 scrollX: true,
@@ -164,47 +176,31 @@
                         targets: [0],
                         visible: false,
                     }, {
-                        targets: 2,
-                        createdCell: function(td, cellData, rowData, row, col) {
-
-                            if (rowData[2] == 'ACTIVO') {
-                                $(td).html('<span class="bg-success px-2 py-1 rounded-pill fw-bold"> ' + rowData[2] + ' </span>')
-                            }
-
-                            if (rowData[2] == 'INACTIVO') {
-                                $(td).html('<span class="bg-danger px-2 py-1 rounded-pill fw-bold"> ' + rowData[2] + ' </span>')
-                            }
-
-                        }
-                    }, {
-
                         targets: 3,
                         createdCell: function(td, cellData, rowData, row, col) {
-                            $(td).html('<span class="">' + formatearFechaHora(rowData[3]) + '</span>')
+
+                            if (rowData[3] == 'ACTIVO') {
+                                $(td).html('<span class="bg-success px-2 py-1 rounded-pill fw-bold"> ' + rowData[3] + ' </span>')
+                            }
+
+                            if (rowData[3] == 'INACTIVO') {
+                                $(td).html('<span class="bg-danger px-2 py-1 rounded-pill fw-bold"> ' + rowData[3] + ' </span>')
+                            }
+
                         }
                     },
                     {
                         targets: 4,
                         createdCell: function(td, cellData, rowData, row, col) {
-                            if (rowData[4] !== undefined && rowData[4] !== null && rowData[4] !== '') {
-                                $(td).html('<span class="">' + formatearFechaHora(rowData[4]) + '</span>')
-                            } else {
-                                $(td).html('<span class="">No registra fecha</span>')
-                            }
-                        }
-                    },
-                    {
-                        targets: 5,
-                        createdCell: function(td, cellData, rowData, row, col) {
 
                             let htmlContent = "";
 
-                            if (rowData[2] == "ACTIVO") {
+                            if (rowData[3] == "ACTIVO") {
 
-                                htmlContent += "<span class='fas fa-edit text-primary fs-5' id='btnActualizarTipoDoc' style='cursor:pointer;' data-id='" + rowData[0] + "' title='Editar'>";
+                                htmlContent += "<span class='fas fa-edit text-primary fs-5' id='btnCargaComprobante' style='cursor:pointer;' data-id='" + rowData[0] + "' title='Editar'>";
 
 
-                                htmlContent += "<span class='text-danger px-1' id='btnDarDeBajaTipoDoc' style='cursor:pointer;' data-id='" + rowData[0] + "'>" +
+                                htmlContent += "<span class='text-danger px-1' id='btnBajaComprobante' style='cursor:pointer;' data-id='" + rowData[0] + "'>" +
                                     "<i class='fa fa-trash-alt fs-5'></i>" +
                                     "</span>";
                             } else {
@@ -226,8 +222,8 @@
             });
         }
 
-        function guardarTipoDocumento() {
-            form_validate_topo_doc = validarFormulario('validar_tipo_doc_new');
+        function guardarComprobantes() {
+            form_validate_topo_doc = validarFormulario('validarFormComprobantes');
             if (!form_validate_topo_doc) {
                 mensajeToast("error", "Complete los datos obligatorios");
                 return;
@@ -236,24 +232,23 @@
                 title: 'Está seguro(a) de guardar el tipo de documento?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#28a745',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Si!',
                 cancelButtonText: 'No',
             }).then((result) => {
                 if (result.isConfirmed) {
                     var formData = new FormData();
-                    formData.append('datos_tipo_doc', $("#form_Tipo_Documento").serialize());
-                    response = SolicitudAjax('tiposdocumentos/save', 'POST', formData);
-
+                    formData.append('datosTiposComprobantes', $("#formComprobantes").serialize());
+                    response = SolicitudAjax('tipo_comprobantes/save', 'POST', formData);
                     Swal.fire({
                         position: 'top-center',
                         icon: response['tipo_msj'],
                         title: response['msj'],
                         showConfirmButton: true
                     });
-                    recargarTablas('tbl_tipo_documento');
-                    limpiarFormulario('#form_Tipo_Documento', '.validar_tipo_doc_new');
+                    listarComprobantes();
+                    limpiarFormulario('#formComprobantes', '.validarFormComprobantes');
                 }
 
             })
@@ -324,12 +319,13 @@
             }
         }
 
-        function obtenerTipoDoc(id) {
-            response = SolicitudAjax('tiposdocumentos/obtenerDoc/' + id, 'POST');
-            var datoDoc = response.datosTipoDoc;
+        function obtenerComprobante(id) {
+            response = SolicitudAjax('tipo_comprobantes/get/' + id, 'GET');
+            var datoDoc = response.datoComprobante;
             // Rellenar los campos del modal con los datos obtenidos
             $('#idComprobante').val(datoDoc.id);
             $('#descripcion').val(datoDoc.descripcion);
+            $('#codigo').val(datoDoc.codigo);
             //animacion al input
             resaltaInput("#descripcion");
             cambiadeEstadoBotonYInput(
@@ -339,34 +335,34 @@
                 'btn-primary', // Clase a agregar al botón
                 'fa-save', // Clase a remover del ícono
                 'fa-sync', // Clase a agregar al ícono
-                'btnActualizarTipoDocumento', // Nuevo ID para el botón
-                'form_Tipo_Documento', //ID del formulario anterior
-                'form_Tipo_DocumentoActualizar', //Nuevo ID del form
+                'btnActualizaComprobante', // Nuevo ID para el botón
+                'formComprobantes', //ID del formulario anterior
+                'formComprobanteActualizar', //Nuevo ID del form
                 '#descripcion' // Selector del input para hacer focus
             );
 
         }
 
-        function actualizarTipoDocumento() {
+        function actualizarComprobante() {
 
-            form_validate_topo_doc = validarFormulario('validar_tipo_doc_new');
+            form_validate_topo_doc = validarFormulario('validarFormComprobantes');
             if (!form_validate_topo_doc) {
                 mensajeToast("error", "Complete los datos obligatorios");
                 return;
             }
             Swal.fire({
-                title: 'Está seguro(a) de actualizar la descripción?',
+                title: 'Está seguro(a) de actualizar ?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#28a745',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Si!',
                 cancelButtonText: 'No',
             }).then((result) => {
                 if (result.isConfirmed) {
                     var formData = new FormData();
-                    formData.append('datos_tipo_doc', $("#form_Tipo_DocumentoActualizar").serialize());
-                    response = SolicitudAjax('tiposdocumentos/update', 'POST', formData);
+                    formData.append('datosComprobante', $("#formComprobanteActualizar").serialize());
+                    response = SolicitudAjax('tipo_comprobantes/update', 'POST', formData);
                     Swal.fire({
                         position: "center",
                         icon: response['tipo_msj'],
@@ -375,18 +371,18 @@
                         timer: 6000
                     });
 
-                    recargarTablas('tbl_tipo_documento');
-                    limpiarFormulario('#form_Tipo_DocumentoActualizar', '.validar_tipo_doc_new');
+                    recargarTablas('tblComprobantes');
+                    limpiarFormulario('#formComprobanteActualizar', '.validarFormComprobantes');
                     cambiadeEstadoBotonYInput(
-                        '#btnActualizarTipoDocumento', // Selector del botón
+                        '#btnActualizaComprobante', // Selector del botón
                         'GUARDAR', // Nuevo texto para el botón
                         'btn-primary', // Clase a remover del botón
                         'btn-success', // Clase a agregar al botón
                         'fa-sync', // Clase a remover del ícono
                         'fa-save', // Clase a agregar al ícono
                         'btnRegistrarComprobante', // Nuevo ID para el botón
-                        'form_Tipo_DocumentoActualizar', //ID del formulario anterior
-                        'form_Tipo_Documento', //Nuevo ID del
+                        'formComprobanteActualizar', //ID del formulario anterior
+                        'formComprobantes', //Nuevo ID del
                         '#descripcion' // Selector del input para hacer focus
                     );
                 }
@@ -395,18 +391,18 @@
 
         }
 
-        function DarDeBajaTipoDocumento(id) {
+        function darDeBajaComprobante(id) {
             Swal.fire({
-                title: 'Está seguro(a) de Dar de Baja el Tipo de Documento?',
+                title: 'Está seguro(a) de Dar de Baja el Tipo de Comprobante?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#28a745',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Si!',
                 cancelButtonText: 'No',
             }).then((result) => {
                 if (result.isConfirmed) {
-                    response = SolicitudAjax('tiposdocumentos/delete/' + id, 'POST');
+                    response = SolicitudAjax('tipo_comprobantes/delete/' + id, 'POST');
                     Swal.fire({
                         position: "center",
                         icon: response['tipo_msj'],
@@ -414,7 +410,7 @@
                         showConfirmButton: true,
                         timer: 6000
                     });
-                    recargarTablas('tbl_tipo_documento');
+                    recargarTablas('tblComprobantes');
                 }
 
             })
@@ -423,16 +419,16 @@
 
         function activarTipoDocumento(id) {
             Swal.fire({
-                title: 'Está seguro(a) de Activar el Tipo de Documento?',
+                title: 'Está seguro(a) de Activar el Tipo de Comprobante?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#28a745',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Si!',
                 cancelButtonText: 'No',
             }).then((result) => {
                 if (result.isConfirmed) {
-                    response = SolicitudAjax('tiposdocumentos/active/' + id, 'POST');
+                    response = SolicitudAjax('tipo_comprobantes/active/' + id, 'POST');
                     Swal.fire({
                         position: "center",
                         icon: response['tipo_msj'],
@@ -440,7 +436,7 @@
                         showConfirmButton: true,
                         timer: 6000
                     });
-                    recargarTablas('tbl_tipo_documento');
+                    recargarTablas('tblComprobantes');
                 }
 
             })

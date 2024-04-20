@@ -60,9 +60,19 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
+                        <li class="nav-item"  data-url="administrar/productos">
+                        <a href="<?= base_url('dashboard'); ?>" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p class="text-bold">
+                                    TABLERO PRINCIPAL
+                                </p>
+                            </a>
+                        </li>
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <i class="fas fa-boxes"></i>
+
                                 <p class="text-bold">
                                     INVENTARIOS
                                     <i class="right fas fa-angle-left"></i>
@@ -115,8 +125,8 @@
                             </a>
                             <ul class="nav nav-treeview">
 
-                                <li class="nav-item" data-url="administrar/facturas">
-                                    <a href="<?php echo base_url(); ?>administrar/facturas" class="nav-link ">
+                                <li class="nav-item" data-url="administrar/ventas">
+                                    <a href="<?php echo base_url(); ?>administrar/ventas" class="nav-link ">
                                         <i class="nav-icon fas fa-file-invoice-dollar" aria-hidden="true"></i>
                                         <p> Facturar</p>
                                     </a>
@@ -153,16 +163,22 @@
                                         <p>EMPRESA</p>
                                     </a>
                                 </li>
-                                <li class="nav-item" data-url="ventas/clientes">
+                                <li class="nav-item" data-url="gerencia/proveedor">
                                     <a href="<?php echo base_url(); ?>gerencia/proveedores" class="nav-link ">
                                         <i class="fas fa-people-carry nav-icon"></i> <!-- Ícono actualizado para PROVEEDORES -->
                                         <p>PROVEEDORES</p>
                                     </a>
                                 </li>
-                                <li class="nav-item" data-url="ventas/tiposdocumentos">
+                                <li class="nav-item" data-url="gerencia/tiposdocumentos">
                                     <a href="<?php echo base_url(); ?>gerencia/tipo_comprobantes" class="nav-link">
-                                    <i class="fas fa-file-contract nav-icon"></i>
-                                        <p>Tipo de comprobantes</p>
+                                        <i class="fas fa-file-contract nav-icon"></i>
+                                        <p>TIPO DE COMPROBANTES</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-url="gerencia/series">
+                                    <a href="<?php echo base_url(); ?>gerencia/series" class="nav-link">
+                                        <i class="fas fa-file-contract nav-icon"></i>
+                                        <p>SERIES</p>
                                     </a>
                                 </li>
 

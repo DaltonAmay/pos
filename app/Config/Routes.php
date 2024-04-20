@@ -6,6 +6,14 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
+//RUTA PARA DASHBOARD
+$routes->get('dashboard', 'Dashboard::index');
+$routes->post('dashboard/datosDashboard', 'Dashboard::obtenerDatosDashboard');
+$routes->post('dashboard/grafico_barras', 'Dashboard::grafico_barras');
+$routes->post('dashboard/topVentasCategorias', 'Dashboard::TopVentasCategorias');
+$routes->post('dashboard/graficoDoughnutTipoComprobantes', 'Dashboard::graficoDoughnutTipoC');
+
+
 
 
 // RUTAS PARA UNIDADES DE MEDIDA
@@ -39,8 +47,15 @@ $routes->post('administrar/productos/save', 'Inventarios\Productos::save');
 $routes->get('administrar/productos/obtenerDatosProducto/(:num)', 'Inventarios\Productos::obtenerDatosProducto/$1');
 $routes->post('administrar/productos/update', 'Inventarios\Productos::update');
 $routes->get('administrar/productos/delete/(:num)', 'Inventarios\Productos::delete/$1');
-//  RUTAS PARA FACTURAS
-$routes->get('administrar/facturas', 'Ventas\Facturar::index');
+//  RUTAS PARA VENTAS
+$routes->get('administrar/ventas', 'Ventas\Venta::index');
+//carga de Selects2 
+$routes->post('ventas/loadCboEmpresas', 'Gerencia\Empresa::obtenerEmpresas');
+$routes->post('administrar/ventas/loadCboTipoDocumento', 'Ventas\TipoDocumento::obtenerTipoDocumentos');
+$routes->post('administrar/ventas/loadCboTipoComprobante','Gerencia\TipoComprobante::getComprobantes');
+
+
+
 $routes->get('administrar/ventas/listar', 'Ventas::ajaxListarVentas');
 $routes->post('administrar/ventas/save', 'Ventas::save');
 $routes->post('ventas/get_tipo_documentos', 'Ventas\TipoDocumento::obtenerTipoDocumentos');
@@ -55,11 +70,11 @@ $routes->post('ventas/clientes/obtenerCliente/(:num)', 'Ventas\Clientes::obtener
 $routes->post('ventas/clientes/update', 'Ventas\Clientes::update');
 $routes->post('ventas/clientes/delete/(:num)', 'Ventas\Clientes::delete/$1');
 $routes->post('ventas/clientes/active/(:num)', 'Ventas\Clientes::active/$1');
-//RUTAS VENTAS
-$routes->post('administrar/ventas/save', 'Ventas::save');
-$routes->get('administrar/ventas/obtenerDatosVenta/(:num)', 'Ventas::obtenerDatosVenta/$1');
-$routes->post('ventas/update', 'Ventas::update');
-$routes->get('ventas/delete/(:num)', 'Ventas::delete/$1'); 
+
+
+
+
+
 //RUTAS TIPO DOCUMENTO 
 $routes->get('ventas/tiposdocumentos', 'Ventas\TipoDocumento::index');
 $routes->post('ventas/tiposdocumentos/obtenerDocs', 'Ventas\TipoDocumento::ajaxListarTipoDocumento');
@@ -82,11 +97,22 @@ $routes->post('gerencia/empresa/deleteEmpresa/(:num)', 'Gerencia\Empresa::delete
 $routes->post('gerencia/empresa/activarEmpresa/(:num)', 'Gerencia\Empresa::active/$1');
 //RUTA TIPO DE COMPROBANTES
 $routes->get('gerencia/tipo_comprobantes', 'Gerencia\TipoComprobante::index');
-$routes->get('gerencia/tipo_comprobantes/get', 'Gerencia\TipoComprobante::ajaxListarTipoDocumento');
+$routes->post('gerencia/tipo_comprobantes/obtenerComprobantes', 'Gerencia\TipoComprobante::ajaxListarTipoComprobantes');
+$routes->post('gerencia/comprobantes/get_tipoComprobantes','Gerencia\TipoComprobante::getComprobantes');
 $routes->post('gerencia/tipo_comprobantes/save', 'Gerencia\TipoComprobante::save');
-$routes->get('gerencia/tipo_comprobantes/get/(:num)', 'Gerencia\TipoComprobante::obtenerTipoDoc/$1');
+$routes->get('gerencia/tipo_comprobantes/get/(:num)', 'Gerencia\TipoComprobante::obtenerComprobante/$1');
 $routes->post('gerencia/tipo_comprobantes/update', 'Gerencia\TipoComprobante::update');
 $routes->post('gerencia/tipo_comprobantes/delete/(:num)', 'Gerencia\TipoComprobante::delete/$1');
 $routes->post('gerencia/tipo_comprobantes/active/(:num)', 'Gerencia\TipoComprobante::active/$1');
+//RUTA DE SERIES
+$routes->get('gerencia/series', 'Gerencia\Serie::index');
+$routes->post('gerencia/series/list', 'Gerencia\Serie::ajaxListarSeries');
+$routes->post('gerencia/series/save', 'Gerencia\Serie::save');
+$routes->get('gerencia/series/get/(:num)', 'Gerencia\Serie::obtenerSerie/$1');
+$routes->post('gerencia/series/update', 'Gerencia\Serie::update');
+$routes->post('gerencia/series/delete/(:num)', 'Gerencia\Serie::delete/$1');
+$routes->post('gerencia/series/active/(:num)', 'Gerencia\Serie::active/$1');
+//rutas
+
 
  

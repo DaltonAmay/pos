@@ -170,12 +170,12 @@ class Clientes extends BaseController
 
 
         // Inicializa el Query Builder para la tabla 'clientes'
-        $builder = $this->db->table('clientes');
+        $builder = $this->db->table('cliente'); 
 
         // Construye la consulta
-        $builder->select('clientes.*, tipo_documento.descripcion as nombreDocumento')
-            ->join('tipo_documento', 'tipo_documento.id = clientes.id_tipo_documento')
-            ->where('clientes.id_cliente', $id_cliente);
+        $builder->select('cliente.*, tipo_documento.descripcion as nombreDocumento')
+            ->join('tipo_documento', 'tipo_documento.id = cliente.id_tipo_documento')
+            ->where('cliente.id_cliente', $id_cliente);
         $query = $builder->get();
         // Obtiene el resultado
         $cliente = $query->getRow();
@@ -192,7 +192,7 @@ class Clientes extends BaseController
     {
         $db = \Config\Database::connect(); // Obtiene la conexión de base de datos
 
-        $builder = $db->table('clientes cli');
+        $builder = $db->table('cliente cli');
         $builder->select(
             "
         '' ,
@@ -263,7 +263,7 @@ class Clientes extends BaseController
         $totalFiltered = $queryTotalFiltered->getRowArray()['total'];
 
         // Obtener el número total de filas (sin filtros)
-        $builderTotal = $db->table('productos');
+        $builderTotal = $db->table('cliente');
         $builderTotal->select('COUNT(*) as total');
         $queryTotal = $builderTotal->get();
         $totalData = $queryTotal->getRowArray()['total'];

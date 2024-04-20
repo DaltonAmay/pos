@@ -1,0 +1,28 @@
+CRITICAL - 2024-03-22 00:03:12 --> Undefined property: stdClass::$total
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$total', 'C:\\laragon\\www\\pos\\app\\Controllers\\Dashboard.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:03:51 --> Trying to get property 'ganancia_total' of non-object
+in APPPATH\Controllers\Dashboard.php on line 54.
+ 1 APPPATH\Controllers\Dashboard.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'ganancia_total\' of non-object', 'C:\\laragon\\www\\pos\\app\\Controllers\\Dashboard.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:06:11 --> Undefined variable: porcentajeGanancias
+in APPPATH\Controllers\Dashboard.php on line 74.
+ 1 APPPATH\Controllers\Dashboard.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: porcentajeGanancias', 'C:\\laragon\\www\\pos\\app\\Controllers\\Dashboard.php', 74, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:07:19 --> Trying to get property 'ganancia_total' of non-object
+in APPPATH\Controllers\Dashboard.php on line 54.
+ 1 APPPATH\Controllers\Dashboard.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'ganancia_total\' of non-object', 'C:\\laragon\\www\\pos\\app\\Controllers\\Dashboard.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

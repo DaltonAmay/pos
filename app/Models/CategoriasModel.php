@@ -5,7 +5,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class CategoriasModel extends Model{
-    protected $table      = 'categorias';
+    protected $table      = 'categoria';
     protected $primaryKey = 'id_categoria';
 
     protected $useAutoIncrement = true;

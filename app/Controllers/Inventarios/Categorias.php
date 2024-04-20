@@ -32,7 +32,7 @@ class Categorias extends BaseController
     public function ajaxListarCategorias()
     {
         $db = \Config\Database::connect();
-        $builder = $db->table('categorias cat');
+        $builder = $db->table('categoria cat');
         $builder->select(
             "cat.id_categoria,
          cat.nombre,
@@ -91,7 +91,7 @@ class Categorias extends BaseController
          $totalFiltered = $queryTotalFiltered->getRowArray()['total'];
  
          // Obtener el número total de filas (sin filtros)
-         $builderTotal = $db->table('categorias');
+         $builderTotal = $db->table('categoria');
          $builderTotal->select('COUNT(*) as total');
          $queryTotal = $builderTotal->get();
          $totalData = $queryTotal->getRowArray()['total'];

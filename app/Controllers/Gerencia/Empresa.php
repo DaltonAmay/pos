@@ -458,8 +458,8 @@ class Empresa extends BaseController
 
     public function obtenerEmpresas()
     {
-        // $data = $this->empresa->where('estado', 1)->findAll();
-        $data = $this->empresa->findAll();
+        $data = $this->empresa->where('estado', 1)->findAll();
+        // $data = $this->empresa->findAll();
         if (count($data) > 0) {
             return json_encode($data);
         } else {

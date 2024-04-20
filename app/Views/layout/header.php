@@ -40,6 +40,23 @@
     <!-- MENSAJES TOAST -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/dist/css/toastr.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/css/styles.css">
+    <!-- CSS de Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+
+
+
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.canvasjs.com/ga/canvasjs.min.js"></script>
+
+
+    <!-- SheetJS (xlsx.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+
+
     <script>
         var base_url = "<?php echo base_url(); ?>";
     </script>

@@ -76,7 +76,7 @@
 
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-id-card-alt mr-1 my-text-color"></i> Tipo Documento <strong class="text-danger fw-bold">*</strong></label>
                                     <select class="form-select" id="tipo_documento" name="tipo_documento" aria-label="Floating label select example" required>
-                                       
+
                                     </select>
                                     <div class="invalid-feedback">Seleccione el Tipo de Documento</div>
 
@@ -85,43 +85,43 @@
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-id-card mr-1 my-text-color"></i>Nro Documento <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="nro_documento" onchange="validateJS(event, 'nro_documento')" name="nro_documento" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="nro_documento" onchange="validateJS(event, 'nro_documento')" name="nro_documento" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el Nro de Documento</div>
                                 </div>
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-user-tie mr-1 my-text-color"></i>Apellido del Cliente <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="apellido" name="apellido_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="apellido" name="apellido_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el Apellido del Cliente</div>
                                 </div>
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-user-tie mr-1 my-text-color"></i>Nombre del Cliente <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="nombre" name="nombre_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="nombre" name="nombre_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el Nombre del Cliente</div>
                                 </div>
 
 
                                 <div class="col-12 col-lg-5 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-map-marker-alt mr-1 my-text-color"></i>Dirección <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"class="form-control form-control-sm" id="direccion" name="direccion" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="direccion" name="direccion" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese la dirección del Cliente</div>
                                 </div>
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fa fa-envelope"></i>Correo <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="correo" name="correo" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="correo" name="correo" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el correo del Cliente</div>
                                 </div>
 
                                 <div class="col-12 col-lg-2 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fa fa-mobile mr-1 my-text-color"></i>Celular</label>
-                                    <input type="text"  class="form-control form-control-sm" id="celular" name="celular" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    <input type="text" class="form-control form-control-sm" id="celular" name="celular" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="col-12 col-lg-2 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-phone-alt mr-1 my-text-color"></i>Teléfono</label>
-                                    <input type="text"  class="form-control form-control-sm" id="telefono" name="telefono" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    <input type="text" class="form-control form-control-sm" id="telefono" name="telefono" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
 
@@ -191,43 +191,43 @@
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-id-card mr-1 my-text-color"></i>Nro Documento <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="nro_documentoE" onchange="validateJS(event, 'nro_documento')" name="nro_documento" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="nro_documentoE" onchange="validateJS(event, 'nro_documento')" name="nro_documento" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el Nro de Documento</div>
                                 </div>
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-user-tie mr-1 my-text-color"></i>Apellido del Cliente <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="apellidoE" name="apellido_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="apellidoE" name="apellido_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el Apellido del Cliente</div>
                                 </div>
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-user-tie mr-1 my-text-color"></i>Nombre del Cliente <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="nombreE" name="nombre_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="nombreE" name="nombre_cliente" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el Nombre del Cliente</div>
                                 </div>
 
 
                                 <div class="col-12 col-lg-5 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-map-marker-alt mr-1 my-text-color"></i>Dirección <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="direccionE" name="direccion" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="direccionE" name="direccion" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese la dirección del Cliente</div>
                                 </div>
 
                                 <div class="col-12 col-lg-3 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fa fa-envelope"></i>Correo <strong class="text-danger fw-bold">*</strong></label>
-                                    <input type="text"  class="form-control form-control-sm" id="correoE" name="correo" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                    <input type="text" class="form-control form-control-sm" id="correoE" name="correo" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
                                     <div class="invalid-feedback">Ingrese el correo del Cliente</div>
                                 </div>
 
                                 <div class="col-12 col-lg-2 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fa fa-mobile mr-1 my-text-color"></i>Celular</label>
-                                    <input type="text"  class="form-control form-control-sm" id="celularE" name="celular" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    <input type="text" class="form-control form-control-sm" id="celularE" name="celular" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="col-12 col-lg-2 mb-2">
                                     <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-phone-alt mr-1 my-text-color"></i>Teléfono</label>
-                                    <input type="text"  class="form-control form-control-sm" id="telefonoE" name="telefono" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    <input type="text" class="form-control form-control-sm" id="telefonoE" name="telefono" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
 
@@ -274,7 +274,7 @@
                 /*==========================================*/
                 // INICIALIZO EL SELECT DE TIPO DE DOCUMENTO
                 /*==========================================*/
-                CargarSelects();
+                CargarSelects(null,"tipo_documento");
                 /*==========================================*/
                 // INICIALIZO LA TABLA DE CLIENTES
                 /*==========================================*/
@@ -369,7 +369,7 @@
                         else accion = 'registrar_cliente'
 
                         var formData = new FormData();
-            
+
                         formData.append('datos_cliente', $("#frm-datos-clientes").serialize());
 
                         response = SolicitudAjax('clientes/save', 'POST', formData);
@@ -408,11 +408,13 @@
                         [5, 10, 30, 50, 100, -1],
                         ['5', '10', '30', '50', '100', 'Todos']
                     ],
-                    order: [[1, 'DESC']],
+                    order: [
+                        [1, 'DESC']
+                    ],
                     pageLength: 10,
                     serverSide: true,
                     processing: true,
-                    
+
                     ajax: {
                         url: 'clientes/obtenerClientes',
                         type: 'POST'
@@ -464,9 +466,11 @@
             }
 
 
-            function CargarSelects($idTipoDoc) {
-                CargarSelect($idTipoDoc, $("#tipo_documento"), "--Seleccione Tipo Documento--", "get_tipo_documentos", 'obtener_tipo_documento', null, 0);
+            function CargarSelects($idTipoDoc = null, idSelect) {
+                CargarSelect($idTipoDoc, $("#" + idSelect), "--Seleccione Tipo Documento--", "get_tipo_documentos", 'obtener_tipo_documento', null, 0);
             }
+
+
 
 
             var isValid
@@ -551,6 +555,7 @@
                         if (response.datoCliente) {
                             var datosCliente = response.datoCliente;
                             idTipoD = datosCliente.id_tipo_documento;
+
                             $("#id_cliente").val(datosCliente.id_cliente);
                             $("#nro_documentoE").val(datosCliente.nro_documento);
                             $("#apellidoE").val(datosCliente.apellidos);
@@ -559,7 +564,7 @@
                             $("#correoE").val(datosCliente.correo);
                             $("#celularE").val(datosCliente.celular);
                             $("#telefonoE").val(datosCliente.telefono);
-                            CargarSelectsByidTipoDocumento(idTipoD);
+                            CargarSelects(idTipoD, "tipo_documentoE");
                         } else {
                             mensajeToast("error", response.error);
                         }

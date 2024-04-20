@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class MarcasModel extends Model
 {
-    protected $table      = 'marcas';
+    protected $table      = 'marca';
     protected $primaryKey = 'id_marca';
 
     protected $useAutoIncrement = true;

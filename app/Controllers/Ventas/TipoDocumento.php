@@ -33,9 +33,8 @@ class TipoDocumento extends BaseController
         echo view('layout/footer');
     }
 
-
     public function obtenerTipoDocumentos(){
-        $data = $this->tipoDocumento->where('estado', 1)->findAll();
+        $data = $this->tipoDocumento->findAll();
         if (count($data) > 0) {
             return json_encode($data); // Devuelve los datos y el framework se encarga de la codificación JSON
         } else {

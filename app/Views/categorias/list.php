@@ -32,7 +32,7 @@
                                             <div class="row">
 
                                                 <div class="col-md-12">
-                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i>Descripción</label>
+                                                    <label class="mb-0 ml-1 text-sm my-text-color"><i class="fas fa-layer-group mr-1 my-text-color"></i>Descripción <span class="text-danger">(*)</span></label>
                                                     <input type="hidden" name="idCategoria" id="idCategoria">
 
                                                     <input type="text" style="border-radius: 20px;" class="form-control form-control-sm" id="nombre" name="nombre" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
@@ -389,7 +389,7 @@
                 title: 'Está seguro(a) de Dar de Baja la Categoría?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#28a745',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Si!',
                 cancelButtonText: 'No',
@@ -415,7 +415,7 @@
                 title: 'Está seguro(a) de Activar la Categoría?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#28a745',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Si!',
                 cancelButtonText: 'No',

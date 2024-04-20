@@ -15,6 +15,11 @@ class TipoComprobanteModel extends Model{
 
     protected $allowedFields = ['codigo','descripcion','estado'];
 
+    public function getSeries()
+    {
+        return $this->hasMany('App\Models\SerieModel', 'id_tipo_comprobante', 'id');
+    }
+
   
 }
 

@@ -1,0 +1,120 @@
+ERROR - 2024-03-15 09:55:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CASE WHEN sr.estado = 1 THEN 'ACTIVO' ELSE 'INACTIVO' END as estado
+FROM `series' at line 7 in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT sr.id,\r\n...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sr.id,\r\n...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sr.id,\r\n...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,\r\n...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-15 09:55:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CASE WHEN sr.estado = 1 THEN 'ACTIVO' ELSE 'INACTIVO' END as estado
+FROM `series' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,
+                sr.serie,
+                sr.numero_inicial,
+                sr.numero_actual,
+                \'\' as opciones,
+                tc.descripcion as tipoComprobante
+                CASE WHEN sr.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `series` `sr`
+WHERE `sr`.`serie` LIKE :sr.serie: ESCAPE \'!\'
+OR  `sr`.`numero_inicial` LIKE :sr.numero_inicial: ESCAPE \'!\'
+OR  `sr`.`numero_actual` LIKE :sr.numero_actual: ESCAPE \'!\'
+OR  `tc`.`descripcion` LIKE :tc.descripcion: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-15 09:56:15 --> mysqli_sql_exception: Unknown column 'tc.descripcion' in 'field list' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT sr.id,\r\n...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sr.id,\r\n...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sr.id,\r\n...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,\r\n...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-15 09:56:15 --> Unknown column 'tc.descripcion' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,
+                sr.serie,
+                sr.numero_inicial,
+                sr.numero_actual,
+                \'\' as opciones,
+                tc.descripcion as tipoComprobante,
+                CASE WHEN sr.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `series` `sr`
+WHERE `sr`.`serie` LIKE :sr.serie: ESCAPE \'!\'
+OR  `sr`.`numero_inicial` LIKE :sr.numero_inicial: ESCAPE \'!\'
+OR  `sr`.`numero_actual` LIKE :sr.numero_actual: ESCAPE \'!\'
+OR  `tc`.`descripcion` LIKE :tc.descripcion: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 11:03:44 --> Undefined variable $route
+in APPPATH\Config\Routes.php on line 86.
+ 1 APPPATH\Config\Routes.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'C:\\laragon\\www\\pos\\app\\Config\\Routes.php', 86)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\pos\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 11:13:32 --> Undefined array key "estado"
+in APPPATH\Controllers\Gerencia\Serie.php on line 125.
+ 1 APPPATH\Controllers\Gerencia\Serie.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Serie.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 11:13:42 --> Undefined array key "estado"
+in APPPATH\Controllers\Gerencia\Serie.php on line 125.
+ 1 APPPATH\Controllers\Gerencia\Serie.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Serie.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 11:14:21 --> Undefined array key "estado"
+in APPPATH\Controllers\Gerencia\Serie.php on line 125.
+ 1 APPPATH\Controllers\Gerencia\Serie.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Serie.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 11:18:42 --> Undefined array key "estado"
+in APPPATH\Controllers\Gerencia\Serie.php on line 125.
+ 1 APPPATH\Controllers\Gerencia\Serie.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\laragon\\www\\pos\\app\\Controllers\\Gerencia\\Serie.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:13:27 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:30:07 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:40:45 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

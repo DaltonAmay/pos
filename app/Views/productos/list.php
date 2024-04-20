@@ -780,8 +780,8 @@
                 });
 
                 swalWithBootstrapButtons.fire({
-                    title: "¿Estás Seguro?",
-                    text: "¿Deseas eliminar este producto?",
+                    title: "¿Estás Seguro de eliminar el Producto?",
+                    text: "Dejara de estar disponiblepara para cualquier movimiento",
                     icon: "warning",
                     showCancelButton: true,
                     confirmButtonText: "Sí, Elimínalo ahora",

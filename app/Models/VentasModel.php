@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class VentasModel extends Model
 {
-    protected $table      = 'ventas';
+    protected $table      = 'venta';
     protected $primaryKey = 'id_venta';
 
     protected $useAutoIncrement = true;
@@ -15,22 +15,27 @@ class VentasModel extends Model
     protected $useSoftDeletes = false;
 
     protected $allowedFields =  [
-        'id',
-        'fecha',
+        'idventa',
+        'numero_venta',
+        'fecha_emision',
+        'id_tipo_comprobante',
         'subtotal',
-        'subtotal12',
-        'descuento',
         'iva',
-        'total',
+        'exento',
+        'retenido',
+        'descuento',
+        'importe_total',
+        'sonletras',
         'recibido',
         'cambio',
-        'tipo_venta_id',
-        'forma_pago_id',
-        'idCliente',
-        'idacceso',
-        'num_venta_id',
-        'serie',
-        'estado'
+        'pago_efectivo',
+        'pago_tarjeta',
+        'numero_tarjeta',
+        'tarjeta_ambiente',
+        'id_serie',
+        'id_cliente',
+        'id_usuario',
+        'estado',
     ];
 
     // Dates
@@ -38,7 +43,6 @@ class VentasModel extends Model
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
 
     // Validation
     protected $validationRules      = [];

@@ -747,26 +747,18 @@
                 confirmButtonText: 'Si, deseo eliminarla!',
                 cancelButtonText: 'Cancelar',
             }).then((result) => {
-
+                                
                 if (result.isConfirmed) {
-
                     response = SolicitudAjax('empresa/deleteEmpresa/' + id, 'POST', );
-
                     Swal.fire({
                         position: 'top-center',
                         icon: response['tipo_msj'],
                         title: response['msj'],
                         showConfirmButton: true
                     });
-
                     fnc_CargarDatatableEmpresas();
-
                 }
-            })
-
-
-
-
+            });
         }
 
         function fnc_ActivarEmpresa(id) {
@@ -844,9 +836,8 @@
             $("#registrar-empresas").removeClass('active show')
 
             $("#registrar-empresas-tab").html('<i class="fas fa-file-signature"></i> Registrar')
-
-
         }
+
 
         function ajustarHeadersDataTables(element) {
 
@@ -865,6 +856,7 @@
             // Initiate additional resize handling on datatable
             resizeHandler(element);
 
+        
         }
 
         // PREVISUALIZAR LA IMAGEN

@@ -42,6 +42,8 @@
 <script src="https://cdn.jsdelivr.net/npm/select-picker@0.3.2/dist/picker.min.js"></script>
 <!-- SWEETALERT2.js -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- JavaScript de Select2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 <!-- MENSAJES TOAST -->
 <script src="<?php echo base_url(); ?>assets/dist/js/toastr.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/dist/js/funciones_globales.js"></script>

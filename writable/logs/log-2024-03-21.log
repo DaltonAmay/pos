@@ -1,0 +1,669 @@
+CRITICAL - 2024-03-21 07:52:51 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 08:49:53 --> mysqli_sql_exception: Table 'pos_ec.clientes' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' ,\r\n  ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' ,\r\n  ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' ,\r\n  ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' ,\r\n  ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(257): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 08:49:53 --> Table 'pos_ec.clientes' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' ,
+        cli.id_cliente,
+        cli.id_tipo_documento,
+        td.descripcion as tipo_documento,
+        cli.nro_documento,
+        cli.apellidos,
+        cli.nombres,
+        cli.direccion,
+        cli.correo,
+        cli.telefono,
+        cli.celular,
+        CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE `td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`nombres` LIKE :cli.nombres: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+OR  `cli`.`direccion` LIKE :cli.direccion: ESCAPE \'!\'
+OR  `cli`.`celular` LIKE :cli.celular: ESCAPE \'!\'
+ORDER BY `cli`.`id_cliente` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(257): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 08:50:17 --> mysqli_sql_exception: Table 'pos_ec.clientes' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' ,\r\n  ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' ,\r\n  ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' ,\r\n  ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' ,\r\n  ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(257): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 08:50:17 --> Table 'pos_ec.clientes' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' ,
+        cli.id_cliente,
+        cli.id_tipo_documento,
+        td.descripcion as tipo_documento,
+        cli.nro_documento,
+        cli.apellidos,
+        cli.nombres,
+        cli.direccion,
+        cli.correo,
+        cli.telefono,
+        cli.celular,
+        CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE `td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`nombres` LIKE :cli.nombres: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+OR  `cli`.`direccion` LIKE :cli.direccion: ESCAPE \'!\'
+OR  `cli`.`celular` LIKE :cli.celular: ESCAPE \'!\'
+ORDER BY `cli`.`id_cliente` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(257): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 08:50:20 --> mysqli_sql_exception: Table 'pos_ec.clientes' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT '' ,\r\n  ...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT '' ,\r\n  ...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT '' ,\r\n  ...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT '' ,\r\n  ...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(257): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 08:50:20 --> Table 'pos_ec.clientes' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT \'\' ,
+        cli.id_cliente,
+        cli.id_tipo_documento,
+        td.descripcion as tipo_documento,
+        cli.nro_documento,
+        cli.apellidos,
+        cli.nombres,
+        cli.direccion,
+        cli.correo,
+        cli.telefono,
+        cli.celular,
+        CASE WHEN cli.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `clientes` `cli`
+JOIN `tipo_documento` `td` ON `cli`.`id_tipo_documento` = `td`.`id`
+WHERE `td`.`descripcion` LIKE :td.descripcion: ESCAPE \'!\'
+OR  `cli`.`nro_documento` LIKE :cli.nro_documento: ESCAPE \'!\'
+OR  `cli`.`nombres` LIKE :cli.nombres: ESCAPE \'!\'
+OR  `cli`.`apellidos` LIKE :cli.apellidos: ESCAPE \'!\'
+OR  `cli`.`direccion` LIKE :cli.direccion: ESCAPE \'!\'
+OR  `cli`.`celular` LIKE :cli.celular: ESCAPE \'!\'
+ORDER BY `cli`.`id_cliente` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(257): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 08:51:12 --> mysqli_sql_exception: Table 'pos_ec.productos' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 08:51:12 --> Table 'pos_ec.productos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as total
+FROM `productos`', [], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 08:51:21 --> mysqli_sql_exception: Table 'pos_ec.productos' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 08:51:21 --> Table 'pos_ec.productos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as total
+FROM `productos`', [], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 08:51:57 --> Undefined index: length
+in APPPATH\Controllers\Ventas\Clientes.php on line 253.
+ 1 APPPATH\Controllers\Ventas\Clientes.php(253): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: length', 'C:\\laragon\\www\\pos\\app\\Controllers\\Ventas\\Clientes.php', 253, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 08:55:27 --> mysqli_sql_exception: Table 'pos_ec.productos' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Ventas\Clientes.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 08:55:27 --> Table 'pos_ec.productos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as total
+FROM `productos`', [], false)
+ 2 APPPATH\Controllers\Ventas\Clientes.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Ventas\Clientes->obtenerClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 08:58:19 --> mysqli_sql_exception: Table 'pos_ec.marcas' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT mar.id_m...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mar.id_m...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mar.id_m...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_m...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 08:58:19 --> Table 'pos_ec.marcas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT mar.id_marca,
+         mar.nombre,
+         mar.created_at,
+         mar.updated_at,
+         \'\' as opciones,
+         CASE WHEN mar.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `marcas` `mar`
+WHERE `mar`.`nombre` LIKE :mar.nombre: ESCAPE \'!\'
+OR  `mar`.`estado` LIKE :mar.estado: ESCAPE \'!\'
+OR  `mar`.`created_at` LIKE :mar.created_at: ESCAPE \'!\'
+OR  `mar`.`updated_at` LIKE :mar.updated_at: ESCAPE \'!\'
+ORDER BY `mar`.`id_marca` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Marcas.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Marcas->ajaxListarMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Marcas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:30:46 --> mysqli_sql_exception: Table 'pos_ec.categorias' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.id_pro...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.id_pro...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.id_pro...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_pro...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:30:46 --> Table 'pos_ec.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_producto,
+            p.cod_interno, 
+            p.cod_barras,
+            p.nombre_producto,
+            p.precio_compra,
+            p.precio_venta,
+            p.precio_venta_mayoreo,
+            p.utilidad,
+            p.stock,
+            p.stock_min,
+            p.exento,
+            p.inventariable,
+            p.perecedero,
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `producto` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`estado` = :p.estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`cod_interno` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:31:01 --> mysqli_sql_exception: Table 'pos_ec.categorias' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.id_pro...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.id_pro...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.id_pro...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_pro...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:31:01 --> Table 'pos_ec.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_producto,
+            p.cod_interno, 
+            p.cod_barras,
+            p.nombre_producto,
+            p.precio_compra,
+            p.precio_venta,
+            p.precio_venta_mayoreo,
+            p.utilidad,
+            p.stock,
+            p.stock_min,
+            p.exento,
+            p.inventariable,
+            p.perecedero,
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `producto` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`estado` = :p.estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`cod_interno` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:31:53 --> mysqli_sql_exception: Table 'pos_ec.series' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT sr.id,\r\n...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sr.id,\r\n...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sr.id,\r\n...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,\r\n...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:31:53 --> Table 'pos_ec.series' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,
+                sr.serie,
+                sr.numero_inicial,
+                sr.numero_actual,
+                \'\' as opciones,
+                tc.descripcion as tipoComprobante,
+                CASE WHEN sr.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `series` `sr`
+JOIN `tipo_comprobante` `tc` ON `sr`.`id_tipo_comprobante` = `tc`.`id`
+WHERE `sr`.`serie` LIKE :sr.serie: ESCAPE \'!\'
+OR  `sr`.`numero_inicial` LIKE :sr.numero_inicial: ESCAPE \'!\'
+OR  `sr`.`numero_actual` LIKE :sr.numero_actual: ESCAPE \'!\'
+OR  `tc`.`descripcion` LIKE :tc.descripcion: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:32:30 --> mysqli_sql_exception: Table 'pos_ec.series' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT sr.id,\r\n...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sr.id,\r\n...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sr.id,\r\n...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,\r\n...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:32:30 --> Table 'pos_ec.series' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,
+                sr.serie,
+                sr.numero_inicial,
+                sr.numero_actual,
+                \'\' as opciones,
+                tc.descripcion as tipoComprobante,
+                CASE WHEN sr.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `series` `sr`
+JOIN `tipo_comprobante` `tc` ON `sr`.`id_tipo_comprobante` = `tc`.`id`
+WHERE `sr`.`serie` LIKE :sr.serie: ESCAPE \'!\'
+OR  `sr`.`numero_inicial` LIKE :sr.numero_inicial: ESCAPE \'!\'
+OR  `sr`.`numero_actual` LIKE :sr.numero_actual: ESCAPE \'!\'
+OR  `tc`.`descripcion` LIKE :tc.descripcion: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:32:34 --> mysqli_sql_exception: Table 'pos_ec.series' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT sr.id,\r\n...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sr.id,\r\n...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sr.id,\r\n...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,\r\n...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:32:34 --> Table 'pos_ec.series' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,
+                sr.serie,
+                sr.numero_inicial,
+                sr.numero_actual,
+                \'\' as opciones,
+                tc.descripcion as tipoComprobante,
+                CASE WHEN sr.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `series` `sr`
+JOIN `tipo_comprobante` `tc` ON `sr`.`id_tipo_comprobante` = `tc`.`id`
+WHERE `sr`.`serie` LIKE :sr.serie: ESCAPE \'!\'
+OR  `sr`.`numero_inicial` LIKE :sr.numero_inicial: ESCAPE \'!\'
+OR  `sr`.`numero_actual` LIKE :sr.numero_actual: ESCAPE \'!\'
+OR  `tc`.`descripcion` LIKE :tc.descripcion: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:33:17 --> mysqli_sql_exception: Table 'pos_ec.series' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT sr.id,\r\n...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sr.id,\r\n...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sr.id,\r\n...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,\r\n...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:33:17 --> Table 'pos_ec.series' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sr.id,
+                sr.serie,
+                sr.numero_inicial,
+                sr.numero_actual,
+                \'\' as opciones,
+                tc.descripcion as tipoComprobante,
+                CASE WHEN sr.estado = 1 THEN \'ACTIVO\' ELSE \'INACTIVO\' END as estado
+FROM `series` `sr`
+JOIN `tipo_comprobante` `tc` ON `sr`.`id_tipo_comprobante` = `tc`.`id`
+WHERE `sr`.`serie` LIKE :sr.serie: ESCAPE \'!\'
+OR  `sr`.`numero_inicial` LIKE :sr.numero_inicial: ESCAPE \'!\'
+OR  `sr`.`numero_actual` LIKE :sr.numero_actual: ESCAPE \'!\'
+OR  `tc`.`descripcion` LIKE :tc.descripcion: ESCAPE \'!\'
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Gerencia\Serie.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Gerencia\Serie->ajaxListarSeries()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gerencia\Serie))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:34:03 --> mysqli_sql_exception: Table 'pos_ec.categorias' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.id_pro...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.id_pro...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.id_pro...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_pro...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:34:03 --> Table 'pos_ec.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_producto,
+            p.cod_interno, 
+            p.cod_barras,
+            p.nombre_producto,
+            p.precio_compra,
+            p.precio_venta,
+            p.precio_venta_mayoreo,
+            p.utilidad,
+            p.stock,
+            p.stock_min,
+            p.exento,
+            p.inventariable,
+            p.perecedero,
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `producto` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`estado` = :p.estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`cod_interno` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 09:34:11 --> mysqli_sql_exception: Table 'pos_ec.categorias' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.id_pro...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.id_pro...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.id_pro...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_pro...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 09:34:11 --> Table 'pos_ec.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT p.id_producto,
+            p.cod_interno, 
+            p.cod_barras,
+            p.nombre_producto,
+            p.precio_compra,
+            p.precio_venta,
+            p.precio_venta_mayoreo,
+            p.utilidad,
+            p.stock,
+            p.stock_min,
+            p.exento,
+            p.inventariable,
+            p.perecedero,
+        \'\' as opciones,
+        c.nombre as nombre_categoria
+FROM `producto` `p`
+JOIN `categorias` `c` ON `p`.`idcategoria` = `c`.`id_categoria`
+WHERE `p`.`estado` = :p.estado:
+AND  `c`.`nombre` LIKE :c.nombre: ESCAPE \'!\'
+OR  `p`.`cod_interno` LIKE :p.cod_interno: ESCAPE \'!\'
+OR  `p`.`nombre_producto` LIKE :p.nombre_producto: ESCAPE \'!\'
+OR  `p`.`cod_barras` LIKE :p.cod_barras: ESCAPE \'!\'
+OR  `c`.`nombre` LIKE :c.nombre.1: ESCAPE \'!\'
+OR  `p`.`precio_compra` LIKE :p.precio_compra: ESCAPE \'!\'
+OR  `p`.`precio_venta` LIKE :p.precio_venta: ESCAPE \'!\'
+OR  `p`.`precio_venta_mayoreo` LIKE :p.precio_venta_mayoreo: ESCAPE \'!\'
+OR  `p`.`utilidad` LIKE :p.utilidad: ESCAPE \'!\'
+ORDER BY `p`.`cod_interno` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Controllers\Inventarios\Productos.php(127): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Inventarios\Productos->ajaxListarProductos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventarios\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:07:35 --> mysqli_sql_exception: Table 'pos_ec.productos' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Dashboard.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 15:07:35 --> Table 'pos_ec.productos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `productos`', [], false)
+ 2 APPPATH\Controllers\Dashboard.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:07:43 --> mysqli_sql_exception: Table 'pos_ec.productos' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Dashboard.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 15:07:43 --> Table 'pos_ec.productos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `productos`', [], false)
+ 2 APPPATH\Controllers\Dashboard.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:09:33 --> mysqli_sql_exception: Table 'pos_ec.productos' doesn't exist in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Dashboard.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 15:09:33 --> Table 'pos_ec.productos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `productos`', [], false)
+ 2 APPPATH\Controllers\Dashboard.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 15:10:00 --> Undefined property: stdClass::$importe_total
+in APPPATH\Controllers\Dashboard.php on line 44.
+ 1 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$importe_total', 'C:\\laragon\\www\\pos\\app\\Controllers\\Dashboard.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:10:25 --> mysqli_sql_exception: Unknown column 'vd.idproducto' in 'on clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(vd.i...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(vd.i...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(vd.i...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(vd.i...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Dashboard.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 15:10:25 --> Unknown column 'vd.idproducto' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(vd.importe) - SUM(p.precio_compra * vd.cantidad) as ganancia_total
+FROM `venta_detalle` as `vd`
+INNER JOIN `producto` as `p` ON `vd`.`idproducto` = `p`.`idproducto`', [], false)
+ 2 APPPATH\Controllers\Dashboard.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:10:51 --> mysqli_sql_exception: Unknown column 'p.idproducto' in 'on clause' in C:\laragon\www\pos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(vd.i...', 0)
+#1 C:\laragon\www\pos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(vd.i...')
+#2 C:\laragon\www\pos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(vd.i...')
+#3 C:\laragon\www\pos\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(vd.i...', Array, false)
+#4 C:\laragon\www\pos\app\Controllers\Dashboard.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pos\system\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+#6 C:\laragon\www\pos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\laragon\www\pos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-21 15:10:51 --> Unknown column 'p.idproducto' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(vd.importe) - SUM(p.precio_compra * vd.cantidad) as ganancia_total
+FROM `venta_detalle` as `vd`
+INNER JOIN `producto` as `p` ON `vd`.`id_producto` = `p`.`idproducto`', [], false)
+ 2 APPPATH\Controllers\Dashboard.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->obtenerDatosDashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

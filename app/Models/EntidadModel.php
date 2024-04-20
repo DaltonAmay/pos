@@ -5,7 +5,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class EntidadModel extends Model{
-    protected $table      = 'entidades_certificadoras';
+    protected $table      = 'entidad_certificadora';
     protected $primaryKey = 'id';
 
     protected $useAutoIncrement = true;
